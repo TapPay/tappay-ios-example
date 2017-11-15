@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E4E85921FAC4B3D00BD1288 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E85911FAC4B3D00BD1288 /* AppDelegate.m */; };
+		7E4E85951FAC4B3D00BD1288 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E85941FAC4B3D00BD1288 /* ViewController.m */; };
+		7E4E85981FAC4B3D00BD1288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85961FAC4B3D00BD1288 /* Main.storyboard */; };
+		7E4E859A1FAC4B3D00BD1288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85991FAC4B3D00BD1288 /* Assets.xcassets */; };
+		7E4E859D1FAC4B3D00BD1288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E859B1FAC4B3D00BD1288 /* LaunchScreen.storyboard */; };
+		7E4E85A01FAC4B3D00BD1288 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E859F1FAC4B3D00BD1288 /* main.m */; };
+		7E4E85B81FAC4B7C00BD1288 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4E85A61FAC4B7B00BD1288 /* TPDirect.framework */; };
+		7E4E85B91FAC4B7C00BD1288 /* card_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85A91FAC4B7B00BD1288 /* card_amex.png */; };
+		7E4E85BA1FAC4B7C00BD1288 /* card_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85AA1FAC4B7B00BD1288 /* card_amex@2x.png */; };
+		7E4E85BB1FAC4B7C00BD1288 /* card_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85AB1FAC4B7B00BD1288 /* card_amex@3x.png */; };
+		7E4E85BC1FAC4B7C00BD1288 /* card_jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85AC1FAC4B7B00BD1288 /* card_jcb.png */; };
+		7E4E85BD1FAC4B7C00BD1288 /* card_jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85AD1FAC4B7B00BD1288 /* card_jcb@2x.png */; };
+		7E4E85BE1FAC4B7C00BD1288 /* card_jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85AE1FAC4B7B00BD1288 /* card_jcb@3x.png */; };
+		7E4E85BF1FAC4B7C00BD1288 /* card_mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85AF1FAC4B7B00BD1288 /* card_mastercard.png */; };
+		7E4E85C01FAC4B7C00BD1288 /* card_mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B01FAC4B7B00BD1288 /* card_mastercard@2x.png */; };
+		7E4E85C11FAC4B7C00BD1288 /* card_mastercard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B11FAC4B7B00BD1288 /* card_mastercard@3x.png */; };
+		7E4E85C21FAC4B7C00BD1288 /* card_unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B21FAC4B7B00BD1288 /* card_unknown.png */; };
+		7E4E85C31FAC4B7C00BD1288 /* card_unknown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B31FAC4B7B00BD1288 /* card_unknown@2x.png */; };
+		7E4E85C41FAC4B7C00BD1288 /* card_unknown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B41FAC4B7B00BD1288 /* card_unknown@3x.png */; };
+		7E4E85C51FAC4B7C00BD1288 /* card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B51FAC4B7B00BD1288 /* card_visa.png */; };
+		7E4E85C61FAC4B7C00BD1288 /* card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B61FAC4B7B00BD1288 /* card_visa@2x.png */; };
+		7E4E85C71FAC4B7C00BD1288 /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B71FAC4B7B00BD1288 /* card_visa@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E4E858D1FAC4B3D00BD1288 /* TPDApplePay_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDApplePay_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4E85901FAC4B3D00BD1288 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E4E85911FAC4B3D00BD1288 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E4E85931FAC4B3D00BD1288 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7E4E85941FAC4B3D00BD1288 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7E4E85971FAC4B3D00BD1288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E4E85991FAC4B3D00BD1288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E4E859C1FAC4B3D00BD1288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E4E859E1FAC4B3D00BD1288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E4E859F1FAC4B3D00BD1288 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E4E85A61FAC4B7B00BD1288 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
+		7E4E85A91FAC4B7B00BD1288 /* card_amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_amex.png; sourceTree = "<group>"; };
+		7E4E85AA1FAC4B7B00BD1288 /* card_amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_amex@2x.png"; sourceTree = "<group>"; };
+		7E4E85AB1FAC4B7B00BD1288 /* card_amex@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_amex@3x.png"; sourceTree = "<group>"; };
+		7E4E85AC1FAC4B7B00BD1288 /* card_jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_jcb.png; sourceTree = "<group>"; };
+		7E4E85AD1FAC4B7B00BD1288 /* card_jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_jcb@2x.png"; sourceTree = "<group>"; };
+		7E4E85AE1FAC4B7B00BD1288 /* card_jcb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_jcb@3x.png"; sourceTree = "<group>"; };
+		7E4E85AF1FAC4B7B00BD1288 /* card_mastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_mastercard.png; sourceTree = "<group>"; };
+		7E4E85B01FAC4B7B00BD1288 /* card_mastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_mastercard@2x.png"; sourceTree = "<group>"; };
+		7E4E85B11FAC4B7B00BD1288 /* card_mastercard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_mastercard@3x.png"; sourceTree = "<group>"; };
+		7E4E85B21FAC4B7B00BD1288 /* card_unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_unknown.png; sourceTree = "<group>"; };
+		7E4E85B31FAC4B7B00BD1288 /* card_unknown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_unknown@2x.png"; sourceTree = "<group>"; };
+		7E4E85B41FAC4B7B00BD1288 /* card_unknown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_unknown@3x.png"; sourceTree = "<group>"; };
+		7E4E85B51FAC4B7B00BD1288 /* card_visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_visa.png; sourceTree = "<group>"; };
+		7E4E85B61FAC4B7B00BD1288 /* card_visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@2x.png"; sourceTree = "<group>"; };
+		7E4E85B71FAC4B7B00BD1288 /* card_visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@3x.png"; sourceTree = "<group>"; };
+		7EC7D6061FB9AD04002A651B /* TPDApplePay_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TPDApplePay_Example.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E4E858A1FAC4B3D00BD1288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4E85B81FAC4B7C00BD1288 /* TPDirect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E4E85841FAC4B3D00BD1288 = {
+			isa = PBXGroup;
+			children = (
+				7E4E858F1FAC4B3D00BD1288 /* TPDApplePay_Example */,
+				7E4E858E1FAC4B3D00BD1288 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E4E858E1FAC4B3D00BD1288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E4E858D1FAC4B3D00BD1288 /* TPDApplePay_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E4E858F1FAC4B3D00BD1288 /* TPDApplePay_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7EC7D6061FB9AD04002A651B /* TPDApplePay_Example.entitlements */,
+				7E4E85901FAC4B3D00BD1288 /* AppDelegate.h */,
+				7E4E85911FAC4B3D00BD1288 /* AppDelegate.m */,
+				7E4E85931FAC4B3D00BD1288 /* ViewController.h */,
+				7E4E85941FAC4B3D00BD1288 /* ViewController.m */,
+				7E4E85961FAC4B3D00BD1288 /* Main.storyboard */,
+				7E4E85991FAC4B3D00BD1288 /* Assets.xcassets */,
+				7E4E859B1FAC4B3D00BD1288 /* LaunchScreen.storyboard */,
+				7E4E859E1FAC4B3D00BD1288 /* Info.plist */,
+				7E4E859F1FAC4B3D00BD1288 /* main.m */,
+				7E4E85A61FAC4B7B00BD1288 /* TPDirect.framework */,
+				7E4E85A71FAC4B7B00BD1288 /* TPDirectResource */,
+			);
+			path = TPDApplePay_Example;
+			sourceTree = "<group>";
+		};
+		7E4E85A71FAC4B7B00BD1288 /* TPDirectResource */ = {
+			isa = PBXGroup;
+			children = (
+				7E4E85A81FAC4B7B00BD1288 /* Image */,
+			);
+			path = TPDirectResource;
+			sourceTree = "<group>";
+		};
+		7E4E85A81FAC4B7B00BD1288 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7E4E85A91FAC4B7B00BD1288 /* card_amex.png */,
+				7E4E85AA1FAC4B7B00BD1288 /* card_amex@2x.png */,
+				7E4E85AB1FAC4B7B00BD1288 /* card_amex@3x.png */,
+				7E4E85AC1FAC4B7B00BD1288 /* card_jcb.png */,
+				7E4E85AD1FAC4B7B00BD1288 /* card_jcb@2x.png */,
+				7E4E85AE1FAC4B7B00BD1288 /* card_jcb@3x.png */,
+				7E4E85AF1FAC4B7B00BD1288 /* card_mastercard.png */,
+				7E4E85B01FAC4B7B00BD1288 /* card_mastercard@2x.png */,
+				7E4E85B11FAC4B7B00BD1288 /* card_mastercard@3x.png */,
+				7E4E85B21FAC4B7B00BD1288 /* card_unknown.png */,
+				7E4E85B31FAC4B7B00BD1288 /* card_unknown@2x.png */,
+				7E4E85B41FAC4B7B00BD1288 /* card_unknown@3x.png */,
+				7E4E85B51FAC4B7B00BD1288 /* card_visa.png */,
+				7E4E85B61FAC4B7B00BD1288 /* card_visa@2x.png */,
+				7E4E85B71FAC4B7B00BD1288 /* card_visa@3x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E4E858C1FAC4B3D00BD1288 /* TPDApplePay_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E4E85A31FAC4B3D00BD1288 /* Build configuration list for PBXNativeTarget "TPDApplePay_Example" */;
+			buildPhases = (
+				7E4E85891FAC4B3D00BD1288 /* Sources */,
+				7E4E858A1FAC4B3D00BD1288 /* Frameworks */,
+				7E4E858B1FAC4B3D00BD1288 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPDApplePay_Example;
+			productName = TPDApplePay_Example;
+			productReference = 7E4E858D1FAC4B3D00BD1288 /* TPDApplePay_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E4E85851FAC4B3D00BD1288 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Cherri Tech Inc.";
+				TargetAttributes = {
+					7E4E858C1FAC4B3D00BD1288 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7E4E85881FAC4B3D00BD1288 /* Build configuration list for PBXProject "TPDApplePay_Example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E4E85841FAC4B3D00BD1288;
+			productRefGroup = 7E4E858E1FAC4B3D00BD1288 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E4E858C1FAC4B3D00BD1288 /* TPDApplePay_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E4E858B1FAC4B3D00BD1288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4E85C41FAC4B7C00BD1288 /* card_unknown@3x.png in Resources */,
+				7E4E85BC1FAC4B7C00BD1288 /* card_jcb.png in Resources */,
+				7E4E85C31FAC4B7C00BD1288 /* card_unknown@2x.png in Resources */,
+				7E4E85B91FAC4B7C00BD1288 /* card_amex.png in Resources */,
+				7E4E85C21FAC4B7C00BD1288 /* card_unknown.png in Resources */,
+				7E4E859D1FAC4B3D00BD1288 /* LaunchScreen.storyboard in Resources */,
+				7E4E85C11FAC4B7C00BD1288 /* card_mastercard@3x.png in Resources */,
+				7E4E85C01FAC4B7C00BD1288 /* card_mastercard@2x.png in Resources */,
+				7E4E85C71FAC4B7C00BD1288 /* card_visa@3x.png in Resources */,
+				7E4E85BB1FAC4B7C00BD1288 /* card_amex@3x.png in Resources */,
+				7E4E85BE1FAC4B7C00BD1288 /* card_jcb@3x.png in Resources */,
+				7E4E85BD1FAC4B7C00BD1288 /* card_jcb@2x.png in Resources */,
+				7E4E859A1FAC4B3D00BD1288 /* Assets.xcassets in Resources */,
+				7E4E85C51FAC4B7C00BD1288 /* card_visa.png in Resources */,
+				7E4E85BF1FAC4B7C00BD1288 /* card_mastercard.png in Resources */,
+				7E4E85BA1FAC4B7C00BD1288 /* card_amex@2x.png in Resources */,
+				7E4E85981FAC4B3D00BD1288 /* Main.storyboard in Resources */,
+				7E4E85C61FAC4B7C00BD1288 /* card_visa@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E4E85891FAC4B3D00BD1288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4E85951FAC4B3D00BD1288 /* ViewController.m in Sources */,
+				7E4E85A01FAC4B3D00BD1288 /* main.m in Sources */,
+				7E4E85921FAC4B3D00BD1288 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E4E85961FAC4B3D00BD1288 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E4E85971FAC4B3D00BD1288 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E4E859B1FAC4B3D00BD1288 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E4E859C1FAC4B3D00BD1288 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E4E85A11FAC4B3D00BD1288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E4E85A21FAC4B3D00BD1288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E4E85A41FAC4B3D00BD1288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TPDApplePay_Example/TPDApplePay_Example.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPDApplePay_Example",
+				);
+				INFOPLIST_FILE = TPDApplePay_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E4E85A51FAC4B3D00BD1288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TPDApplePay_Example/TPDApplePay_Example.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPDApplePay_Example",
+				);
+				INFOPLIST_FILE = TPDApplePay_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E4E85881FAC4B3D00BD1288 /* Build configuration list for PBXProject "TPDApplePay_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4E85A11FAC4B3D00BD1288 /* Debug */,
+				7E4E85A21FAC4B3D00BD1288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E4E85A31FAC4B3D00BD1288 /* Build configuration list for PBXNativeTarget "TPDApplePay_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4E85A41FAC4B3D00BD1288 /* Debug */,
+				7E4E85A51FAC4B3D00BD1288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E4E85851FAC4B3D00BD1288 /* Project object */;
+}

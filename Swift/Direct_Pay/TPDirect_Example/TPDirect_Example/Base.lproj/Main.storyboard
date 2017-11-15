@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TPDirect_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ih6-FG-Oev">
+                                <rect key="frame" x="57" y="80" width="260" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Bmb-hf-3BJ"/>
+                                    <constraint firstAttribute="width" constant="260" id="iK0-70-8lj"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="您可以設定中華郵政VISA金融卡及各家銀行信用卡（美國運通、大來卡、銀聯卡除外）費用將併入所設定信用卡帳單。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-B6-ucw">
+                                <rect key="frame" x="37" y="190" width="300" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="NNa-z2-1j3"/>
+                                    <constraint firstAttribute="width" constant="300" id="Sfs-Ox-wjZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-aG-1Bf">
+                                <rect key="frame" x="149.5" y="325" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.88909536600000005" green="0.56646364930000004" blue="0.27671140430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ber-WQ-99K"/>
+                                    <constraint firstAttribute="width" constant="75" id="dNR-1b-vMj"/>
+                                </constraints>
+                                <state key="normal" title="確認">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9g-H7-eMT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1D-TO-d0k">
+                                <rect key="frame" x="142" y="385" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.46666666670000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="rLc-B3-n5S"/>
+                                </constraints>
+                                <state key="normal" title="Get Fraud Id">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getFraudId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHd-BE-2OG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XaL-aG-1Bf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hz-AY-Cxc"/>
+                            <constraint firstItem="XaL-aG-1Bf" firstAttribute="top" secondItem="gKW-B6-ucw" secondAttribute="bottom" constant="45" id="NNI-EJ-rfu"/>
+                            <constraint firstItem="W1D-TO-d0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PIB-tG-cLW"/>
+                            <constraint firstItem="gKW-B6-ucw" firstAttribute="top" secondItem="ih6-FG-Oev" secondAttribute="bottom" constant="30" id="XJX-bd-TtF"/>
+                            <constraint firstItem="gKW-B6-ucw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFr-zH-yAw"/>
+                            <constraint firstItem="ih6-FG-Oev" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80" id="ZX0-Gl-lqH"/>
+                            <constraint firstItem="W1D-TO-d0k" firstAttribute="top" secondItem="XaL-aG-1Bf" secondAttribute="bottom" constant="30" id="npn-fU-DL4"/>
+                            <constraint firstItem="ih6-FG-Oev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCc-YC-Q3q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BEe-CA-Gl6"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardView" destination="ih6-FG-Oev" id="Byd-Fv-Ryq"/>
+                        <outlet property="payButton" destination="XaL-aG-1Bf" id="bp6-D6-5LS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
