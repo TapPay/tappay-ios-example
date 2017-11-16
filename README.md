@@ -6,12 +6,16 @@ TapPay iOS SDK is used to get token(i.e. prime) on iOS platform for charging a c
 
 > Obtain your app id and keys here. > https://www.tappaysdk.com/en
 
+# Demo
+
+![direct pay demo](https://media.giphy.com/media/xUOxeQPVxyh59SBOi4/giphy.gif)   ![apple pay demo](https://media.giphy.com/media/3ohjVaPE9DBZRMN8hG/giphy.gif)
+
 # Usage
 
 ## Direct Pay
 1. Import TPDirect.framework and TPDirectResource into your project.
 2. Create a Bridging-Header.h file and Import TPDirect SDK
-```swift
+```objc
 #import <TPDirect/TPDirect.h>
 ```
 3. Use TPDSetup to set up your environment.
@@ -20,11 +24,11 @@ TapPay iOS SDK is used to get token(i.e. prime) on iOS platform for charging a c
 import AdSupport
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
+    TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
 
-TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
 
-TPDSetup.shareInstance().serverSync()
+    TPDSetup.shareInstance().serverSync()
 }
 ```
 
@@ -42,11 +46,11 @@ tpdForm.setNormalColor(UIColor.black)
 
 ```swift
 tpdForm.onFormUpdated { (status) in
-if (status.isCanGetPrime()) {
-// Can make payment.
-}else{
-// Can't make payment.
-}
+    if (status.isCanGetPrime()) {
+        // Can make payment.
+    } else {
+        // Can't make payment.
+    }
 }
 ```
 
@@ -59,11 +63,11 @@ self.tpdCard = TPDCard.setup(self.tpdForm)
 ```swift
 tpdCard.onSuccessCallback { (prime, cardInfo) in
 
-print("Prime : \(prime!), cardInfo : \ (cardInfo)")
+    print("Prime : \(prime!), cardInfo : \(cardInfo)")
 
 }.onFailureCallback { (status, message) in
 
-print("status : \(status) , Message : \(message)")
+    print("status : \(status) , Message : \(message)")
 
 }.getPrime()
 ```
@@ -75,7 +79,7 @@ print("status : \(status) , Message : \(message)")
 1. Download and import TPDirect.framework into your project.
 
 2. Create a Bridging-Header.h file Import TPDirect SDK
-```swift
+```objc
 #import <TPDirect/TPDirect.h>
 ```
 3. Import PassKit.framework into your project.
@@ -88,11 +92,11 @@ import PassKit
 import AdSupport
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
+    TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
 
-TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
 
-TPDSetup.shareInstance().serverSync()
+    TPDSetup.shareInstance().serverSync()
 }
 ```
 6. Create TPDMerchant for Apple Pay Merchant Information.
@@ -115,28 +119,28 @@ applePay.startPayment()
 ```swift
 func tpdApplePay(_ applePay: TPDApplePay!, didReceivePrime prime: String!) {
 
-// 1. Send Your Prime To Your Server, And Handle Payment With Result
+    // 1. Send Your Prime To Your Server, And Handle Payment With Result
 
-print("Prime : \(prime!)");
+    print("Prime : \(prime!)");
 
-// 2. Handle Payment Result Success / Failure in Delegate.
-let paymentReault = true;
-applePay.showPaymentResult(paymentReault)
-}
+    // 2. Handle Payment Result Success / Failure in Delegate.
+    let paymentReault = true;
+    applePay.showPaymentResult(paymentReault)
+
 }
 ```
 
 13. Handle Payment Success Result.
 ```swift
 func tpdApplePay(_ applePay: TPDApplePay!, didSuccessPayment result: TPDTransactionResult!) {
-print("Apple Pay Did Success ==> Amount : \(result.amount.stringValue)")
+    print("Apple Pay Did Success ==> Amount : \(result.amount.stringValue)")
 
-print("shippingContact.name : \(applePay.consumer.shippingContact?.name?.givenName) \( applePay.consumer.shippingContact?.name?.familyName)")
-print("shippingContact.emailAddress : \(applePay.consumer.shippingContact?.emailAddress)")
-print("shippingContact.phoneNumber : \(applePay.consumer.shippingContact?.phoneNumber?.stringValue)")
+    print("shippingContact.name : \(applePay.consumer.shippingContact?.name?.givenName) \( applePay.consumer.shippingContact?.name?.familyName)")
+    print("shippingContact.emailAddress : \(applePay.consumer.shippingContact?.emailAddress)")
+    print("shippingContact.phoneNumber : \(applePay.consumer.shippingContact?.phoneNumber?.stringValue)")
 
-print("Shipping Method.identifier : \(applePay.cart.shippingMethod.identifier)")
-print("Shipping Method.detail : \(applePay.cart.shippingMethod.detail)")
+    print("Shipping Method.identifier : \(applePay.cart.shippingMethod.identifier)")
+    print("Shipping Method.detail : \(applePay.cart.shippingMethod.detail)")
 
 }
 ```
@@ -144,6 +148,6 @@ print("Shipping Method.detail : \(applePay.cart.shippingMethod.detail)")
 14. Handle Payment Failure Result.
 ```swift
 func tpdApplePay(_ applePay: TPDApplePay!, didFailurePayment result: TPDTransactionResult!) {
-print("Apple Pay Did Failure ==> Message : \(result.message), ErrorCode : \(result.status)")
+    print("Apple Pay Did Failure ==> Message : \(result.message), ErrorCode : \(result.status)")
 }
 ```
