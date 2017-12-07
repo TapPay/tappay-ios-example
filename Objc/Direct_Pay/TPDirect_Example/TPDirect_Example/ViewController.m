@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIView *cardView;
 @property (weak, nonatomic) IBOutlet UIButton *payButton;
+@property (weak, nonatomic) IBOutlet UITextView *displayText;
+
 
 @property (strong, nonatomic) TPDForm *tpdForm;
 
@@ -49,7 +51,6 @@
     
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -72,6 +73,13 @@
         //
         
         NSString *result = [NSString stringWithFormat:@"Prime : %@,\n LastFour : %@,\n Bincode : %@,\n Issuer : %@,\n cardType : %lu,\n funding : %lu,\n country : %@,\n countryCode : %@,\n level : %@", prime, cardInfo.lastFour, cardInfo.bincode, cardInfo.issuer, cardInfo.cardType, cardInfo.funding , cardInfo.country,cardInfo.countryCode,cardInfo.level];
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSString *payment = [NSString stringWithFormat:@"Use below cURL to proceed the payment.\ncurl -X POST \\\nhttps://sandbox.tappayapis.com/tpc/payment/pay-by-prime \\\n-H \'cache-control: no-cache\' \\\n-H \'content-type: application/json\' \\\n-H \'postman-token: 0745795d-2398-3e29-7820-b8e490d23d18\' \\\n-H \'x-api-key: partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\' \\\n-d \'{ \n \"prime\": \"%@\", \"partner_key\": \"partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\", \"merchant_id\": \"GlobalTesting_CTBC\", \"details\":\"TapPay Test\", \"amount\": 100, \"cardholder\": { \"phone_number\": \"+886923456789\", \"name\": \"Jane Doe\", \"email\": \"Jane@Doe.com\", \"zip_code\": \"12345\", \"address\": \"123 1st Avenue, City, Country\", \"national_id\": \"A123456789\" }, \"remember\": true }\'",prime];
+            self.displayText.text = payment;
+            NSLog(@"%@", payment);
+        });
         
         NSLog(@"%@", result);
         [self showResult:result];

@@ -15,6 +15,7 @@
 @property (nonatomic, strong) TPDCart *cart;
 @property (nonatomic, strong) TPDApplePay *applePay;
 @property (nonatomic, strong) PKPaymentButton *applePayButton;
+@property (weak, nonatomic) IBOutlet UITextView *displayText;
 
 
 @end
@@ -40,7 +41,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (void)didClickBuyButton:(PKPaymentButton *)sender {
     
@@ -92,7 +92,7 @@
     self.merchant = [TPDMerchant new];
     self.merchant.merchantName               = @"TapPay!";
     self.merchant.merchantCapability         = PKMerchantCapability3DS;
-    self.merchant.applePayMerchantIdentifier = @"merchant.tech.cherri"; // Your Apple Pay Merchant ID (https://developer.apple.com/account/ios/identifier/merchant)
+    self.merchant.applePayMerchantIdentifier = @"merchant.tech.cherri.global.test"; // Your Apple Pay Merchant ID (https://developer.apple.com/account/ios/identifier/merchant)
     self.merchant.countryCode                = @"TW";
     self.merchant.currencyCode               = @"TWD";
     self.merchant.supportedNetworks          = @[PKPaymentNetworkAmex, PKPaymentNetworkVisa ,PKPaymentNetworkMasterCard];
@@ -254,6 +254,14 @@
     NSLog(@"shippingContact.emailAddress : %@", applePay.consumer.shippingContact.emailAddress);
     NSLog(@"shippingContact.phoneNumber : %@", applePay.consumer.shippingContact.phoneNumber.stringValue);
     NSLog(@"===================================================== \n\n");
+    
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString *payment = [NSString stringWithFormat:@"Use below cURL to proceed the payment.\ncurl -X POST \\\nhttps://sandbox.tappayapis.com/tpc/payment/pay-by-prime \\\n-H \'cache-control: no-cache\' \\\n-H \'content-type: application/json\' \\\n-H \'postman-token: 0745795d-2398-3e29-7820-b8e490d23d18\' \\\n-H \'x-api-key: partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\' \\\n-d \'{ \n \"prime\": \"%@\", \"partner_key\": \"partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\", \"merchant_id\": \"GlobalTesting_CTBC\", \"details\":\"TapPay Test\", \"amount\": %@, \"cardholder\": { \"phone_number\": \"+886923456789\", \"name\": \"Jane Doe\", \"email\": \"Jane@Doe.com\", \"zip_code\": \"12345\", \"address\": \"123 1st Avenue, City, Country\", \"national_id\": \"A123456789\" }, \"remember\": true }\'",prime,applePay.cart.totalAmount];
+        self.displayText.text = payment;
+        NSLog(@"%@", payment);
+    });
+    
     
     // 2. If Payment Success, set paymentReault = YES.
     BOOL paymentReault = YES;

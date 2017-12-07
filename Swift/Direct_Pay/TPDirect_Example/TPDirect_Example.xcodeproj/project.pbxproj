@@ -72,6 +72,7 @@
 		7E5BF80E1FAB1E39005E47BD = {
 			isa = PBXGroup;
 			children = (
+				7E5BF82D1FAB1E8E005E47BD /* TPDirectResource */,
 				7E5BF8191FAB1E39005E47BD /* TPDirect_Example */,
 				7E5BF8181FAB1E39005E47BD /* Products */,
 			);
@@ -96,7 +97,6 @@
 				7E5BF8261FAB1E39005E47BD /* Info.plist */,
 				7E5BF84E1FAB1EF6005E47BD /* TPDirect_Example-Bridging-Header.h */,
 				7E5BF82C1FAB1E8E005E47BD /* TPDirect.framework */,
-				7E5BF82D1FAB1E8E005E47BD /* TPDirectResource */,
 			);
 			path = TPDirect_Example;
 			sourceTree = "<group>";

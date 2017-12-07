@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     //MARK: - @IBOutlet
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var payButton: UIButton!
-    
+    @IBOutlet weak var displayText: UITextView!
     var tpdCard : TPDCard!
     var tpdForm : TPDForm!
     
@@ -29,12 +29,15 @@ class ViewController: UIViewController {
         tpdForm.setOkColor(colorWithRGB(rgbString: "008744", alpha: 1.0))
         tpdForm.setNormalColor(colorWithRGB(rgbString: "0F0F0F", alpha: 1.0))
         
+        
+        
         // 3. Setup TPDForm onFormUpdated Callback
         tpdForm.onFormUpdated { (status) in
             
             // Use callback Get Status.
-            weak var weakSelf = self
             
+            weak var weakSelf = self
+    
             weakSelf?.payButton.isEnabled = status.isCanGetPrime()
             weakSelf?.payButton.alpha     = (status.isCanGetPrime()) ? 1.0 : 0.25
             
@@ -43,7 +46,6 @@ class ViewController: UIViewController {
         // Button Disable (Default)
         payButton.isEnabled = false
         payButton.alpha     = 0.25
-        
         
     }
 
@@ -70,6 +72,13 @@ class ViewController: UIViewController {
             let result = "Prime : \(prime!),\n LastFour : \(cardInfo!.lastFour!),\n Bincode : \(cardInfo!.bincode!),\n Issuer : \(cardInfo!.issuer!),\n cardType : \(cardInfo!.cardType),\n funding : \(cardInfo!.cardType),\n country : \(cardInfo!.country!),\n countryCode : \(cardInfo!.countryCode!),\n level : \(cardInfo!.level!)"
             
             print(result)
+            
+            DispatchQueue.main.async {
+                let payment = "Use below cURL to proceed the payment.\ncurl -X POST \\\nhttps://sandbox.tappayapis.com/tpc/payment/pay-by-prime \\\n-H \'cache-control: no-cache\' \\\n-H \'content-type: application/json\' \\\n-H \'postman-token: 0745795d-2398-3e29-7820-b8e490d23d18\' \\\n-H \'x-api-key: partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\' \\\n-d \'{ \n \"prime\": \"\(prime!)\", \"partner_key\": \"partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\", \"merchant_id\": \"GlobalTesting_CTBC\", \"details\":\"TapPay Test\", \"amount\": 100, \"cardholder\": { \"phone_number\": \"+886923456789\", \"name\": \"Jane Doe\", \"email\": \"Jane@Doe.com\", \"zip_code\": \"12345\", \"address\": \"123 1st Avenue, City, Country\", \"national_id\": \"A123456789\" }, \"remember\": true }\'"
+                self.displayText.text = payment
+                print(payment)
+                
+            }
             
             weak var weakSelf = self
             weakSelf?.showResult(message: result)

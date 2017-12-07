@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var cart     : TPDCart!
     var applePay : TPDApplePay!
     var applePayButton : PKPaymentButton!
-    
+    @IBOutlet weak var displayText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         merchant = TPDMerchant()
         merchant.merchantName               = "TapPay!"
         merchant.merchantCapability         = .capability3DS;
-        merchant.applePayMerchantIdentifier = "merchant.tech.cherri"; // Your Apple Pay Merchant ID (https://developer.apple.com/account/ios/identifier/merchant)
+        merchant.applePayMerchantIdentifier = "merchant.tech.cherri.global.test"; // Your Apple Pay Merchant ID (https://developer.apple.com/account/ios/identifier/merchant)
         merchant.countryCode                = "TW";
         merchant.currencyCode               = "TWD";
         merchant.supportedNetworks          = [.amex, .masterCard, .visa]
@@ -170,6 +170,7 @@ extension ViewController :TPDApplePayDelegate {
         print("Shipping Method.detail : \(applePay.cart.shippingMethod.detail)")
         print("===================================================== \n\n")
         
+
     }
     
     func tpdApplePay(_ applePay: TPDApplePay!, didFailurePayment result: TPDTransactionResult!) {
@@ -242,6 +243,14 @@ extension ViewController :TPDApplePayDelegate {
         print("shippingContact.emailAddress : \(applePay.consumer.shippingContact?.emailAddress)");
         print("shippingContact.phoneNumber : \(applePay.consumer.shippingContact?.phoneNumber?.stringValue)");
         print("===================================================== \n\n");
+        
+        
+        DispatchQueue.main.async {
+            let payment = "Use below cURL to proceed the payment.\ncurl -X POST \\\nhttps://sandbox.tappayapis.com/tpc/payment/pay-by-prime \\\n-H \'cache-control: no-cache\' \\\n-H \'content-type: application/json\' \\\n-H \'postman-token: 0745795d-2398-3e29-7820-b8e490d23d18\' \\\n-H \'x-api-key: partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\' \\\n-d \'{ \n \"prime\": \"\(prime!)\", \"partner_key\": \"partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\", \"merchant_id\": \"GlobalTesting_CTBC\", \"details\":\"TapPay Test\", \"amount\": \(applePay.cart.totalAmount!.stringValue), \"cardholder\": { \"phone_number\": \"+886923456789\", \"name\": \"Jane Doe\", \"email\": \"Jane@Doe.com\", \"zip_code\": \"12345\", \"address\": \"123 1st Avenue, City, Country\", \"national_id\": \"A123456789\" }, \"remember\": true }\'"
+            self.displayText.text = payment
+            print(payment)
+            
+        }
         
         // 2. If Payment Success, set paymentReault = ture.
         let paymentReault = true;

@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
-		<string>merchant.tech.cherri</string>
+		<string>merchant.tech.cherri.global.test</string>
 	</array>
 </dict>
 </plist>
