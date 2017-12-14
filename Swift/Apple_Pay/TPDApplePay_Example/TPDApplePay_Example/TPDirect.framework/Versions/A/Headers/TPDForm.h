@@ -14,9 +14,8 @@
 
 /**
  This Method Will Set Up TPDForm And Return TPDForm Instance
- 
- 
- @param view (UIView *)view  ,Use Your Customized View To Display TPDForm.
+
+ @param view Use Your Customized View To Display TPDForm.
  @return TPDForm Instance
  */
 + (instancetype)setupWithContainer:(UIView *)view;
@@ -32,24 +31,25 @@
  */
 -(instancetype _Nonnull)onFormUpdated:(void(^_Nonnull)(TPDStatus *_Nonnull status))callback;
 
+
 /**
  Set Error Status TextField TextColor
 
- @param color
+ @param color Error Color
  */
 - (void)setErrorColor:(UIColor * _Nonnull)color;
 
 /**
  Set OK Status TextField TextColor
 
- @param color
+ @param color Ok Color
  */
 - (void)setOkColor:(UIColor * _Nonnull)color;
 
 /**
  Set Normal Status TextField TextColor
 
- @param color
+ @param color NormalColor
  */
 - (void)setNormalColor:(UIColor * _Nonnull)color;
 
