@@ -118,8 +118,8 @@ class ViewController: UIViewController {
         consumer = TPDConsumer()
         consumer.billingContact     = contact
         consumer.shippingContact    = contact
-        consumer.requiredShippingAddressFields  = [.email, .name, .phone]
-        consumer.requiredBillingAddressFields   = [.email, .name, .phone]
+        consumer.requiredShippingAddressFields  = []
+        consumer.requiredBillingAddressFields   = []
     
     }
     

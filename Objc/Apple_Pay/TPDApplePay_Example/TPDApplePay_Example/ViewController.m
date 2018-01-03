@@ -128,8 +128,8 @@
     self.consumer = [TPDConsumer new];
     self.consumer.billingContact    = contact;
     self.consumer.shippingContact   = contact;
-    self.consumer.requiredShippingAddressFields  = PKAddressFieldEmail | PKAddressFieldName | PKAddressFieldPhone;
-    self.consumer.requiredBillingAddressFields   = PKAddressFieldEmail | PKAddressFieldName | PKAddressFieldPhone;
+    self.consumer.requiredShippingAddressFields  = PKAddressFieldNone;
+    self.consumer.requiredBillingAddressFields   = PKAddressFieldNone;
     
 }
 
