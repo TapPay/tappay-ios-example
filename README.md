@@ -8,7 +8,7 @@ TapPay iOS SDK is used to get token(i.e. prime) on iOS platform for charging a c
 
 # Demo
 
-![direct pay demo](https://media.giphy.com/media/xUOxeQPVxyh59SBOi4/giphy.gif)   ![apple pay demo](https://media.giphy.com/media/3ohjVaPE9DBZRMN8hG/giphy.gif)   ![LINE Pay demo](./line_pay.gif)
+![direct pay demo](https://media.giphy.com/media/xUOxeQPVxyh59SBOi4/giphy.gif)   ![apple pay demo](https://media.giphy.com/media/3ohjVaPE9DBZRMN8hG/giphy.gif)   <img src="./line_pay.gif" width="300px"/>
 
 # Usage
 
