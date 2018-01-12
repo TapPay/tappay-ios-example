@@ -2,7 +2,7 @@
 //  TPDCardValidationResult.h
 //  TPDirect
 //
-//  Created by 高嘉琦 on 2017/10/17.
+//  
 //  Copyright © 2017年 tech.cherri. All rights reserved.
 //
 

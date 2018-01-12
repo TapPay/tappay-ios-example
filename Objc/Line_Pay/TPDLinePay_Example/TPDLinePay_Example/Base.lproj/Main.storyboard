@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwE-J2-9rq">
+                                <rect key="frame" x="145" y="330" width="85" height="28"/>
+                                <state key="normal" image="linepay_logo"/>
+                                <connections>
+                                    <action selector="startLinePayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wlm-BY-iA0"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-2P-O3g">
+                                <rect key="frame" x="18.5" y="366" width="337.5" height="267"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dfv-2P-O3g" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="3vL-ga-6Yt"/>
+                            <constraint firstItem="dfv-2P-O3g" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="6Lm-6r-fB1"/>
+                            <constraint firstItem="cwE-J2-9rq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8rF-rE-s9G"/>
+                            <constraint firstItem="dfv-2P-O3g" firstAttribute="top" secondItem="cwE-J2-9rq" secondAttribute="bottom" constant="8" id="eft-St-VDr"/>
+                            <constraint firstItem="dfv-2P-O3g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f7L-0R-cpA"/>
+                            <constraint firstItem="cwE-J2-9rq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g8V-Fw-eFU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayText" destination="dfv-2P-O3g" id="cjZ-GI-VdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.5" y="133.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="linepay_logo" width="85" height="28"/>
+    </resources>
+</document>

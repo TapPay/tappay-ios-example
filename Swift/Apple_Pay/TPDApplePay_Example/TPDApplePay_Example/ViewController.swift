@@ -217,14 +217,14 @@ extension ViewController :TPDApplePayDelegate {
         
     }
     
-    func tpdApplePay(_ applePay: TPDApplePay!, canAuthorizePaymentWithShippingContact shippingContact: PKContact!) -> Bool {
+    func tpdApplePay(_ applePay: TPDApplePay!, canAuthorizePaymentWithShippingContact shippingContact: PKContact?) -> Bool {
         //
         
         print("=====================================================")
         print("======> canAuthorizePaymentWithShippingContact ")
-        print("shippingContact.name : \(shippingContact.name?.givenName) \(shippingContact.name?.familyName)")
-        print("shippingContact.emailAddress : \(shippingContact.emailAddress)")
-        print("shippingContact.phoneNumber : \(shippingContact.phoneNumber?.stringValue)")
+        print("shippingContact.name : \(shippingContact?.name?.givenName) \(shippingContact?.name?.familyName)")
+        print("shippingContact.emailAddress : \(shippingContact?.emailAddress)")
+        print("shippingContact.phoneNumber : \(shippingContact?.phoneNumber?.stringValue)")
         print("===================================================== \n\n")
         return true;
     }
