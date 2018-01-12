@@ -266,14 +266,14 @@ func application(_ application: UIApplication, open url: URL, sourceApplication:
 Implement addExceptionOberver function in AppDelegate didFinishLaunchingWithOptions to handle exception, .
 
 ```Swift
-TPDLinePay.addExceptionObserver(#selector(tappayLinePayException(notofication:)))
+TPDLinePay.addExceptionObserver(#selector(tappayLinePayExceptionHandler(notofication:)))
 ```
 
 #### Step2
-In AppDelegate add tappayLinePayException function, when exception happened receive notification.
+In AppDelegate add tappayLinePayExceptionHandler function, when exception happened receive notification.
 
 ```Swift
-@objc func tappayException(notofication: Notification) {
+@objc func tappayLinePayExceptionHandler(notofication: Notification) {
 
 let result : TPDLinePayResult = TPDLinePay.parseURL(notofication)
 
