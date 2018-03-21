@@ -15,7 +15,6 @@
 @property (strong, nonatomic) NSString * frontend_redirect_url;
 @property (strong, nonatomic) NSString * backend_notify_url;
 
-
 @end
 
 @implementation ViewController
@@ -23,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     
     self.frontend_redirect_url = @"https://example.com/front-end-redirect";
     self.backend_notify_url = @"https://example.com/back-end-notify";
@@ -36,6 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startLinePayAction:(id)sender {
+    
     
     // 1. Initilize TPDLinePay Object.
     TPDLinePay * linePay = [TPDLinePay setupWithReturnUrl:@"tapapyLinePayExample://frontend_redirect"];
