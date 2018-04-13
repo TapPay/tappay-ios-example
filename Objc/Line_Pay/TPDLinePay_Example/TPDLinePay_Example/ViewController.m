@@ -37,7 +37,7 @@
     
     
     // 1. Initilize TPDLinePay Object.
-    TPDLinePay * linePay = [TPDLinePay setupWithReturnUrl:@"tapapyLinePayExample://frontend_redirect"];
+    TPDLinePay * linePay = [TPDLinePay setupWithReturnUrl:@"tappaylinepayexample://frontend_redirect"];
     
     // 2. Check current device can use LINE Pay.
     if ([TPDLinePay isLinePayAvailable]) {

@@ -11,7 +11,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tappayLinePayExample</string>
+				<string>tappaylinepayexample</string>
 			</array>
 			<key>CFBundleURLName</key>
 			<string>com.tappay.LinePay</string>

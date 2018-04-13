@@ -23,7 +23,7 @@
 			<string>com.tappay.TPDLinePay_Example</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>linepayexample</string>
+				<string>tappaylinepayexample</string>
 			</array>
 		</dict>
 	</array>

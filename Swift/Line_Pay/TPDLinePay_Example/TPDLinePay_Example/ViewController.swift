@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBAction func startLinPayAction(_ sender: Any) {
         
         // 1. Initilize TPDLinePay Object.
-        let linePay = TPDLinePay.setup(withReturnUrl: "linepayexample://frontend_redirect")
+        let linePay = TPDLinePay.setup(withReturnUrl: "tappaylinepayexample://frontend_redirect")
         
         // 2. Check current device can use LINE Pay.
         if (TPDLinePay.isLinePayAvailable()){
