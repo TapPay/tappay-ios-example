@@ -102,7 +102,7 @@ class ViewController: UIViewController {
         shipping2.detail     = "Ships in 6 hours";
         shipping2.amount     = NSDecimalNumber(string: "50.0");
         shipping2.label      = "Shipping 6";
-        merchant.shippingMethods            = [shipping1, shipping2];
+//        merchant.shippingMethods            = [shipping1, shipping2];
    
     }
     
@@ -127,24 +127,10 @@ class ViewController: UIViewController {
         
         cart = TPDCart()
         
-        let book = TPDPaymentItem(itemName:"Book", withAmount: NSDecimalNumber(string: "100.00"))
+        let book = TPDPaymentItem(itemName: "Book", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: false)
         cart.add(book)
         
-        let shippingFee = TPDPaymentItem(itemName:"Shipping", withAmount: NSDecimalNumber(string: "50.00"))
-        cart.add(shippingFee)
-        
-        let discount = TPDPaymentItem(itemName:"Discount", withAmount: NSDecimalNumber(string: "-3.00"))
-        cart.add(discount)
-        
-        let tax = TPDPaymentItem(itemName:"Tax", withAmount: NSDecimalNumber(string: "6.00"))
-        cart.add(tax)
-
-        cart.shippingType   = .shipping;
-        
     }
-    
-    
-    
 }
 
 
@@ -166,8 +152,7 @@ extension ViewController :TPDApplePayDelegate {
         print("shippingContact.emailAddress : \(applePay.consumer.shippingContact?.emailAddress)")
         print("shippingContact.phoneNumber : \(applePay.consumer.shippingContact?.phoneNumber?.stringValue)")
         
-        print("Shipping Method.identifier : \(applePay.cart.shippingMethod.identifier)")
-        print("Shipping Method.detail : \(applePay.cart.shippingMethod.detail)")
+
         print("===================================================== \n\n")
         
 

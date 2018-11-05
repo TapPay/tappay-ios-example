@@ -111,7 +111,7 @@
     shipping2.amount     = [NSDecimalNumber decimalNumberWithString:@"50.0"];
     shipping2.label      = @"Shipping 6";
     
-    self.merchant.shippingMethods            = @[shipping1, shipping2];
+//    self.merchant.shippingMethods            = @[shipping1, shipping2];
     
     
 }
@@ -140,16 +140,6 @@
     TPDPaymentItem *book = [TPDPaymentItem paymentItemWithItemName:@"Book"
                                                         withAmount:[NSDecimalNumber decimalNumberWithString:@"100.00"]];
     [self.cart addPaymentItem:book];
-    
-    TPDPaymentItem *discount  = [TPDPaymentItem paymentItemWithItemName:@"Discount"
-                                                             withAmount:[NSDecimalNumber decimalNumberWithString:@"-3.00"]];
-    [self.cart addPaymentItem:discount];
-    
-    TPDPaymentItem *tax  = [TPDPaymentItem paymentItemWithItemName:@"Tax"
-                                                        withAmount:[NSDecimalNumber decimalNumberWithString:@"6.00"]];
-    [self.cart addPaymentItem:tax];
-    
-    self.cart.shippingType   = PKShippingTypeShipping;
     
 }
 
