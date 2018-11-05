@@ -11,6 +11,7 @@
 
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSDecimalNumber *amount;
+@property (nonatomic, assign) BOOL isVisible;
 
 /**
  Initialize PaymentItem
@@ -20,5 +21,16 @@
  @return instancetype
  */
 + (instancetype)paymentItemWithItemName:(NSString *)itemName withAmount:(NSDecimalNumber *)amount;
+
+
+/**
+ Initialize PaymentItem
+ 
+ @param itemName NSString, PaymentItem Name, Shown In The Apple Pay Form.
+ @param amount NSDecimalNumber, Amount, , Shown In The Apple Pay Form As '10.00'.
+ @param isVisible BOOL, if NO, item would not be shown on payment sheet.
+ @return instancetype
+ */
++ (instancetype)paymentItemWithItemName:(NSString *)itemName withAmount:(NSDecimalNumber *)amount withIsVisible:(BOOL)isVisible;
 
 @end
