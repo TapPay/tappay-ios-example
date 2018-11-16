@@ -44,12 +44,6 @@ class ViewController: UIViewController {
         applePay.startPayment()
         
     }
-    
-    
-    @objc func didClickSetupButton(sender:PKPaymentButton) {
-        
-        TPDApplePay.showSetupView()
-    }
 
     
     //MARK: - Apple Pay Setting
@@ -57,25 +51,16 @@ class ViewController: UIViewController {
         
         
         // Check Consumer / Application Can Use Apple Pay.
-        if !TPDApplePay.canMakePayments(usingNetworks: self.merchant.supportedNetworks) {
-            
+        if (TPDApplePay.canMakePayments(usingNetworks: self.merchant.supportedNetworks)) {
+            applePayButton = PKPaymentButton.init(paymentButtonType: .buy, paymentButtonStyle: .black)
+        } else {
             applePayButton = PKPaymentButton.init(paymentButtonType: .setUp, paymentButtonStyle: .black)
-            applePayButton.addTarget(self, action: #selector(ViewController.didClickSetupButton(sender:)), for: .touchUpInside)
-            view.addSubview(applePayButton)
-            applePayButton.center = view.center
-            return;
         }
         
-        // Check Device Support Apple Pay
-        if TPDApplePay.canMakePayments() {
-            applePayButton = PKPaymentButton.init(paymentButtonType: .buy, paymentButtonStyle: .black)
-            applePayButton.addTarget(self, action: #selector(ViewController.didClickBuyButton(sender:)), for: .touchUpInside)
-
-            view.addSubview(applePayButton)
-            applePayButton.center = view.center
-            
-            return;
-        }
+        view.addSubview(applePayButton)
+        applePayButton.center = view.center
+        
+        applePayButton.addTarget(self, action: #selector(ViewController.didClickBuyButton(sender:)), for: .touchUpInside)
         
     }
     

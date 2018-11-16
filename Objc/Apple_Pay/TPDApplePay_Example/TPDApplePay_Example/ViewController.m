@@ -56,34 +56,20 @@
     
 }
 
-- (void)didClickSetupButton:(PKPaymentButton *)sender {
-    [TPDApplePay showSetupView];
-}
-
 - (void)paymentButtonSetting {
     
     
     // Check Consumer / Application Can Use Apple Pay.
-    if (![TPDApplePay canMakePaymentsUsingNetworks:self.merchant.supportedNetworks]) {
+    if ([TPDApplePay canMakePaymentsUsingNetworks:self.merchant.supportedNetworks]) {
+        self.applePayButton = [PKPaymentButton buttonWithType:PKPaymentButtonTypeBuy style:PKPaymentButtonStyleBlack];
+    } else {
         self.applePayButton = [PKPaymentButton buttonWithType:PKPaymentButtonTypeSetUp style:PKPaymentButtonStyleBlack];
-        [self.applePayButton addTarget:self action:@selector(didClickSetupButton:) forControlEvents:UIControlEventTouchUpInside];
-
-        [self.view addSubview:self.applePayButton];
-        self.applePayButton.center = self.view.center;
-
-        return;
     }
     
-    // Check Device Support Apple Pay
-    if ([TPDApplePay canMakePayments]) {
-        self.applePayButton = [PKPaymentButton buttonWithType:PKPaymentButtonTypeBuy style:PKPaymentButtonStyleBlack];
-        [self.applePayButton addTarget:self action:@selector(didClickBuyButton:) forControlEvents:UIControlEventTouchUpInside];
-        
-        [self.view addSubview:self.applePayButton];
-        self.applePayButton.center = self.view.center;
-        
-        return;
-    }
+    [self.view addSubview:self.applePayButton];
+    self.applePayButton.center = self.view.center;
+    
+    [self.applePayButton addTarget:self action:@selector(didClickBuyButton:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
