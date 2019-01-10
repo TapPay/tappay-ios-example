@@ -1,7 +1,7 @@
 //
 //  TPDMerchant.h
 //
-//  TPDirect iOS SDK - v2.2.4
+//  TPDirect iOS SDK - v2.2.5
 //  Copyright © 2017 Cherri Tech, Inc. All rights reserved.
 //
 
