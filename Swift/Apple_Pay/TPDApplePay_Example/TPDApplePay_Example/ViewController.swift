@@ -115,6 +115,9 @@ class ViewController: UIViewController {
         let book = TPDPaymentItem(itemName: "Book", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: false)
         cart.add(book)
         
+        let book1 = TPDPaymentItem(itemName: "Book", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: false)
+        cart.add(book1)
+        
     }
 }
 

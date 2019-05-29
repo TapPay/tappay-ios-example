@@ -1,7 +1,7 @@
 //
 //  TPDConsumer.h
 //
-//  TPDirect iOS SDK - v2.2.5
+//  TPDirect iOS SDK - v2.3
 //  Copyright © 2017 Cherri Tech, Inc. All rights reserved.
 //
 

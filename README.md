@@ -8,7 +8,7 @@ TapPay iOS SDK is used to get token(i.e. prime) on iOS platform for charging a c
 
 # Demo
 
-![direct pay demo](https://media.giphy.com/media/xUOxeQPVxyh59SBOi4/giphy.gif)   ![apple pay demo](https://media.giphy.com/media/3ohjVaPE9DBZRMN8hG/giphy.gif)   <img src="./line_pay.gif" width="300px"/>
+![direct pay demo](https://media.giphy.com/media/9M1ojhxhX6kxK96FET/giphy.gif)   ![apple pay demo](https://media.giphy.com/media/3ohjVaPE9DBZRMN8hG/giphy.gif)   <img src="./line_pay.gif" width="300px"/>
 
 # Usage
 
@@ -54,11 +54,18 @@ tpdForm.onFormUpdated { (status) in
 }
 ```
 
-### 7. Use TPDForm to initialize TPDCard.
+### 7. Setup TPDForm display ccv field
+
+```swift
+// Default is true.
+tpdForm.setIsUsedCcv(true) 
+```
+
+### 8. Use TPDForm to initialize TPDCard.
 ```swift
 self.tpdCard = TPDCard.setup(self.tpdForm)
 ```
-### 8. Use the getPrime() function in TPDCard to obtain the prime token.
+### 9. Use the getPrime() function in TPDCard to obtain the prime token.
 
 ```swift
 tpdCard.onSuccessCallback { (prime, cardInfo) in

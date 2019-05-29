@@ -1,7 +1,7 @@
 //
 //  TPDCard.h
 //
-//  TPDirect iOS SDK - v2.2.5
+//  TPDirect iOS SDK - v2.3
 //  Copyright © 2017年 Cherri Tech, Inc. All rights reserved.
 //
 
@@ -85,5 +85,20 @@
  Show Off Keyboard
  */
 - (void)showOffKeyboard;
+
+
+/**
+ Set TPDForm display ccv field.
+
+ @param IsUseCcv BOOL
+ */
+- (void)setIsUsedCcv:(BOOL)IsUseCcv;
+
+/**
+ Get current TPDForm is used ccv status.
+
+ @return isUsedCcv BOOL
+ */
+- (BOOL)getIsUsedCcv;
 
 @end

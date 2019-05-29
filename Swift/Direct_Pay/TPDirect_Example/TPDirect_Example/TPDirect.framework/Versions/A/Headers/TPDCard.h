@@ -1,7 +1,7 @@
 //
 //  TPDCard.h
 //
-//  TPDirect iOS SDK - v2.2.5
+//  TPDirect iOS SDK - v2.3
 //  Copyright © 2016年 Cherri Tech, Inc. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, CardType) {
     CardType_JCB,
     CardType_MasterCard,
     CardType_AMEX,
+    CardType_UnionPay,
     CardType_Unknown
 
 };
@@ -56,7 +57,7 @@ typedef NS_ENUM(NSInteger, CardType) {
  @param callback (NSString *_Nullable prime, TPDCardInfo *_Nullable cardInfo)
  @return TPDCard Instance
  */
-- (instancetype _Nonnull)onSuccessCallback:(void(^ _Nonnull)(NSString *_Nullable prime, TPDCardInfo *_Nullable cardInfo))callback;
+- (instancetype _Nonnull)onSuccessCallback:(void(^ _Nonnull)(NSString *_Nullable prime, TPDCardInfo *_Nullable cardInfo, NSString * _Nullable cardIdentifier))callback;
 
 
 /**

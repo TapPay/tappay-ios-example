@@ -29,8 +29,6 @@ class ViewController: UIViewController {
         tpdForm.setOkColor(colorWithRGB(rgbString: "008744", alpha: 1.0))
         tpdForm.setNormalColor(colorWithRGB(rgbString: "0F0F0F", alpha: 1.0))
         
-        
-        
         // 3. Setup TPDForm onFormUpdated Callback
         tpdForm.onFormUpdated { (status) in
             
@@ -67,9 +65,11 @@ class ViewController: UIViewController {
         tpdCard = TPDCard.setup(tpdForm)
         
         // 2. Setup TPDCard on Success Callback.
-        tpdCard.onSuccessCallback { (prime, cardInfo) in
+        
+        
+        tpdCard.onSuccessCallback { (prime, cardInfo, cardIdentifier) in
             
-            let result = "Prime : \(prime!),\n LastFour : \(cardInfo!.lastFour!),\n Bincode : \(cardInfo!.bincode!),\n Issuer : \(cardInfo!.issuer!),\n cardType : \(cardInfo!.cardType),\n funding : \(cardInfo!.cardType),\n country : \(cardInfo!.country!),\n countryCode : \(cardInfo!.countryCode!),\n level : \(cardInfo!.level!)"
+            let result = "Prime : \(prime!),\n card identifier : \(cardIdentifier), \nLastFour : \(cardInfo!.lastFour!),\n Bincode : \(cardInfo!.bincode!),\n Issuer : \(cardInfo!.issuer!),\n cardType : \(cardInfo!.cardType),\n funding : \(cardInfo!.cardType),\n country : \(cardInfo!.country!),\n countryCode : \(cardInfo!.countryCode!),\n level : \(cardInfo!.level!)"
             
             print(result)
             
