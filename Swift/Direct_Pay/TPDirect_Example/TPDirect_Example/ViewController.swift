@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         
         tpdCard.onSuccessCallback { (prime, cardInfo, cardIdentifier) in
             
-            let result = "Prime : \(prime!),\n card identifier : \(cardIdentifier), \nLastFour : \(cardInfo!.lastFour!),\n Bincode : \(cardInfo!.bincode!),\n Issuer : \(cardInfo!.issuer!),\n cardType : \(cardInfo!.cardType),\n funding : \(cardInfo!.cardType),\n country : \(cardInfo!.country!),\n countryCode : \(cardInfo!.countryCode!),\n level : \(cardInfo!.level!)"
+            let result = "Prime : \(prime!),\n card identifier : \(cardIdentifier!), \nLastFour : \(cardInfo!.lastFour!),\n Bincode : \(cardInfo!.bincode!),\n Issuer : \(cardInfo!.issuer!),\n cardType : \(cardInfo!.cardType),\n funding : \(cardInfo!.cardType),\n country : \(cardInfo!.country!),\n countryCode : \(cardInfo!.countryCode!),\n level : \(cardInfo!.level!)"
             
             print(result)
             

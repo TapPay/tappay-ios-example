@@ -68,9 +68,9 @@ self.tpdCard = TPDCard.setup(self.tpdForm)
 ### 9. Use the getPrime() function in TPDCard to obtain the prime token.
 
 ```swift
-tpdCard.onSuccessCallback { (prime, cardInfo) in
+tpdCard.onSuccessCallback { (prime, cardInfo, cardIdentifier) in
 
-    print("Prime : \(prime!), cardInfo : \(cardInfo)")
+    print("Prime : \(prime!), cardInfo : \(cardInfo), cardIdentifier : \(cardIdentifier)")
 
 }.onFailureCallback { (status, message) in
 
