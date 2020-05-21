@@ -326,12 +326,13 @@ click + button and choose Associated Domains
 #### step 3
 In Associated Domains section click + button add domain
 
-![](./jko_step3.png)
+![](./jko_step3.png)  
 
 #### step 4 
 Domain should be applink:{your domain without https://}
 
-![](./bundle_identifier.png)
+![](./jko_step4.png)
+
 
 #### step 5 
 Setup a config need to upload a file on your server.
@@ -355,7 +356,7 @@ appID format : <TeamID>.<bundle identifier>
 Get teamID from apple developer membership
 <br>
 Get bundle identifier from xCode
-![](/uploads/upload_eeedce04bd4639960a851c182fb6f8e3.png)
+![](./bundle_identifier.png)
 
 
 ### Setup TPDJKOPay
