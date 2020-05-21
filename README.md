@@ -317,21 +317,21 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 #### step 1
 Go to xCode TARGET and Signing & Capabilities page
 
-![](/uploads/upload_f806799834d2e3b5526405a5a7689759.png)
+![](./jko_step1.png)
 
 #### step 2 
 click + button and choose Associated Domains
-![](/uploads/upload_e40414ea529fe6e66cf4540875f98802.png)
+![](./jko_step2.png)
 
 #### step 3
 In Associated Domains section click + button add domain
 
-![](/uploads/upload_dd81113382eb9f0229666d09b301e275.png)
+![](./jko_step3.png)
 
 #### step 4 
 Domain should be applink:{your domain without https://}
 
-![](/uploads/upload_e0c5f5ae768672094212ed2ecd0fc808.png)
+![](./bundle_identifier.png)
 
 #### step 5 
 Setup a config need to upload a file on your server.
