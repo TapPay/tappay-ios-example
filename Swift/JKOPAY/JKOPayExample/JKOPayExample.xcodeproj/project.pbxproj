@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9255B9C244462FC00030A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9255B9B244462FC00030A09 /* AppDelegate.swift */; };
+		F9255B9E244462FC00030A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9255B9D244462FC00030A09 /* SceneDelegate.swift */; };
+		F9255BA0244462FC00030A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9255B9F244462FC00030A09 /* ViewController.swift */; };
+		F9255BA3244462FC00030A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9255BA1244462FC00030A09 /* Main.storyboard */; };
+		F9255BA5244462FD00030A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9255BA4244462FD00030A09 /* Assets.xcassets */; };
+		F9255BA8244462FD00030A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9255BA6244462FD00030A09 /* LaunchScreen.storyboard */; };
+		F9255BB82444652500030A09 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9255BB3244464ED00030A09 /* WebKit.framework */; };
+		F950D23C2474EEE800D731A3 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F950D23B2474EEE800D731A3 /* TPDirect.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9255B98244462FC00030A09 /* JKOPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9255B9B244462FC00030A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9255B9D244462FC00030A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F9255B9F244462FC00030A09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9255BA2244462FC00030A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9255BA4244462FD00030A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9255BA7244462FD00030A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9255BA9244462FD00030A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9255BB1244463CC00030A09 /* JKOPayExample-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JKOPayExample-Bridging-header.h"; sourceTree = "<group>"; };
+		F9255BB3244464ED00030A09 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F9255BB92444654700030A09 /* JKOPayExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JKOPayExample.entitlements; sourceTree = "<group>"; };
+		F950D23B2474EEE800D731A3 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9255B95244462FC00030A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9255BB82444652500030A09 /* WebKit.framework in Frameworks */,
+				F950D23C2474EEE800D731A3 /* TPDirect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9255B8F244462FC00030A09 = {
+			isa = PBXGroup;
+			children = (
+				F9255B9A244462FC00030A09 /* JKOPayExample */,
+				F9255B99244462FC00030A09 /* Products */,
+				F9255BB2244464ED00030A09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9255B99244462FC00030A09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9255B98244462FC00030A09 /* JKOPayExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9255B9A244462FC00030A09 /* JKOPayExample */ = {
+			isa = PBXGroup;
+			children = (
+				F9255BB92444654700030A09 /* JKOPayExample.entitlements */,
+				F9255B9B244462FC00030A09 /* AppDelegate.swift */,
+				F9255B9D244462FC00030A09 /* SceneDelegate.swift */,
+				F9255B9F244462FC00030A09 /* ViewController.swift */,
+				F9255BB1244463CC00030A09 /* JKOPayExample-Bridging-header.h */,
+				F9255BA1244462FC00030A09 /* Main.storyboard */,
+				F9255BA4244462FD00030A09 /* Assets.xcassets */,
+				F9255BA6244462FD00030A09 /* LaunchScreen.storyboard */,
+				F9255BA9244462FD00030A09 /* Info.plist */,
+				F950D23B2474EEE800D731A3 /* TPDirect.framework */,
+			);
+			path = JKOPayExample;
+			sourceTree = "<group>";
+		};
+		F9255BB2244464ED00030A09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9255BB3244464ED00030A09 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9255B97244462FC00030A09 /* JKOPayExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9255BAC244462FD00030A09 /* Build configuration list for PBXNativeTarget "JKOPayExample" */;
+			buildPhases = (
+				F9255B94244462FC00030A09 /* Sources */,
+				F9255B95244462FC00030A09 /* Frameworks */,
+				F9255B96244462FC00030A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKOPayExample;
+			productName = JKOPayExample;
+			productReference = F9255B98244462FC00030A09 /* JKOPayExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9255B90244462FC00030A09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Cherri;
+				TargetAttributes = {
+					F9255B97244462FC00030A09 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F9255B93244462FC00030A09 /* Build configuration list for PBXProject "JKOPayExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9255B8F244462FC00030A09;
+			productRefGroup = F9255B99244462FC00030A09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9255B97244462FC00030A09 /* JKOPayExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9255B96244462FC00030A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9255BA8244462FD00030A09 /* LaunchScreen.storyboard in Resources */,
+				F9255BA5244462FD00030A09 /* Assets.xcassets in Resources */,
+				F9255BA3244462FC00030A09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9255B94244462FC00030A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9255BA0244462FC00030A09 /* ViewController.swift in Sources */,
+				F9255B9C244462FC00030A09 /* AppDelegate.swift in Sources */,
+				F9255B9E244462FC00030A09 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9255BA1244462FC00030A09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9255BA2244462FC00030A09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9255BA6244462FD00030A09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9255BA7244462FD00030A09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9255BAA244462FD00030A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9255BAB244462FD00030A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9255BAD244462FD00030A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JKOPayExample/JKOPayExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKOPayExample",
+				);
+				INFOPLIST_FILE = JKOPayExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cherri.JKOPayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cherrikevin/Cherri/JKOPayExample/JKOPayExample/JKOPayExample-Bridging-header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9255BAE244462FD00030A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JKOPayExample/JKOPayExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKOPayExample",
+				);
+				INFOPLIST_FILE = JKOPayExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cherri.JKOPayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cherrikevin/Cherri/JKOPayExample/JKOPayExample/JKOPayExample-Bridging-header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9255B93244462FC00030A09 /* Build configuration list for PBXProject "JKOPayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9255BAA244462FD00030A09 /* Debug */,
+				F9255BAB244462FD00030A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9255BAC244462FD00030A09 /* Build configuration list for PBXNativeTarget "JKOPayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9255BAD244462FD00030A09 /* Debug */,
+				F9255BAE244462FD00030A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9255B90244462FC00030A09 /* Project object */;
+}

@@ -13,7 +13,7 @@
 		7E8EEEBB1FF60778004C0542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8EEEB91FF60778004C0542 /* Main.storyboard */; };
 		7E8EEEBD1FF60778004C0542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8EEEBC1FF60778004C0542 /* Assets.xcassets */; };
 		7E8EEEC01FF60778004C0542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8EEEBE1FF60778004C0542 /* LaunchScreen.storyboard */; };
-		7E97120220060E59005C9506 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E97120120060E59005C9506 /* TPDirect.framework */; };
+		F932D6472476A1FA002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6462476A1FA002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		7E8EEEBF1FF60778004C0542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E8EEEC11FF60778004C0542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8EEEC91FF6236D004C0542 /* TPDLinePay_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPDLinePay_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		7E97120120060E59005C9506 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
+		F932D6462476A1FA002136A0 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4633B71FF6427800B5297F /* SafariServices.framework in Frameworks */,
-				7E97120220060E59005C9506 /* TPDirect.framework in Frameworks */,
+				F932D6472476A1FA002136A0 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +76,8 @@
 				7E8EEEBC1FF60778004C0542 /* Assets.xcassets */,
 				7E8EEEBE1FF60778004C0542 /* LaunchScreen.storyboard */,
 				7E8EEEC11FF60778004C0542 /* Info.plist */,
-				7E97120120060E59005C9506 /* TPDirect.framework */,
 				7E8EEEC91FF6236D004C0542 /* TPDLinePay_Example-Bridging-Header.h */,
+				F932D6462476A1FA002136A0 /* TPDirect.framework */,
 			);
 			path = TPDLinePay_Example;
 			sourceTree = "<group>";

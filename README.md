@@ -292,7 +292,139 @@ print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTrad
 
 
 
+## JKOPay
 
+### 1. Download and import TPDirect.framework into your project.
+### 2. Create a Bridging-Header.h file and Import TPDirect SDK
+```swift
+#import <TPDirect/TPDirect.h>
+```
+
+### 3. Use TPDSetup to set up your environment.
+```
+import AdSupport
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+    TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
+
+    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+
+    TPDSetup.shareInstance().serverSync()
+}
+```
+### Setup universal link
+
+#### step 1
+Go to xCode TARGET and Signing & Capabilities page
+
+![](/uploads/upload_f806799834d2e3b5526405a5a7689759.png)
+
+#### step 2 
+click + button and choose Associated Domains
+![](/uploads/upload_e40414ea529fe6e66cf4540875f98802.png)
+
+#### step 3
+In Associated Domains section click + button add domain
+
+![](/uploads/upload_dd81113382eb9f0229666d09b301e275.png)
+
+#### step 4 
+Domain should be applink:{your domain without https://}
+
+![](/uploads/upload_e0c5f5ae768672094212ed2ecd0fc808.png)
+
+#### step 5 
+Setup a config need to upload a file on your server.
+You can use ngrok to test.
+create a folder /.well-known in your server then create a file 'apple-app-site-association' 
+
+appID format : <TeamID>.<bundle identifier>
+```
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "T9G64ZZGC4.Cherri.JKO-example",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
+```
+Get teamID from apple developer membership
+<br>
+Get bundle identifier from xCode
+![](/uploads/upload_eeedce04bd4639960a851c182fb6f8e3.png)
+
+
+### Setup TPDJKOPay
+Use your custom universal link to initialize TPDJKOPay object.
+```siwft
+let jkoPay = TPDJKOPay.setup(withReturnUrl: "Your universal link")
+```
+
+### Get Prime
+Call getPrime function, via onSuccessCallback or onFailureCallbac to get prime or error message.
+
+
+```swift
+jkoPay.onSuccessCallback { (prime) in
+    print(prime : \(prime!))
+}.onFailureCallback { (status, msg) in
+    print("status : \(status), msg : \(msg)")
+}.getPrime()
+```
+
+### Redirect to JKOPay App 
+
+Obtain payment_url from TapPay, call redirect url function to JKOPay App, get JKOPay result via callback.
+
+```swift
+jkoPay.redirect(payment_url) { (result) in
+    print("status : \(result.status), rec_trade_id : \(result.recTradeId), order_number : \(result.orderNumber), bank_transaction_id : \(result.bankTransactionId)")
+}
+```
+
+### Handle universal link
+
+Use this method handle universal link come from TapPay and parse data. ( For version lower than iOS 13.0 )
+```swift
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    NSURL * url = userActivity.webpageURL;
+    BOOL jkoHandled = [TPDJKOPay handleJKOUniversalLink:url];
+    if (jkoHandled) {
+        return YES;
+    }
+    return NO;
+}
+
+```
+
+### Exception handle
+#### step1
+
+Implement addExceptionOberver function in AppDelegate didFinishLaunchingWithOptions to handle exception.
+
+```swift
+TPDLinePay.addExceptionObserver(#selector(tappayJKOPayExceptionHandler(notofication:)))
+```
+
+#### step2
+
+In AppDelegate add tappayJKOPayExceptionHandler function, when exception happened receive notification.
+
+```swift
+
+func tappayJKOPayExceptionHandler(notofication: Notification) {
+
+let result : TPDJKOPayResult = TPDJKOPay.parseURL(notofication)
+
+print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTradeid : \(result.recTradeId) , bankTransactionId : \(result.bankTransactionId) ")
+
+}
+
+```
 
 
 

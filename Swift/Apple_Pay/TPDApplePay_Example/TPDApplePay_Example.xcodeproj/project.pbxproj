@@ -12,7 +12,6 @@
 		7E4E850C1FAC279300BD1288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E850A1FAC279300BD1288 /* Main.storyboard */; };
 		7E4E850E1FAC279300BD1288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E850D1FAC279300BD1288 /* Assets.xcassets */; };
 		7E4E85111FAC279300BD1288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E850F1FAC279300BD1288 /* LaunchScreen.storyboard */; };
-		7E4E852A1FAC27DE00BD1288 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4E85181FAC27DD00BD1288 /* TPDirect.framework */; };
 		7E4E852B1FAC27DE00BD1288 /* card_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E851B1FAC27DD00BD1288 /* card_amex.png */; };
 		7E4E852C1FAC27DE00BD1288 /* card_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E851C1FAC27DD00BD1288 /* card_amex@2x.png */; };
 		7E4E852D1FAC27DE00BD1288 /* card_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E851D1FAC27DD00BD1288 /* card_amex@3x.png */; };
@@ -28,6 +27,7 @@
 		7E4E85371FAC27DE00BD1288 /* card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85271FAC27DD00BD1288 /* card_visa.png */; };
 		7E4E85381FAC27DE00BD1288 /* card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85281FAC27DD00BD1288 /* card_visa@2x.png */; };
 		7E4E85391FAC27DE00BD1288 /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85291FAC27DD00BD1288 /* card_visa@3x.png */; };
+		F932D6432476A17D002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6422476A17D002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,6 @@
 		7E4E850D1FAC279300BD1288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E4E85101FAC279300BD1288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E4E85121FAC279300BD1288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E4E85181FAC27DD00BD1288 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 		7E4E851B1FAC27DD00BD1288 /* card_amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_amex.png; sourceTree = "<group>"; };
 		7E4E851C1FAC27DD00BD1288 /* card_amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_amex@2x.png"; sourceTree = "<group>"; };
 		7E4E851D1FAC27DD00BD1288 /* card_amex@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_amex@3x.png"; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		7E4E85291FAC27DD00BD1288 /* card_visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@3x.png"; sourceTree = "<group>"; };
 		7E4E853A1FAC27F500BD1288 /* TPDApplePay_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPDApplePay_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		7EC7D6071FB9AE0A002A651B /* TPDApplePay_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TPDApplePay_Example.entitlements; sourceTree = "<group>"; };
+		F932D6422476A17D002136A0 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E4E852A1FAC27DE00BD1288 /* TPDirect.framework in Frameworks */,
+				F932D6432476A17D002136A0 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 				7E4E850A1FAC279300BD1288 /* Main.storyboard */,
 				7E4E850D1FAC279300BD1288 /* Assets.xcassets */,
 				7E4E850F1FAC279300BD1288 /* LaunchScreen.storyboard */,
-				7E4E85181FAC27DD00BD1288 /* TPDirect.framework */,
+				F932D6422476A17D002136A0 /* TPDirect.framework */,
 				7E4E85191FAC27DD00BD1288 /* TPDirectResource */,
 				7E4E85121FAC279300BD1288 /* Info.plist */,
 				7E4E853A1FAC27F500BD1288 /* TPDApplePay_Example-Bridging-Header.h */,
