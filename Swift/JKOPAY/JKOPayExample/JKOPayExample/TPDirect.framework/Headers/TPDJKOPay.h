@@ -2,7 +2,7 @@
 //  TPDJKOPay.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.4
+//  TPDirect iOS SDK - v2.5
 //  Created by Cherri Kevin on 3/30/20.
 //  Copyright © 2020 tech.cherri. All rights reserved.
 //
@@ -44,10 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)redirect:(NSString *_Nonnull)url completion:(void (^_Nonnull)(TPDJKOPayResult * _Nonnull result))callback;
 
 /// Check device installed JKO App
-+ (BOOL)isJkoPayAvailable;
++ (BOOL)isJKOPayAvailable;
 
 /// Go to App Store install JKO App
-+ (void)installJkoApp;
++ (void)installJKOApp;
 
 /// Use this method to handle link come from TapPay ,
 /// and return results via redirectWith Url (TPDLinePayResult callback).

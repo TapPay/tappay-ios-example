@@ -1,7 +1,7 @@
 //
 //  TPDPaymentItem.h
 //
-//  TPDirect iOS SDK - v2.4
+//  TPDirect iOS SDK - v2.5
 //  Copyright © 2017 Cherri Tech, Inc. All rights reserved.
 //
 
@@ -13,6 +13,8 @@
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSDecimalNumber *amount;
 @property (nonatomic, assign) BOOL isVisible;
+@property (nonatomic, assign) PKPaymentSummaryItemType type;
+
 
 /**
  Initialize PaymentItem
@@ -34,4 +36,8 @@
  */
 + (instancetype)paymentItemWithItemName:(NSString *)itemName withAmount:(NSDecimalNumber *)amount withIsVisible:(BOOL)isVisible;
 
+
++ (instancetype)pendingPaymentItemWithItemName:(NSString *)itemName;
+
 @end
+

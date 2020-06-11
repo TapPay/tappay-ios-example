@@ -122,10 +122,15 @@
 - (void)cartSetting {
     
     self.cart = [TPDCart new];
+    self.cart.isAmountPending = YES;
     
-    TPDPaymentItem *book = [TPDPaymentItem paymentItemWithItemName:@"Book"
+    TPDPaymentItem *final = [TPDPaymentItem paymentItemWithItemName:@"Book"
                                                         withAmount:[NSDecimalNumber decimalNumberWithString:@"100.00"]];
-    [self.cart addPaymentItem:book];
+    [self.cart addPaymentItem:final];
+    
+    TPDPaymentItem * pending = [TPDPaymentItem pendingPaymentItemWithItemName:@"pending"];
+    [self.cart addPaymentItem:pending];
+    
     
 }
 
@@ -217,18 +222,26 @@
 }
 
 // With Payment Handle
-- (void)tpdApplePay:(TPDApplePay *)applePay didReceivePrime:(NSString *)prime {
+
+- (void)tpdApplePay:(TPDApplePay *)applePay didReceivePrime:(NSString *)prime withExpiryMillis:(long)expiryMillis {
     
     // 1. Send Your 'Prime' To Your Server, And Handle Payment With Result
     // ...
     NSLog(@"=====================================================");
     NSLog(@"======> didReceivePrime ");
     NSLog(@"Prime : %@", prime);
+    NSLog(@"Expiry millis : %ld",expiryMillis);
     NSLog(@"totalAmount : %@",applePay.cart.totalAmount);
     NSLog(@"Client  IP : %@",applePay.consumer.clientIP);
     NSLog(@"shippingContact.name : %@ %@", applePay.consumer.shippingContact.name.givenName, applePay.consumer.shippingContact.name.familyName);
     NSLog(@"shippingContact.emailAddress : %@", applePay.consumer.shippingContact.emailAddress);
     NSLog(@"shippingContact.phoneNumber : %@", applePay.consumer.shippingContact.phoneNumber.stringValue);
+    
+    PKPaymentMethod * paymentMethod = self.consumer.paymentMethod;
+    
+    NSLog(@"tpye : %ld", paymentMethod.type);
+    NSLog(@"Network : %@", paymentMethod.network);
+    NSLog(@"Display Name : %@", paymentMethod.displayName);
     NSLog(@"===================================================== \n\n");
     
     
@@ -237,14 +250,12 @@
         self.displayText.text = payment;
         NSLog(@"%@", payment);
     });
-    
-    
+
+
     // 2. If Payment Success, set paymentReault = YES.
     BOOL paymentReault = YES;
     [applePay showPaymentResult:paymentReault];
-    
 }
-
 
 
 @end

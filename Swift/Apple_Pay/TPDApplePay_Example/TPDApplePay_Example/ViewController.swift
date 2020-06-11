@@ -112,11 +112,13 @@ class ViewController: UIViewController {
         
         cart = TPDCart()
         
-        let book = TPDPaymentItem(itemName: "Book", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: false)
-        cart.add(book)
+        self.cart.isAmountPending = true
         
-        let book1 = TPDPaymentItem(itemName: "Book", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: false)
-        cart.add(book1)
+        let final = TPDPaymentItem(itemName: "Book", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: true)
+        cart.add(final)
+        
+        let pending = TPDPaymentItem.pendingPaymentItem(withItemName: "pendingItem")
+        cart.add(pending)
         
     }
 }
@@ -203,20 +205,26 @@ extension ViewController :TPDApplePayDelegate {
     }
     
     // With Payment Handle
-    func tpdApplePay(_ applePay: TPDApplePay!, didReceivePrime prime: String!) {
-        
+    func tpdApplePay(_ applePay: TPDApplePay!, didReceivePrime prime: String!, withExpiryMillis expiryMillis: Int) {
         // 1. Send Your Prime To Your Server, And Handle Payment With Result
         // ...
         print("=====================================================");
         print("======> didReceivePrime");
         print("Prime : \(prime!)");
+        print("Expiry millis : \(expiryMillis)");
         print("total Amount :   \(applePay.cart.totalAmount!)")
         print("Client IP : \(applePay.consumer.clientIP!)")
         print("shippingContact.name : \(applePay.consumer.shippingContact?.name?.givenName) \(applePay.consumer.shippingContact?.name?.familyName)");
         print("shippingContact.emailAddress : \(applePay.consumer.shippingContact?.emailAddress)");
         print("shippingContact.phoneNumber : \(applePay.consumer.shippingContact?.phoneNumber?.stringValue)");
-        print("===================================================== \n\n");
         
+        let paymentMethod = self.consumer.paymentMethod!
+        
+        print("type : \(paymentMethod.type.rawValue)")
+        print("Network : \(paymentMethod.network!.rawValue)")
+        print("Display Name : \(paymentMethod.displayName!)")
+        
+        print("===================================================== \n\n");
         
         DispatchQueue.main.async {
             let payment = "Use below cURL to proceed the payment.\ncurl -X POST \\\nhttps://sandbox.tappaysdk.com/tpc/payment/pay-by-prime \\\n-H \'content-type: application/json\' \\\n-H \'x-api-key: partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\' \\\n-d \'{ \n \"prime\": \"\(prime!)\", \"partner_key\": \"partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\", \"merchant_id\": \"GlobalTesting_CTBC\", \"details\":\"TapPay Test\", \"amount\": \(applePay.cart.totalAmount!.stringValue), \"cardholder\": { \"phone_number\": \"+886923456789\", \"name\": \"Jane Doe\", \"email\": \"Jane@Doe.com\", \"zip_code\": \"12345\", \"address\": \"123 1st Avenue, City, Country\", \"national_id\": \"A123456789\" }, \"remember\": true }\'"

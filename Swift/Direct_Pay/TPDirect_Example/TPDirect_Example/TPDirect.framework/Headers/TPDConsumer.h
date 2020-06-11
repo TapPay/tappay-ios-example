@@ -1,7 +1,7 @@
 //
 //  TPDConsumer.h
 //
-//  TPDirect iOS SDK - v2.4
+//  TPDirect iOS SDK - v2.5
 //  Copyright © 2017 Cherri Tech, Inc. All rights reserved.
 //
 
@@ -10,6 +10,10 @@
 
 
 @interface TPDConsumer : NSObject
+
+
+// Information about the card.
+@property (nonatomic, strong, nullable) PKPaymentMethod *paymentMethod;
 
 // If the merchant already has a billing address on file, set it here.
 @property (nonatomic, strong, nullable) PKContact *billingContact;

@@ -108,6 +108,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 ### 6. Create TPDMerchant for Apple Pay Merchant Information.
 ### 7. Create TPDConsumer for Apple Pay Consumer Information.
+According to isAmountPending setting to decide use deferred payment or not, default is false.
+![](./amount_pending_en.png)
 ### 8. Create TPDCart for Apple Pay Cart Information.
 ### 9. Check Device Support Apple Pay.
 ```swift
