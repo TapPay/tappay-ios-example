@@ -123,8 +123,9 @@
     
     self.cart = [TPDCart new];
     self.cart.isAmountPending = YES;
+    self.cart.isShowTotalAmount = NO;
     
-    TPDPaymentItem *final = [TPDPaymentItem paymentItemWithItemName:@"Book"
+    TPDPaymentItem *final = [TPDPaymentItem paymentItemWithItemName:@"final"
                                                         withAmount:[NSDecimalNumber decimalNumberWithString:@"100.00"]];
     [self.cart addPaymentItem:final];
     

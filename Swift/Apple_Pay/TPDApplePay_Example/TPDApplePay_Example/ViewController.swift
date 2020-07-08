@@ -113,8 +113,9 @@ class ViewController: UIViewController {
         cart = TPDCart()
         
         self.cart.isAmountPending = true
+        self.cart.isShowTotalAmount = false
         
-        let final = TPDPaymentItem(itemName: "Book", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: true)
+        let final = TPDPaymentItem(itemName: "final", withAmount: NSDecimalNumber(string: "100.00"), withIsVisible: true)
         cart.add(final)
         
         let pending = TPDPaymentItem.pendingPaymentItem(withItemName: "pendingItem")

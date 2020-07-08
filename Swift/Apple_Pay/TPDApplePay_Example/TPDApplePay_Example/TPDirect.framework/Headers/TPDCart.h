@@ -1,7 +1,7 @@
 //
 //  TPDCart.h
 //
-//  TPDirect iOS SDK - v2.5
+//  TPDirect iOS SDK - v2.6
 //  Copyright © 2017 Cherri Tech, Inc. All rights reserved.
 //
 
@@ -22,6 +22,8 @@
 @property (nonatomic, strong, nullable) NSDecimalNumber *totalAmount;
 
 @property (nonatomic, assign) Boolean isAmountPending;
+
+@property (nonatomic, assign) Boolean isShowTotalAmount;
 
 /**
  Add New TPDPaymentItem.
