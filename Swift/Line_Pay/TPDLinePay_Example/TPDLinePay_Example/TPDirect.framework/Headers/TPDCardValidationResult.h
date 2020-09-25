@@ -2,7 +2,7 @@
 //  TPDCardValidationResult.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.6
+//  TPDirect iOS SDK - v2.7
 //  Copyright © 2017年 tech.cherri. All rights reserved.
 //
 

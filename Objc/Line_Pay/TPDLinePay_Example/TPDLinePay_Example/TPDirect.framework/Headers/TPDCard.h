@@ -1,7 +1,7 @@
 //
 //  TPDCard.h
 //
-//  TPDirect iOS SDK - v2.6
+//  TPDirect iOS SDK - v2.7
 //  Copyright © 2016年 Cherri Tech, Inc. All rights reserved.
 //
 
