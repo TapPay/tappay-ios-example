@@ -2,7 +2,7 @@
 //  TPDJKOPay.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.7
+//  TPDirect iOS SDK - v2.8
 //  Created by Cherri Kevin on 3/30/20.
 //  Copyright © 2020 tech.cherri. All rights reserved.
 //
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Set on getPrime Failure Callback
 ///
-/// @param callback (NSInteger status, NSString +_Nonnull message)
+/// @param callback (NSInteger status, NSString *_Nonnull message)
 /// @return Instance
 - (instancetype _Nonnull)onFailureCallback:(void(^_Nonnull)(NSInteger status , NSString *_Nonnull message))callback;
 
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)installJKOApp;
 
 /// Use this method to handle link come from TapPay ,
-/// and return results via redirectWith Url (TPDLinePayResult callback).
+/// and return results via redirectWith Url (TPDJKOPayResult callback).
 ///
 /// @param link , From TapPay Payment Result Url
 /// @return BOOL, Check link is from TapPay.

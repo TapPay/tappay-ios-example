@@ -27,7 +27,7 @@
 		7E5BF84B1FAB1E8E005E47BD /* card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF83B1FAB1E8E005E47BD /* card_visa.png */; };
 		7E5BF84C1FAB1E8E005E47BD /* card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF83C1FAB1E8E005E47BD /* card_visa@2x.png */; };
 		7E5BF84D1FAB1E8E005E47BD /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF83D1FAB1E8E005E47BD /* card_visa@3x.png */; };
-		F932D6452476A1AD002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6442476A1AD002136A0 /* TPDirect.framework */; };
+		F9A913C9256A78EE004154B4 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6442476A1AD002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F932D6452476A1AD002136A0 /* TPDirect.framework in Frameworks */,
+				F9A913C9256A78EE004154B4 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

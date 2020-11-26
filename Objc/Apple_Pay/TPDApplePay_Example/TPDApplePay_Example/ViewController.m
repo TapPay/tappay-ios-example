@@ -224,28 +224,29 @@
 
 // With Payment Handle
 
-- (void)tpdApplePay:(TPDApplePay *)applePay didReceivePrime:(NSString *)prime withExpiryMillis:(long)expiryMillis {
-    
+- (void)tpdApplePay:(TPDApplePay *)applePay didReceivePrime:(NSString *)prime withExpiryMillis:(long)expiryMillis withCardInfo:(TPDCardInfo *)cardInfo withMerchantReferenceInfo:(NSDictionary *)merchantReferenceInfo {
+
     // 1. Send Your 'Prime' To Your Server, And Handle Payment With Result
     // ...
     NSLog(@"=====================================================");
     NSLog(@"======> didReceivePrime ");
     NSLog(@"Prime : %@", prime);
     NSLog(@"Expiry millis : %ld",expiryMillis);
+    NSLog(@"merchantReferenceInfo : %@", merchantReferenceInfo);
     NSLog(@"totalAmount : %@",applePay.cart.totalAmount);
     NSLog(@"Client  IP : %@",applePay.consumer.clientIP);
     NSLog(@"shippingContact.name : %@ %@", applePay.consumer.shippingContact.name.givenName, applePay.consumer.shippingContact.name.familyName);
     NSLog(@"shippingContact.emailAddress : %@", applePay.consumer.shippingContact.emailAddress);
     NSLog(@"shippingContact.phoneNumber : %@", applePay.consumer.shippingContact.phoneNumber.stringValue);
-    
+
     PKPaymentMethod * paymentMethod = self.consumer.paymentMethod;
-    
+
     NSLog(@"tpye : %ld", paymentMethod.type);
     NSLog(@"Network : %@", paymentMethod.network);
     NSLog(@"Display Name : %@", paymentMethod.displayName);
     NSLog(@"===================================================== \n\n");
-    
-    
+
+
     dispatch_async(dispatch_get_main_queue(), ^{
         NSString *payment = [NSString stringWithFormat:@"Use below cURL to proceed the payment.\ncurl -X POST \\\nhttps://sandbox.tappaysdk.com/tpc/payment/pay-by-prime \\\n-H \'content-type: application/json\' \\\n-H \'x-api-key: partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\' \\\n-d \'{ \n \"prime\": \"%@\", \"partner_key\": \"partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM\", \"merchant_id\": \"GlobalTesting_CTBC\", \"details\":\"TapPay Test\", \"amount\": %@, \"cardholder\": { \"phone_number\": \"+886923456789\", \"name\": \"Jane Doe\", \"email\": \"Jane@Doe.com\", \"zip_code\": \"12345\", \"address\": \"123 1st Avenue, City, Country\", \"national_id\": \"A123456789\" }, \"remember\": true }\'",prime,applePay.cart.totalAmount];
         self.displayText.text = payment;

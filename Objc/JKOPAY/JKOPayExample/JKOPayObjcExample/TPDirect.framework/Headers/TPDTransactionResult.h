@@ -1,7 +1,7 @@
 //
 //  TPDTransactionResult.h
 //
-//  TPDirect iOS SDK - v2.7
+//  TPDirect iOS SDK - v2.8
 //  Copyright © 2017 Cherri Tech, Inc. All rights reserved.
 //
 

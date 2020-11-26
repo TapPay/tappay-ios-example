@@ -1,7 +1,7 @@
 //
 //  TPDApplePay.h
 //
-//  TPDirect iOS SDK - v2.7
+//  TPDirect iOS SDK - v2.8
 //  Copyright © 2017年 Cherri Tech, Inc. All rights reserved.
 //  See the Apple Pay Document
 //  ==> https://docs.tappaysdk.com/apple-pay
@@ -12,6 +12,7 @@
 #import <TPDirect/TPDConsumer.h>
 #import <TPDirect/TPDCart.h>
 #import <TPDirect/TPDTransactionResult.h>
+#import "TPDCardInfo.h"
 
 @class TPDApplePay;
 @class TPDTransactionResult;
@@ -25,7 +26,7 @@
 // Remember To Send Prime To Your Server, And Use PayByPrime API
 // If using apple pay deferred payments, please keep prime by yourself.
 // 'https://docs.tappaysdk.com/apple-pay/zh/back.html#pay-by-prime-api' To Finish Payment.
-- (void)tpdApplePay:(TPDApplePay *)applePay didReceivePrime:(NSString *)prime withExpiryMillis:(long)expiryMillis;
+- (void)tpdApplePay:(TPDApplePay *)applePay didReceivePrime:(NSString *)prime withExpiryMillis:(long)expiryMillis withCardInfo:(TPDCardInfo *)cardInfo withMerchantReferenceInfo:(NSDictionary *)merchantReferenceInfo;
 
 // Send To The Delegate After Apple Pay Payment Processing Succeeds.
 - (void)tpdApplePay:(TPDApplePay *)applePay didSuccessPayment:(TPDTransactionResult *)result;

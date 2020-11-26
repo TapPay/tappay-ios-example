@@ -28,7 +28,7 @@
 		7E4E85801FAC451C00BD1288 /* card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85701FAC451C00BD1288 /* card_visa.png */; };
 		7E4E85811FAC451C00BD1288 /* card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85711FAC451C00BD1288 /* card_visa@2x.png */; };
 		7E4E85821FAC451C00BD1288 /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85721FAC451C00BD1288 /* card_visa@3x.png */; };
-		F932D64B2476A249002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D64A2476A249002136A0 /* TPDirect.framework */; };
+		F9A913D9256A8C08004154B4 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A913D8256A8C08004154B4 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +57,7 @@
 		7E4E85701FAC451C00BD1288 /* card_visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_visa.png; sourceTree = "<group>"; };
 		7E4E85711FAC451C00BD1288 /* card_visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@2x.png"; sourceTree = "<group>"; };
 		7E4E85721FAC451C00BD1288 /* card_visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@3x.png"; sourceTree = "<group>"; };
-		F932D64A2476A249002136A0 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
+		F9A913D8256A8C08004154B4 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F932D64B2476A249002136A0 /* TPDirect.framework in Frameworks */,
+				F9A913D9256A8C08004154B4 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 				7E4E85561FAC44D900BD1288 /* LaunchScreen.storyboard */,
 				7E4E85591FAC44D900BD1288 /* Info.plist */,
 				7E4E855A1FAC44D900BD1288 /* main.m */,
-				F932D64A2476A249002136A0 /* TPDirect.framework */,
+				F9A913D8256A8C08004154B4 /* TPDirect.framework */,
 				7E4E85621FAC451C00BD1288 /* TPDirectResource */,
 			);
 			path = TPDirect_Example;

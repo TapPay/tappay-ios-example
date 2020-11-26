@@ -66,10 +66,9 @@ class ViewController: UIViewController {
         
         // 2. Setup TPDCard on Success Callback.
         
-        
-        tpdCard.onSuccessCallback { (prime, cardInfo, cardIdentifier) in
+        tpdCard.onSuccessCallback { (prime, cardInfo, cardIdentifier, merchantReferenceInfo)  in
             
-            let result = "Prime : \(prime!),\n card identifier : \(cardIdentifier!), \nLastFour : \(cardInfo!.lastFour!),\n Bincode : \(cardInfo!.bincode!),\n Issuer : \(cardInfo!.issuer!),\n cardType : \(cardInfo!.cardType),\n funding : \(cardInfo!.cardType),\n country : \(cardInfo!.country!),\n countryCode : \(cardInfo!.countryCode!),\n level : \(cardInfo!.level!)"
+            let result = "Prime : \(prime!),\n card identifier : \(cardIdentifier!),\n merchantReferenceInfo : \(merchantReferenceInfo["affiliateCodes"]!),\nLastFour : \(cardInfo!.lastFour!),\n Bincode : \(cardInfo!.bincode!),\n Issuer : \(cardInfo!.issuer!),\n Issuer_zh_tw : \(cardInfo!.issuerZhTw),\n bank_id : \(cardInfo!.bankId),\n cardType : \(cardInfo!.cardType),\n funding : \(cardInfo!.cardType),\n country : \(cardInfo!.country!),\n countryCode : \(cardInfo!.countryCode!),\n level : \(cardInfo!.level!)"
             
             print(result)
             

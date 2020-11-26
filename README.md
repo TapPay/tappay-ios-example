@@ -432,7 +432,140 @@ print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTrad
 
 
 
+## Easy Wallet
 
+### 1. Download and import TPDirect.framework into your project.
+### 2. Create a Bridging-Header.h file and Import TPDirect SDK
+```swift
+#import <TPDirect/TPDirect.h>
+```
+
+### 3. Use TPDSetup to set up your environment.
+```
+import AdSupport
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+    TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
+
+    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+
+    TPDSetup.shareInstance().serverSync()
+}
+```
+### Setup universal link
+
+#### step 1
+Go to xCode TARGET and Signing & Capabilities page
+
+![](./easywallet_step1.png)
+
+#### step 2 
+click + button and choose Associated Domains
+![](./easywallet_step2.png)
+
+#### step 3
+In Associated Domains section click + button add domain
+
+![](./easywallet_step3.png)  
+
+#### step 4 
+Domain should be applink:{your domain without https://}
+
+![](./jko_step4.png)
+
+
+#### step 5 
+Setup a config need to upload a file on your server.
+You can use ngrok to test.
+create a folder /.well-known in your server then create a file 'apple-app-site-association' 
+
+appID format : <TeamID>.<bundle identifier>
+```
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "T9G64ZZGC4.Cherri.EasyWalletExample",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
+```
+Get teamID from apple developer membership
+<br>
+Get bundle identifier from xCode
+![](./bundle_identifier.png)
+
+
+### Setup TPDEasyWallet
+Use your custom universal link to initialize TPDEasyWallet object.
+```siwft
+let easyWallet = TPDEasyWallet.setup(withReturnUrl: "Your universal link")
+```
+
+### Get Prime
+Call getPrime function, via onSuccessCallback or onFailureCallbac to get prime or error message.
+
+
+```swift
+easyWallet.onSuccessCallback { (prime) in
+    print(prime : \(prime!))
+}.onFailureCallback { (status, msg) in
+    print("status : \(status), msg : \(msg)")
+}.getPrime()
+```
+
+### Redirect to Easy Wallet App 
+
+Obtain payment_url from TapPay, call redirect url function to EasyWallet App, get EasyWallet result via callback.
+
+```swift
+easyWallet.redirect(payment_url) { (result) in
+    print("status : \(result.status), rec_trade_id : \(result.recTradeId), order_number : \(result.orderNumber), bank_transaction_id : \(result.bankTransactionId)")
+}
+```
+
+### Handle universal link
+
+Use this method handle universal link come from TapPay and parse data. ( For version lower than iOS 13.0 )
+```swift
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    NSURL * url = userActivity.webpageURL;
+    BOOL easyWalletHandled = [TPDEasyWallet handleEasyWalletUniversalLink:url];
+    if (easyWalletHandled) {
+        return YES;
+    }
+    return NO;
+}
+
+```
+
+### Exception handle
+#### step1
+
+Implement addExceptionOberver function in AppDelegate didFinishLaunchingWithOptions to handle exception.
+
+```swift
+TPDEasyWallet.addExceptionObserver(#selector(tappayEasyWalletExceptionHandler(notofication:)))
+```
+
+#### step2
+
+In AppDelegate add tappayEasyWalletExceptionHandler function, when exception happened receive notification.
+
+```swift
+
+func tappayEasyWalletExceptionHandler(notofication: Notification) {
+
+let result : TPDEasyWalletResult = TPDEasyWallet.parseURL(notofication)
+
+print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTradeid : \(result.recTradeId) , bankTransactionId : \(result.bankTransactionId) ")
+
+}
+
+```
 
 
 

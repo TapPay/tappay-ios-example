@@ -1,7 +1,7 @@
 //
 //  TPDCardInfo.h
 //
-//  TPDirect iOS SDK - v2.7
+//  TPDirect iOS SDK - v2.8
 //  Copyright © 2017年 Cherri Tech, Inc. All rights reserved.
 //
 
@@ -15,6 +15,8 @@
 @property (strong, nonatomic) NSString * _Nullable countryCode;
 @property (strong, nonatomic) NSString * _Nullable country;
 @property (strong, nonatomic) NSString * _Nullable level;
+@property (strong, nonatomic) NSString * _Nullable issuerZhTw;
+@property (strong, nonatomic) NSString * _Nullable bankId;
 
 /*
  cardType

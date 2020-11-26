@@ -69,10 +69,10 @@
     TPDCard *tpdCard = [TPDCard setup:self.tpdForm];
     
     // 2. Setup TPDCard on Success Callback.
-    [[[tpdCard onSuccessCallback:^(NSString * _Nullable prime, TPDCardInfo * _Nullable cardInfo, NSString * cardIdentifier) {
+    [[[tpdCard onSuccessCallback:^(NSString * _Nullable prime, TPDCardInfo * _Nullable cardInfo, NSString * cardIdentifier, NSDictionary * merchantReferenceInfo) {
         //
         
-        NSString *result = [NSString stringWithFormat:@"Prime : %@,\n LastFour : %@,\n Bincode : %@,\n Issuer : %@,\n cardType : %lu,\n funding : %lu,\n country : %@,\n countryCode : %@,\n level : %@", prime, cardInfo.lastFour, cardInfo.bincode, cardInfo.issuer, cardInfo.cardType, cardInfo.funding , cardInfo.country,cardInfo.countryCode,cardInfo.level];
+        NSString *result = [NSString stringWithFormat:@"Prime : %@,\n merchantReferenceInfo: %@,\n LastFour : %@,\n Bincode : %@,\n Issuer : %@,\n Issuer_zh_tw: %@,\n bank_id: %@,\n cardType : %lu,\n funding : %lu,\n country : %@,\n countryCode : %@,\n level : %@", prime, merchantReferenceInfo,cardInfo.lastFour, cardInfo.bincode, cardInfo.issuer, cardInfo.issuerZhTw, cardInfo.bankId, cardInfo.cardType, cardInfo.funding , cardInfo.country,cardInfo.countryCode,cardInfo.level];
         
         
         dispatch_async(dispatch_get_main_queue(), ^{

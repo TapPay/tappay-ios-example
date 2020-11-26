@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F938C8542563BBAF0063460C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8532563BBAF0063460C /* AppDelegate.m */; };
+		F938C8572563BBAF0063460C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8562563BBAF0063460C /* SceneDelegate.m */; };
+		F938C85A2563BBAF0063460C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8592563BBAF0063460C /* ViewController.m */; };
+		F938C85D2563BBAF0063460C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F938C85B2563BBAF0063460C /* Main.storyboard */; };
+		F938C85F2563BBB10063460C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F938C85E2563BBB10063460C /* Assets.xcassets */; };
+		F938C8622563BBB10063460C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F938C8602563BBB10063460C /* LaunchScreen.storyboard */; };
+		F938C8652563BBB10063460C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8642563BBB10063460C /* main.m */; };
+		F938C86D2563BBED0063460C /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938C86C2563BBED0063460C /* TPDirect.framework */; };
+		F9A913DD256A9A83004154B4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A913DC256A9A83004154B4 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F938C84F2563BBAF0063460C /* EasyWalletExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWalletExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F938C8522563BBAF0063460C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F938C8532563BBAF0063460C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F938C8552563BBAF0063460C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F938C8562563BBAF0063460C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F938C8582563BBAF0063460C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F938C8592563BBAF0063460C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F938C85C2563BBAF0063460C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F938C85E2563BBB10063460C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F938C8612563BBB10063460C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F938C8632563BBB10063460C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F938C8642563BBB10063460C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F938C86C2563BBED0063460C /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
+		F9A913DC256A9A83004154B4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F938C84C2563BBAF0063460C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A913DD256A9A83004154B4 /* WebKit.framework in Frameworks */,
+				F938C86D2563BBED0063460C /* TPDirect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F938C8462563BBAF0063460C = {
+			isa = PBXGroup;
+			children = (
+				F938C8512563BBAF0063460C /* EasyWalletExample */,
+				F938C8502563BBAF0063460C /* Products */,
+				F9A913DB256A9A82004154B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F938C8502563BBAF0063460C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F938C84F2563BBAF0063460C /* EasyWalletExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F938C8512563BBAF0063460C /* EasyWalletExample */ = {
+			isa = PBXGroup;
+			children = (
+				F938C8522563BBAF0063460C /* AppDelegate.h */,
+				F938C8532563BBAF0063460C /* AppDelegate.m */,
+				F938C8552563BBAF0063460C /* SceneDelegate.h */,
+				F938C8562563BBAF0063460C /* SceneDelegate.m */,
+				F938C8582563BBAF0063460C /* ViewController.h */,
+				F938C8592563BBAF0063460C /* ViewController.m */,
+				F938C85B2563BBAF0063460C /* Main.storyboard */,
+				F938C85E2563BBB10063460C /* Assets.xcassets */,
+				F938C8602563BBB10063460C /* LaunchScreen.storyboard */,
+				F938C8632563BBB10063460C /* Info.plist */,
+				F938C8642563BBB10063460C /* main.m */,
+				F938C86C2563BBED0063460C /* TPDirect.framework */,
+			);
+			path = EasyWalletExample;
+			sourceTree = "<group>";
+		};
+		F9A913DB256A9A82004154B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9A913DC256A9A83004154B4 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F938C84E2563BBAF0063460C /* EasyWalletExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F938C8682563BBB10063460C /* Build configuration list for PBXNativeTarget "EasyWalletExample" */;
+			buildPhases = (
+				F938C84B2563BBAF0063460C /* Sources */,
+				F938C84C2563BBAF0063460C /* Frameworks */,
+				F938C84D2563BBAF0063460C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyWalletExample;
+			productName = EasyWalletExample;
+			productReference = F938C84F2563BBAF0063460C /* EasyWalletExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F938C8472563BBAF0063460C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F938C84E2563BBAF0063460C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F938C84A2563BBAF0063460C /* Build configuration list for PBXProject "EasyWalletExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F938C8462563BBAF0063460C;
+			productRefGroup = F938C8502563BBAF0063460C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F938C84E2563BBAF0063460C /* EasyWalletExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F938C84D2563BBAF0063460C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938C8622563BBB10063460C /* LaunchScreen.storyboard in Resources */,
+				F938C85F2563BBB10063460C /* Assets.xcassets in Resources */,
+				F938C85D2563BBAF0063460C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F938C84B2563BBAF0063460C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938C85A2563BBAF0063460C /* ViewController.m in Sources */,
+				F938C8542563BBAF0063460C /* AppDelegate.m in Sources */,
+				F938C8652563BBB10063460C /* main.m in Sources */,
+				F938C8572563BBAF0063460C /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F938C85B2563BBAF0063460C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F938C85C2563BBAF0063460C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F938C8602563BBB10063460C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F938C8612563BBB10063460C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F938C8662563BBB10063460C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F938C8672563BBB10063460C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F938C8692563BBB10063460C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EasyWalletExample",
+				);
+				INFOPLIST_FILE = EasyWalletExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cherri.EasyWalletExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F938C86A2563BBB10063460C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EasyWalletExample",
+				);
+				INFOPLIST_FILE = EasyWalletExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cherri.EasyWalletExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F938C84A2563BBAF0063460C /* Build configuration list for PBXProject "EasyWalletExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F938C8662563BBB10063460C /* Debug */,
+				F938C8672563BBB10063460C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F938C8682563BBB10063460C /* Build configuration list for PBXNativeTarget "EasyWalletExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F938C8692563BBB10063460C /* Debug */,
+				F938C86A2563BBB10063460C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F938C8472563BBAF0063460C /* Project object */;
+}
