@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-aG-1Bf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-aG-1Bf">
                                 <rect key="frame" x="150" y="231" width="75" height="30"/>
                                 <color key="backgroundColor" red="0.88909536600000005" green="0.56646364930000004" blue="0.27671140430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -51,20 +48,6 @@
                                     <action selector="doneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9g-H7-eMT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1D-TO-d0k">
-                                <rect key="frame" x="142.5" y="277" width="90" height="30"/>
-                                <color key="backgroundColor" red="0.24313725489999999" green="0.46666666670000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="kd3-wI-6qi"/>
-                                    <constraint firstAttribute="width" constant="90" id="rLc-B3-n5S"/>
-                                </constraints>
-                                <state key="normal" title="Get Fraud Id">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="getFraudId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHd-BE-2OG"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s8I-X0-R8j">
                                 <rect key="frame" x="19" y="380" width="337.5" height="267"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,22 +55,20 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="BEe-CA-Gl6"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XaL-aG-1Bf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hz-AY-Cxc"/>
                             <constraint firstItem="BEe-CA-Gl6" firstAttribute="bottom" secondItem="s8I-X0-R8j" secondAttribute="bottom" constant="20" id="MeD-77-NX2"/>
                             <constraint firstItem="XaL-aG-1Bf" firstAttribute="top" secondItem="gKW-B6-ucw" secondAttribute="bottom" constant="16" id="NNI-EJ-rfu"/>
-                            <constraint firstItem="W1D-TO-d0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PIB-tG-cLW"/>
                             <constraint firstItem="s8I-X0-R8j" firstAttribute="centerX" secondItem="BEe-CA-Gl6" secondAttribute="centerX" id="Ryg-M5-JGq"/>
                             <constraint firstItem="gKW-B6-ucw" firstAttribute="top" secondItem="ih6-FG-Oev" secondAttribute="bottom" constant="15" id="XJX-bd-TtF"/>
                             <constraint firstItem="gKW-B6-ucw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFr-zH-yAw"/>
                             <constraint firstItem="s8I-X0-R8j" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="ZPh-mg-9F3"/>
                             <constraint firstItem="ih6-FG-Oev" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="ZX0-Gl-lqH"/>
-                            <constraint firstItem="W1D-TO-d0k" firstAttribute="top" secondItem="XaL-aG-1Bf" secondAttribute="bottom" constant="16" id="npn-fU-DL4"/>
                             <constraint firstItem="s8I-X0-R8j" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="tbm-Kc-z0q"/>
                             <constraint firstItem="ih6-FG-Oev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCc-YC-Q3q"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BEe-CA-Gl6"/>
                     </view>
                     <connections>
                         <outlet property="cardView" destination="ih6-FG-Oev" id="Byd-Fv-Ryq"/>

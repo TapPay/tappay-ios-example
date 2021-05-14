@@ -8,7 +8,6 @@
 
 import UIKit
 import TPDirect
-import AdSupport
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,10 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         TPDSetup.setWithAppId(11340, withAppKey: "app_whdEWBH8e8Lzy4N6BysVRRMILYORF6UxXbiOFsICkz0J9j1C0JUlCHv1tVJC", with: TPDServerType.sandBox)
-        
-        TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-        
-        TPDSetup.shareInstance().serverSync()
+
         
         TPDLinePay.addExceptionObserver(#selector(tappayLinePayExceptionHandler(notification:)))
         

@@ -99,18 +99,7 @@
     
 
 }
-- (IBAction)getFraudIdAction:(id)sender {
-    
-    // Get Fraud ID
-    NSString *fraudId = [[TPDSetup shareInstance] getFraudID];
-    
-    // If use pay-by-token. Get fraud ID before first, and send fraud id to your server.
-    NSString *result = [NSString stringWithFormat:@"Send Fraud ID :'%@' to your server, bring it on when you request pay-by-token API", fraudId];
-    
-    NSLog(@"Fraud ID : %@", fraudId);
-    [self showResult:result];
-    
-}
+
 
 #pragma mark - function
 - (void)showResult:(NSString *)message {

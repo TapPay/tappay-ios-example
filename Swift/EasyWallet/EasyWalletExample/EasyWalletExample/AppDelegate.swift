@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AdSupport
 import TPDirect
 
 
@@ -19,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         TPDSetup.setWithAppId(11340, withAppKey: "app_whdEWBH8e8Lzy4N6BysVRRMILYORF6UxXbiOFsICkz0J9j1C0JUlCHv1tVJC", with: TPDServerType.sandBox)
-        TPDSetup.shareInstance().serverSync()
+
         return true
     }
 

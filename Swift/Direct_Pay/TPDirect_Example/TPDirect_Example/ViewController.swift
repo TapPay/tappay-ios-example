@@ -98,17 +98,6 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func getFraudId(_ sender: Any) {
-        
-        let fraudId = TPDSetup.shareInstance().getFraudID()
-        
-        // If use pay-by-token. Get fraud ID before first, and send fraud id to your request.
-        let result = "Send Fraud Id : \(fraudId!) to your server, bring it on when you request pay-by-token API"
-        
-        print(result)
-        showResult(message: result)
-        
-    }
     
     //MARK: - Function
     func showResult(message:String!){

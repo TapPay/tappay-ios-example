@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mny-5D-DVw">
+                                <rect key="frame" x="157" y="94" width="100" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FTd-1R-wIT"/>
+                                    <constraint firstAttribute="height" constant="60" id="dqd-nb-BlN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhW-ki-Doe">
+                                <rect key="frame" x="155.5" y="438" width="103" height="30"/>
+                                <state key="normal" title="Get CCV Prime"/>
+                                <connections>
+                                    <action selector="getCCVPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huj-Dn-tgl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mny-5D-DVw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1mO-Y6-Kcc"/>
+                            <constraint firstItem="qhW-ki-Doe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DlH-um-2KD"/>
+                            <constraint firstItem="qhW-ki-Doe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IMX-dC-a5X"/>
+                            <constraint firstItem="mny-5D-DVw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Rh0-Sb-FAc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ccvFormView" destination="mny-5D-DVw" id="BNy-WC-Lds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

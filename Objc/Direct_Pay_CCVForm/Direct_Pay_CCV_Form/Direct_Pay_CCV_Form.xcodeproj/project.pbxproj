@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9B0E71D264D03DE00C9B287 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E71C264D03DE00C9B287 /* AppDelegate.m */; };
+		F9B0E720264D03DE00C9B287 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E71F264D03DE00C9B287 /* SceneDelegate.m */; };
+		F9B0E723264D03DE00C9B287 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E722264D03DE00C9B287 /* ViewController.m */; };
+		F9B0E726264D03DE00C9B287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B0E724264D03DE00C9B287 /* Main.storyboard */; };
+		F9B0E728264D03E000C9B287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B0E727264D03E000C9B287 /* Assets.xcassets */; };
+		F9B0E72B264D03E000C9B287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B0E729264D03E000C9B287 /* LaunchScreen.storyboard */; };
+		F9B0E72E264D03E000C9B287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E72D264D03E000C9B287 /* main.m */; };
+		F9B0E736264D040300C9B287 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B0E735264D040300C9B287 /* TPDirect.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9B0E718264D03DE00C9B287 /* Direct_Pay_CCV_Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Direct_Pay_CCV_Form.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B0E71B264D03DE00C9B287 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9B0E71C264D03DE00C9B287 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9B0E71E264D03DE00C9B287 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F9B0E71F264D03DE00C9B287 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F9B0E721264D03DE00C9B287 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F9B0E722264D03DE00C9B287 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9B0E725264D03DE00C9B287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9B0E727264D03E000C9B287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9B0E72A264D03E000C9B287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9B0E72C264D03E000C9B287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B0E72D264D03E000C9B287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9B0E735264D040300C9B287 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9B0E715264D03DE00C9B287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B0E736264D040300C9B287 /* TPDirect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9B0E70F264D03DE00C9B287 = {
+			isa = PBXGroup;
+			children = (
+				F9B0E71A264D03DE00C9B287 /* Direct_Pay_CCV_Form */,
+				F9B0E719264D03DE00C9B287 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9B0E719264D03DE00C9B287 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0E718264D03DE00C9B287 /* Direct_Pay_CCV_Form.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9B0E71A264D03DE00C9B287 /* Direct_Pay_CCV_Form */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0E71B264D03DE00C9B287 /* AppDelegate.h */,
+				F9B0E71C264D03DE00C9B287 /* AppDelegate.m */,
+				F9B0E71E264D03DE00C9B287 /* SceneDelegate.h */,
+				F9B0E71F264D03DE00C9B287 /* SceneDelegate.m */,
+				F9B0E721264D03DE00C9B287 /* ViewController.h */,
+				F9B0E722264D03DE00C9B287 /* ViewController.m */,
+				F9B0E724264D03DE00C9B287 /* Main.storyboard */,
+				F9B0E727264D03E000C9B287 /* Assets.xcassets */,
+				F9B0E729264D03E000C9B287 /* LaunchScreen.storyboard */,
+				F9B0E72C264D03E000C9B287 /* Info.plist */,
+				F9B0E72D264D03E000C9B287 /* main.m */,
+				F9B0E735264D040300C9B287 /* TPDirect.framework */,
+			);
+			path = Direct_Pay_CCV_Form;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9B0E717264D03DE00C9B287 /* Direct_Pay_CCV_Form */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B0E731264D03E000C9B287 /* Build configuration list for PBXNativeTarget "Direct_Pay_CCV_Form" */;
+			buildPhases = (
+				F9B0E714264D03DE00C9B287 /* Sources */,
+				F9B0E715264D03DE00C9B287 /* Frameworks */,
+				F9B0E716264D03DE00C9B287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Direct_Pay_CCV_Form;
+			productName = Direct_Pay_CCV_Form;
+			productReference = F9B0E718264D03DE00C9B287 /* Direct_Pay_CCV_Form.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9B0E710264D03DE00C9B287 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					F9B0E717264D03DE00C9B287 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = F9B0E713264D03DE00C9B287 /* Build configuration list for PBXProject "Direct_Pay_CCV_Form" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9B0E70F264D03DE00C9B287;
+			productRefGroup = F9B0E719264D03DE00C9B287 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9B0E717264D03DE00C9B287 /* Direct_Pay_CCV_Form */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9B0E716264D03DE00C9B287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B0E72B264D03E000C9B287 /* LaunchScreen.storyboard in Resources */,
+				F9B0E728264D03E000C9B287 /* Assets.xcassets in Resources */,
+				F9B0E726264D03DE00C9B287 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9B0E714264D03DE00C9B287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B0E723264D03DE00C9B287 /* ViewController.m in Sources */,
+				F9B0E71D264D03DE00C9B287 /* AppDelegate.m in Sources */,
+				F9B0E72E264D03E000C9B287 /* main.m in Sources */,
+				F9B0E720264D03DE00C9B287 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9B0E724264D03DE00C9B287 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9B0E725264D03DE00C9B287 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9B0E729264D03E000C9B287 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9B0E72A264D03E000C9B287 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9B0E72F264D03E000C9B287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9B0E730264D03E000C9B287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9B0E732264D03E000C9B287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Direct_Pay_CCV_Form",
+				);
+				INFOPLIST_FILE = Direct_Pay_CCV_Form/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cherri.Direct-Pay-CCV-Form";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9B0E733264D03E000C9B287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9G64ZZGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Direct_Pay_CCV_Form",
+				);
+				INFOPLIST_FILE = Direct_Pay_CCV_Form/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cherri.Direct-Pay-CCV-Form";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9B0E713264D03DE00C9B287 /* Build configuration list for PBXProject "Direct_Pay_CCV_Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B0E72F264D03E000C9B287 /* Debug */,
+				F9B0E730264D03E000C9B287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B0E731264D03E000C9B287 /* Build configuration list for PBXNativeTarget "Direct_Pay_CCV_Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B0E732264D03E000C9B287 /* Debug */,
+				F9B0E733264D03E000C9B287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9B0E710264D03DE00C9B287 /* Project object */;
+}

@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <TPDirect/TPDirect.h>
-#import <AdSupport/AdSupport.h>
 
 @interface AppDelegate ()
 
@@ -21,13 +20,6 @@
     // Override point for customization after application launch.
     
     [TPDSetup setWithAppId:11340 withAppKey:@"app_whdEWBH8e8Lzy4N6BysVRRMILYORF6UxXbiOFsICkz0J9j1C0JUlCHv1tVJC" withServerType:TPDServer_SandBox];
-    
-    // Please setup Advertising Identifier, to improve the accuracy of fraud detect.
-    [[TPDSetup shareInstance] setupIDFA:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
-    
-    [[TPDSetup shareInstance] serverSync];
-    
-    
     
     return YES;
 }

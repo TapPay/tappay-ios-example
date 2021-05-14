@@ -25,10 +25,6 @@ import AdSupport
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
-
-    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-
-    TPDSetup.shareInstance().serverSync()
 }
 ```
 
@@ -101,9 +97,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
 
-    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-
-    TPDSetup.shareInstance().serverSync()
 }
 ```
 ### 6. Create TPDMerchant for Apple Pay Merchant Information.
@@ -180,9 +173,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
 
-    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-
-    TPDSetup.shareInstance().serverSync()
 }
 ```
 ### 5. Setup Custom URL Scheme
@@ -310,9 +300,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
 
-    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-
-    TPDSetup.shareInstance().serverSync()
 }
 ```
 ### Setup universal link
@@ -447,9 +434,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
 
-    TPDSetup.shareInstance().setupIDFA(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
-
-    TPDSetup.shareInstance().serverSync()
 }
 ```
 ### Setup universal link
@@ -568,8 +552,57 @@ print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTrad
 ```
 
 
+## Direct Pay CCV Form
+
+When using Pay by Card Token API, if you want to bring the ccv data which has been hashed to do transaction , you can use `TPDCcv` class `getPrime()` method to get the ccv_prime.
+ps. ccv_prime is a random string. It can help you not to handling sensitive ccv data.
 
 
+### 1. Setup CCV Form
+
+Use this method to set display ccv field.
+
+```swift
+tpdCcvForm = TPDCcvForm.setupCCV(withContainer: ccvFormView)
+```
 
 
+### 2. Setup Card Type 
 
+This method can verify the ccv format for different card type.
+Ex: If this is a VISA card, we will check if the ccv length is three digits.
+
+```swift
+tpdCcvForm.setCCVForm(CardType.visa)
+```
+
+### 3. onCCVFormUpdated
+
+Use this method to get the current status of ccv.
+
+```swift
+tpdCcvForm.onCCVFormUpdated { (status) in
+  print("isCanGetCCVPrime : \(status!.isCanGetCCVPrime())")
+}
+```
+
+### Setup TPDCcv
+
+Use this method to initial TPDCcv object.
+
+```swift
+tpdCcv = TPDCcv.setup(ccvForm: TPDCcvForm)
+```
+
+### Get Prime
+
+If calling getPrime() successfully, you will get prime from onSuccessCallback.
+If failed, you will get error code and error message from onFailureCallback.
+
+```swift
+tpdCcv.onSuccessCallback { (prime) in
+    // Send ccv_prime to Pay by card token API
+}.onFailureCallback { (status, message) in
+    print("status : \(status), message : \(message)")
+}.getPrime()
+```

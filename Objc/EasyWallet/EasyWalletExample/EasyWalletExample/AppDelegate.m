@@ -20,7 +20,6 @@
     
     [TPDSetup setWithAppId:11340 withAppKey:@"app_whdEWBH8e8Lzy4N6BysVRRMILYORF6UxXbiOFsICkz0J9j1C0JUlCHv1tVJC" withServerType:TPDServer_SandBox];
     
-    [[TPDSetup shareInstance] serverSync];
     return YES;
 }
 

@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 #import <TPDirect/TPDirect.h>
-#import <AdSupport/AdSupport.h>
-
 
 @interface AppDelegate ()
 
@@ -23,9 +21,6 @@
     
     [TPDSetup setWithAppId:11340 withAppKey:@"app_whdEWBH8e8Lzy4N6BysVRRMILYORF6UxXbiOFsICkz0J9j1C0JUlCHv1tVJC" withServerType:TPDServer_SandBox];
     
-    [[TPDSetup shareInstance] setupIDFA:[[ASIdentifierManager sharedManager] advertisingIdentifier].UUIDString];
-    
-    [[TPDSetup shareInstance] serverSync];
     
     [TPDLinePay addExceptionObserver:(@selector(tappayLinePayExceptionHandler:))];
     
