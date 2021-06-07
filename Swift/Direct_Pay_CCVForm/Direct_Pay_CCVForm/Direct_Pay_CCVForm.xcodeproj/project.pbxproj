@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F99235CC266DB7B800AAFC74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99235CB266DB7B800AAFC74 /* SceneDelegate.swift */; };
 		F9B0E6D1264CFFD900C9B287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E6D0264CFFD900C9B287 /* AppDelegate.swift */; };
-		F9B0E6D3264CFFD900C9B287 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E6D2264CFFD900C9B287 /* SceneDelegate.swift */; };
 		F9B0E6D5264CFFD900C9B287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E6D4264CFFD900C9B287 /* ViewController.swift */; };
 		F9B0E6D8264CFFD900C9B287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B0E6D6264CFFD900C9B287 /* Main.storyboard */; };
 		F9B0E6DA264CFFDC00C9B287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B0E6D9264CFFDC00C9B287 /* Assets.xcassets */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F99235CB266DB7B800AAFC74 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F9B0E6CD264CFFD900C9B287 /* Direct_Pay_CCVForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Direct_Pay_CCVForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B0E6D0264CFFD900C9B287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9B0E6D2264CFFD900C9B287 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F9B0E6D4264CFFD900C9B287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9B0E6D7264CFFD900C9B287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9B0E6D9264CFFDC00C9B287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F9B0E6D0264CFFD900C9B287 /* AppDelegate.swift */,
-				F9B0E6D2264CFFD900C9B287 /* SceneDelegate.swift */,
+				F99235CB266DB7B800AAFC74 /* SceneDelegate.swift */,
 				F9B0E6D4264CFFD900C9B287 /* ViewController.swift */,
 				F9B0E6D6264CFFD900C9B287 /* Main.storyboard */,
 				F9B0E6D9264CFFDC00C9B287 /* Assets.xcassets */,
@@ -145,7 +145,7 @@
 			files = (
 				F9B0E6D5264CFFD900C9B287 /* ViewController.swift in Sources */,
 				F9B0E6D1264CFFD900C9B287 /* AppDelegate.swift in Sources */,
-				F9B0E6D3264CFFD900C9B287 /* SceneDelegate.swift in Sources */,
+				F99235CC266DB7B800AAFC74 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +299,7 @@
 					"$(PROJECT_DIR)/Direct_Pay_CCVForm",
 				);
 				INFOPLIST_FILE = Direct_Pay_CCVForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +323,7 @@
 					"$(PROJECT_DIR)/Direct_Pay_CCVForm",
 				);
 				INFOPLIST_FILE = Direct_Pay_CCVForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
