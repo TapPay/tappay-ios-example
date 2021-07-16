@@ -2,7 +2,7 @@
 //  TPDCcvForm.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.10.0
+//  TPDirect iOS SDK - v2.11.0
 //  Created by Cherri Kevin on 4/23/21.
 //  Copyright © 2021 tech.cherri. All rights reserved.
 //
