@@ -398,7 +398,7 @@ Use this method handle universal link come from TapPay and parse data. ( For ver
 Implement addExceptionOberver function in AppDelegate didFinishLaunchingWithOptions to handle exception.
 
 ```swift
-TPDLinePay.addExceptionObserver(#selector(tappayJKOPayExceptionHandler(notofication:)))
+TPDJKOPay.addExceptionObserver(#selector(tappayJKOPayExceptionHandler(notofication:)))
 ```
 
 #### step2

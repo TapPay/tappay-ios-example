@@ -1,7 +1,7 @@
 //
 //  TPDCart.h
 //
-//  TPDirect iOS SDK - v2.11.0
+//  TPDirect iOS SDK - v2.12.0
 //  Copyright © 2017 Cherri Tech, Inc. All rights reserved.
 //
 
