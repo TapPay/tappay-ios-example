@@ -2,7 +2,7 @@
 //  TPDLinePay.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.12.0
+//  TPDirect iOS SDK - v2.13.0
 //  Copyright © 2017年 tech.cherri. All rights reserved.
 //
 
