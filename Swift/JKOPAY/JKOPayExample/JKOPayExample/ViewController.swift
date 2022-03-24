@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBAction func startJKOPay(_ sender: Any) {
         let jkoPay = TPDJKOPay.setup(withReturnUrl: "Your universal link")
-        
+
         jkoPay.onSuccessCallback { (prime) in
             // send prime to your server and call pay by prime API
             DispatchQueue.main.async {

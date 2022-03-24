@@ -27,7 +27,7 @@
 		7E4E85371FAC27DE00BD1288 /* card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85271FAC27DD00BD1288 /* card_visa.png */; };
 		7E4E85381FAC27DE00BD1288 /* card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85281FAC27DD00BD1288 /* card_visa@2x.png */; };
 		7E4E85391FAC27DE00BD1288 /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85291FAC27DD00BD1288 /* card_visa@3x.png */; };
-		F932D6432476A17D002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6422476A17D002136A0 /* TPDirect.framework */; };
+		F960870127748194009FF30F /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6422476A17D002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F932D6432476A17D002136A0 /* TPDirect.framework in Frameworks */,
+				F960870127748194009FF30F /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +75,7 @@
 			children = (
 				7E4E85051FAC279300BD1288 /* TPDApplePay_Example */,
 				7E4E85041FAC279300BD1288 /* Products */,
+				F960870027748194009FF30F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +132,13 @@
 				7E4E85291FAC27DD00BD1288 /* card_visa@3x.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		F960870027748194009FF30F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -25,7 +25,7 @@
     self.backend_notify_url = @"https://example.com/back-end-notify";
 }
 - (IBAction)startJKOPay:(id)sender {
-    TPDJKOPay *jkoPay = [TPDJKOPay setupWithReturnUrl:@"Your universal link"];
+    TPDJKOPay *jkoPay = [TPDJKOPay setupWithReturnUrl:@"https://google.com.tw"];
     
     [[[jkoPay onSuccessCallback:^(NSString * _Nullable prime) {
         //send prime to your server and call pay by prime

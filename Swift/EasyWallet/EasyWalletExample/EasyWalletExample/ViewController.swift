@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func startEasyWallet(_ sender: Any) {
-        let easyWallet = TPDEasyWallet.setup(withReturUrl: "Your universal link")
+        let easyWallet = TPDEasyWallet.setup(withReturUrl: "https://Your.universal.link")
         
         easyWallet.onSuccessCallback { (prime) in
             DispatchQueue.main.async {

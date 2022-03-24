@@ -35,4 +35,5 @@ FOUNDATION_EXPORT const unsigned char TPDirectVersionString[];
 #import <TPDirect/TPDEasyWalletResult.h>
 #import <TPDirect/TPDCcvForm.h>
 #import <TPDirect/TPDCcv.h>
-
+#import <TPDirect/TPDAtome.h>
+#import <TPDirect/TPDAtomeResult.h>
