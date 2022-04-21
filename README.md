@@ -21,7 +21,7 @@ TapPay iOS SDK is used to get token(i.e. prime) on iOS platform for charging a c
 ### 3. Use TPDSetup to set up your environment.
 
 ``` swift
-import AdSupport
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
@@ -92,7 +92,7 @@ import PassKit
 ### 4. Enable Apple Pay in your Xcode and add Apple Merchant IDs.
 ### 5. Use TPDSetup to set up your environment.
 ```swift
-import AdSupport
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
@@ -168,7 +168,7 @@ func tpdApplePay(_ applePay: TPDApplePay!, didFailurePayment result: TPDTransact
 
 ### 4. Use TPDSetup to set up your environment.
 ```swift
-import AdSupport
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
@@ -295,7 +295,7 @@ print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTrad
 
 ### 3. Use TPDSetup to set up your environment.
 ```
-import AdSupport
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
@@ -429,7 +429,7 @@ print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTrad
 
 ### 3. Use TPDSetup to set up your environment.
 ```
-import AdSupport
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
@@ -617,7 +617,7 @@ tpdCcv.onSuccessCallback { (prime) in
 
 ### 3. Use TPDSetup to set up your environment.
 ```
-import AdSupport
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
@@ -732,6 +732,138 @@ In AppDelegate add tappayAtomeExceptionHandler function, when exception happened
 func tappayAtomeExceptionHandler(notofication: Notification) {
 
 let result : TPDAtomeResult = TPDAtome.parseURL(notofication)
+
+print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTradeid : \(result.recTradeId) , bankTransactionId : \(result.bankTransactionId) ")
+
+}
+
+```
+
+## PiWallet
+
+### 1. Download and import TPDirect.framework into your project.
+### 2. Create a Bridging-Header.h file and Import TPDirect SDK
+```swift
+#import <TPDirect/TPDirect.h>
+```
+
+### 3. Use TPDSetup to set up your environment.
+```
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+    TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
+
+}
+```
+### Setup universal link
+
+#### step 1
+Go to xCode TARGET and Signing & Capabilities page
+
+![](./easywallet_step1.png)
+
+#### step 2 
+click + button and choose Associated Domains
+![](./easywallet_step2.png)
+
+#### step 3
+In Associated Domains section click + button add domain
+
+![](./easywallet_step3.png)  
+
+#### step 4 
+Domain should be applink:{your domain without https://}
+
+![](./jko_step4.png)
+
+
+#### step 5 
+Setup a config need to upload a file on your server.
+You can use ngrok to test.
+create a folder /.well-known in your server then create a file 'apple-app-site-association' 
+
+appID format : <TeamID>.<bundle identifier>
+```
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "T9G64ZZGC4.Cherri.TPDPiWalletExample",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
+```
+Get teamID from apple developer membership
+<br>
+Get bundle identifier from xCode
+![](./bundle_identifier.png)
+
+
+### Setup TPDPiWallet
+Use your custom universal link to initialize TPDPiWallet object.
+```siwft
+let piWallet = TPDPiWallet.setup(withReturnUrl: "Your universal link")
+```
+
+### Get Prime
+Call getPrime function, via onSuccessCallback or onFailureCallbac to get prime or error message.
+
+
+```swift
+piWallet.onSuccessCallback { (prime) in
+    print(prime : \(prime!))
+}.onFailureCallback { (status, msg) in
+    print("status : \(status), msg : \(msg)")
+}.getPrime()
+```
+
+### Redirect to PiWallet App 
+
+Obtain payment_url from TapPay, call redirect url function to PiWallet App, get PiWallet result via callback.
+
+```swift
+piWallet.redirect(payment_url) { (result) in
+    print("status : \(result.status), rec_trade_id : \(result.recTradeId), order_number : \(result.orderNumber), bank_transaction_id : \(result.bankTransactionId)")
+}
+```
+
+### Handle universal link
+
+Use this method handle universal link come from TapPay and parse data. ( For version lower than iOS 13.0 )
+```swift
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    NSURL * url = userActivity.webpageURL;
+    BOOL piWalletHandled = [TPDPiWallet handlePiWalletUniversalLink:url];
+    if (piWalletHandled) {
+        return YES;
+    }
+    return NO;
+}
+
+```
+
+### Exception handle
+#### step1
+
+Implement addExceptionOberver function in AppDelegate didFinishLaunchingWithOptions to handle exception.
+
+```swift
+TPDPiWallet.addExceptionObserver(#selector(tappayPiWalletExceptionHandler(notofication:)))
+```
+
+#### step2
+
+In AppDelegate add tappayPiWalletExceptionHandler function, when exception happened receive notification.
+
+```swift
+
+func tappayPiWalletExceptionHandler(notofication: Notification) {
+
+let result : TPDPiWalletResult = TPDPiWallet.parseURL(notofication)
 
 print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTradeid : \(result.recTradeId) , bankTransactionId : \(result.bankTransactionId) ")
 

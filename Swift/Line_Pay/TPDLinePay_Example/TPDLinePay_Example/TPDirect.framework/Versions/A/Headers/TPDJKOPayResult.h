@@ -2,7 +2,7 @@
 //  TPDJKOPayResult.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.14.0
+//  TPDirect iOS SDK - v2.15.0
 //  Created by Cherri Kevin on 3/30/20.
 //  Copyright © 2020 tech.cherri. All rights reserved.
 //
