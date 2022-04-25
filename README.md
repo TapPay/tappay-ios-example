@@ -629,16 +629,16 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 #### step 1
 Go to xCode TARGET and Signing & Capabilities page
 
-![](./easywallet_step1.png)
+![](./atome_step1.png)
 
 #### step 2 
 click + button and choose Associated Domains
-![](./easywallet_step2.png)
+![](./step2.png)
 
 #### step 3
 In Associated Domains section click + button add domain
 
-![](./easywallet_step3.png)  
+![](./atome_step3.png)  
 
 #### step 4 
 Domain should be applink:{your domain without https://}
@@ -761,16 +761,16 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 #### step 1
 Go to xCode TARGET and Signing & Capabilities page
 
-![](./easywallet_step1.png)
+![](./pi_wallet_step1.png)
 
 #### step 2 
 click + button and choose Associated Domains
-![](./easywallet_step2.png)
+![](./step2.png)
 
 #### step 3
 In Associated Domains section click + button add domain
 
-![](./easywallet_step3.png)  
+![](./pi_wallet_step3.png)  
 
 #### step 4 
 Domain should be applink:{your domain without https://}

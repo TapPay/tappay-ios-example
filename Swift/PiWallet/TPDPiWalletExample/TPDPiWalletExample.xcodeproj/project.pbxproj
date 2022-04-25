@@ -28,6 +28,7 @@
 		F902AA792811613800ACB5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F902AA7F2811619500ACB5F3 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 		F902AA82281161A500ACB5F3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F95514AD2816904F00EE9850 /* TPDPiWalletExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TPDPiWalletExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		F902AA6A2811613400ACB5F3 /* TPDPiWalletExample */ = {
 			isa = PBXGroup;
 			children = (
+				F95514AD2816904F00EE9850 /* TPDPiWalletExample.entitlements */,
 				F902AA6B2811613400ACB5F3 /* AppDelegate.swift */,
 				F902AA6D2811613400ACB5F3 /* SceneDelegate.swift */,
 				F902AA6F2811613400ACB5F3 /* ViewController.swift */,
@@ -303,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TPDPiWalletExample/TPDPiWalletExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9G64ZZGC4;
@@ -336,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TPDPiWalletExample/TPDPiWalletExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9G64ZZGC4;
