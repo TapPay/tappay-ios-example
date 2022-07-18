@@ -3,6 +3,7 @@
 //
 //  Copyright © 2016年 Cherri Tech, Inc. All rights reserved.
 //
+//  SDK Version : V2.16.0
 
 
 #import <UIKit/UIKit.h>
@@ -37,3 +38,7 @@ FOUNDATION_EXPORT const unsigned char TPDirectVersionString[];
 #import <TPDirect/TPDCcv.h>
 #import <TPDirect/TPDAtome.h>
 #import <TPDirect/TPDAtomeResult.h>
+#import <TPDirect/TPDPiWallet.h>
+#import <TPDirect/TPDPiWalletResult.h>
+#import <TPDirect/TPDPlusPay.h>
+#import <TPDirect/TPDPaymentResultBase.h>

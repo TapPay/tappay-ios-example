@@ -1,7 +1,6 @@
 //
 //  TPDSetup.h
 //
-//  TPDirect iOS SDK - v2.15.0
 //  Copyright © 2016年 Cherri Tech, Inc. All rights reserved.
 //
 //  Apple Pay Document : https://docs.tappaysdk.com/apple-pay

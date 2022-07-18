@@ -2,7 +2,6 @@
 //  TPDEasyWalletResult.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.16.0 beta
 //  Created by Cherri Kevin on 11/6/20.
 //  Copyright © 2020 tech.cherri. All rights reserved.
 //

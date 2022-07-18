@@ -2,7 +2,7 @@
 //  TPDPaymentBase.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.16.0 beta
+//  TPDirect iOS SDK
 //  Created by Cherri_TapPay_LukeCho on 2022/4/15.
 //  Copyright © 2022 tech.cherri. All rights reserved.
 //

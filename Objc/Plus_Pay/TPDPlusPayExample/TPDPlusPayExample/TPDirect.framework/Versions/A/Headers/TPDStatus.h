@@ -2,7 +2,6 @@
 //  TPDStatus.h
 //  TPDirect
 //
-//  TPDirect iOS SDK - v2.16.0 beta
 //  Created by liaozonglun on 07/07/2017.
 //  Copyright © 2017 tech.cherri. All rights reserved.
 //

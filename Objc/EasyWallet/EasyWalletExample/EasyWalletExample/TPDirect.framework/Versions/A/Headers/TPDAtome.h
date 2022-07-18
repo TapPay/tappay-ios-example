@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Setup TPDAtome Instance
 /// @param returnUrl NSString, returnUrl
-+ (instancetype _Nonnull)setupWithReturUrl: (NSString * _Nonnull)returnUrl;
++ (instancetype _Nonnull)setupWithReturnUrl: (NSString * _Nonnull)returnUrl;
 
 /// This Method Will Get Prime, And Return Results Via onSuccessCallback and onFailureCallback.
 - (void)getPrime;
