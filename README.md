@@ -953,7 +953,7 @@ plusPay.onSuccessCallback { (prime) in
 }.getPrime()
 ```
 
-### Redirect to PiWallet App 
+### Redirect to Family Mart App 
 
 Obtain payment_url from TapPay, call redirect url function to Family Mart App, get Plus Pay result via callback.
 
