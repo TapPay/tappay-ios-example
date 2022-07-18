@@ -935,7 +935,7 @@ Get bundle identifier from xCode
 ![](./bundle_identifier.png)
 
 
-### Setup TPDPiWallet
+### Setup TPDPlusPay
 Use your custom universal link to initialize TPDPlusPay object.
 ```siwft
 let plusPay = TPDPlusPay.setup(withReturnUrl: "Your universal link")
