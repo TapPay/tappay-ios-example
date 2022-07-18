@@ -893,7 +893,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 #### step 1
 Go to xCode TARGET and Signing & Capabilities page
 
-![](./pi_wallet_step1.png)
+![](./plus_pay_step1.png)
 
 #### step 2 
 click + button and choose Associated Domains
@@ -902,7 +902,7 @@ click + button and choose Associated Domains
 #### step 3
 In Associated Domains section click + button add domain
 
-![](./pi_wallet_step3.png)  
+![](./plus_pay_step3.png)  
 
 #### step 4 
 Domain should be applink:{your domain without https://}
@@ -932,10 +932,10 @@ appID format : <TeamID>.<bundle identifier>
 Get teamID from apple developer membership
 <br>
 Get bundle identifier from xCode
-![](./bundle_identifier.png)
+![](./plus_pay_step1.png)
 
 
-### Setup TPDPiWallet
+### Setup TPDPlusPay
 Use your custom universal link to initialize TPDPlusPay object.
 ```siwft
 let plusPay = TPDPlusPay.setup(withReturnUrl: "Your universal link")
@@ -953,7 +953,7 @@ plusPay.onSuccessCallback { (prime) in
 }.getPrime()
 ```
 
-### Redirect to PiWallet App 
+### Redirect to Family Mart App 
 
 Obtain payment_url from TapPay, call redirect url function to Family Mart App, get Plus Pay result via callback.
 
