@@ -932,7 +932,7 @@ appID format : <TeamID>.<bundle identifier>
 Get teamID from apple developer membership
 <br>
 Get bundle identifier from xCode
-![](./bundle_identifier.png)
+![](./plus_pay_step1.png)
 
 
 ### Setup TPDPlusPay
