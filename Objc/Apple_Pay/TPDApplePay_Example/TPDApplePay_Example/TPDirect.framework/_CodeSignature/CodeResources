@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/TPDPaymentBase.h</key>
 		<data>
-		c95T/Al1lgnY90jiVn9kdBehikE=
+		I9x93VmYh6TcswkYGStkht9nc3o=
 		</data>
 		<key>Headers/TPDPaymentItem.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/TPDPaymentResultBase.h</key>
 		<data>
-		56CAKcjdf0iY7b0FYv2eZHHQkoo=
+		om5DBtHVXjxuAoTmK/6oauZLc5s=
 		</data>
 		<key>Headers/TPDPiWallet.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/TPDPlusPay.h</key>
 		<data>
-		+F4jdnBAabyKCIcgFXCfI38HADA=
+		96mHZ3G27ZOCchEO3l58C5bXBP8=
 		</data>
 		<key>Headers/TPDSetup.h</key>
 		<data>
@@ -329,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c95T/Al1lgnY90jiVn9kdBehikE=
+			I9x93VmYh6TcswkYGStkht9nc3o=
 			</data>
 			<key>hash2</key>
 			<data>
-			QfNw0V3zE/gJr7sPiSklA/1rZZOkBo3rMyyE0ta7HVo=
+			e43VPLc4zS5kf9RPUnop3cRitvIO0F60fG5EKkEokAY=
 			</data>
 		</dict>
 		<key>Headers/TPDPaymentItem.h</key>
@@ -351,11 +351,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			56CAKcjdf0iY7b0FYv2eZHHQkoo=
+			om5DBtHVXjxuAoTmK/6oauZLc5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			YAtDF33JjdpluAvkpboXXvwsSLOlnMpYeFew98jjtIs=
+			PukAVRe1KhZl1zmEwu+0JaL+Gb5F01OrDIC+30aNedE=
 			</data>
 		</dict>
 		<key>Headers/TPDPiWallet.h</key>
@@ -384,11 +384,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+F4jdnBAabyKCIcgFXCfI38HADA=
+			96mHZ3G27ZOCchEO3l58C5bXBP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2V/dG97leEN1WLpelq9dqalY3OIPZizbs74IPBy7Dts=
+			0EtXK176LXAXDFLz8LWeU5bQ5/0QrwM5oR60hIBfCA0=
 			</data>
 		</dict>
 		<key>Headers/TPDSetup.h</key>

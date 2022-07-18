@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return TPDPlusPay Instance.
  */
 
-+ (instancetype)plusPayWithReturnUrl:(NSString *)returnUrl;
++ (instancetype)setupWithReturnUrl:(NSString *)returnUrl;
 
 /// This Method Will Get Prime, And Return Results Via onSuccessCallback and onFailureCallback.
 - (void)getPrime;
