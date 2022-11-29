@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/TPDSetup.h</key>
 		<data>
-		fPpSbMIAGSv6VZugFfxuYwOtj1s=
+		+ZFhVN9LPC/HbPN3vR8CgatfzTs=
 		</data>
 		<key>Headers/TPDStatus.h</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tu24+GxrEfyhwiRr3X+2UTroFFE=
+		Q8k5gtV3rElY+uCb+BNZC/8lYa0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -395,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fPpSbMIAGSv6VZugFfxuYwOtj1s=
+			+ZFhVN9LPC/HbPN3vR8CgatfzTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			9qRA/9PD+Z7Yi5TzUcTHy+i7EirCMVLTvdfkc1UQJ4o=
+			7Dl5837+3PDvI2ByPqBplYitEXGKw5R9dus3hdSSKUE=
 			</data>
 		</dict>
 		<key>Headers/TPDStatus.h</key>
