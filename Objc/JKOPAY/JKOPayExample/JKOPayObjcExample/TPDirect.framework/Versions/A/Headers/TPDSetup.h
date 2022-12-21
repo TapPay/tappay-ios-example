@@ -37,6 +37,9 @@ typedef NS_ENUM(NSInteger, TPDServerType) {
                            withAppKey:(NSString *_Nonnull)appKey
                        withServerType:(TPDServerType)serverType;
 
+
++ (instancetype _Nonnull)setWithAppId:(int)appId withAppKey:(NSString *_Nonnull)appKey withRBAAppId:(NSString * _Nullable)RBAAppId withRBAAppKey:(NSString * _Nullable)RBAAppKey withServerType:(TPDServerType)serverType;
+
 #pragma mark - Function
 /**
  @return TPDSetup Instance.
