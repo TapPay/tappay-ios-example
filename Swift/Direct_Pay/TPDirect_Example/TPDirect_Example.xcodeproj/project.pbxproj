@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E09124E295C513C006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09124D295C513C006A0CAB /* TPDirect.xcframework */; };
 		7E5BF81B1FAB1E39005E47BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5BF81A1FAB1E39005E47BD /* AppDelegate.swift */; };
 		7E5BF81D1FAB1E39005E47BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5BF81C1FAB1E39005E47BD /* ViewController.swift */; };
 		7E5BF8201FAB1E39005E47BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF81E1FAB1E39005E47BD /* Main.storyboard */; };
@@ -27,10 +28,10 @@
 		7E5BF84B1FAB1E8E005E47BD /* card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF83B1FAB1E8E005E47BD /* card_visa.png */; };
 		7E5BF84C1FAB1E8E005E47BD /* card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF83C1FAB1E8E005E47BD /* card_visa@2x.png */; };
 		7E5BF84D1FAB1E8E005E47BD /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF83D1FAB1E8E005E47BD /* card_visa@3x.png */; };
-		F97740AD2774805600DEA12A /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6442476A1AD002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E09124D295C513C006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDirect_Example/TPDirect.xcframework; sourceTree = "<group>"; };
 		7E5BF8171FAB1E39005E47BD /* TPDirect_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDirect_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5BF81A1FAB1E39005E47BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E5BF81C1FAB1E39005E47BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		7E5BF83C1FAB1E8E005E47BD /* card_visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@2x.png"; sourceTree = "<group>"; };
 		7E5BF83D1FAB1E8E005E47BD /* card_visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@3x.png"; sourceTree = "<group>"; };
 		7E5BF84E1FAB1EF6005E47BD /* TPDirect_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPDirect_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		F932D6442476A1AD002136A0 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F97740AD2774805600DEA12A /* TPDirect.framework in Frameworks */,
+				0E09124E295C513C006A0CAB /* TPDirect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,6 @@
 				7E5BF8231FAB1E39005E47BD /* LaunchScreen.storyboard */,
 				7E5BF8261FAB1E39005E47BD /* Info.plist */,
 				7E5BF84E1FAB1EF6005E47BD /* TPDirect_Example-Bridging-Header.h */,
-				F932D6442476A1AD002136A0 /* TPDirect.framework */,
 			);
 			path = TPDirect_Example;
 			sourceTree = "<group>";
@@ -135,6 +134,7 @@
 		F97740AC2774805600DEA12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E09124D295C513C006A0CAB /* TPDirect.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -356,7 +356,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -374,7 +375,10 @@
 				);
 				INFOPLIST_FILE = TPDirect_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TPDirect_Example/TPDirect_Example-Bridging-Header.h";
@@ -397,7 +401,10 @@
 				);
 				INFOPLIST_FILE = TPDirect_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TPDirect_Example/TPDirect_Example-Bridging-Header.h";

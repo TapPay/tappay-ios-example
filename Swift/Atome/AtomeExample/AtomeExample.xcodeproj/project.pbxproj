@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E09124C295C510C006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09124B295C510C006A0CAB /* TPDirect.xcframework */; };
 		F9FEEF0E27EC682A00DDCBF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEF0D27EC682A00DDCBF4 /* AppDelegate.swift */; };
 		F9FEEF1027EC682A00DDCBF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEF0F27EC682A00DDCBF4 /* SceneDelegate.swift */; };
 		F9FEEF1227EC682A00DDCBF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEF1127EC682A00DDCBF4 /* ViewController.swift */; };
 		F9FEEF1527EC682A00DDCBF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FEEF1327EC682A00DDCBF4 /* Main.storyboard */; };
 		F9FEEF1727EC682F00DDCBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FEEF1627EC682F00DDCBF4 /* Assets.xcassets */; };
 		F9FEEF1A27EC682F00DDCBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FEEF1827EC682F00DDCBF4 /* LaunchScreen.storyboard */; };
-		F9FEEF2227EC686F00DDCBF4 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEEF2127EC686F00DDCBF4 /* TPDirect.framework */; };
 		F9FEEF2627EC699D00DDCBF4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEEF2527EC699D00DDCBF4 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E09124B295C510C006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = AtomeExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		F95514AC2816901A00EE9850 /* AtomeExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AtomeExample.entitlements; sourceTree = "<group>"; };
 		F9FEEF0A27EC682A00DDCBF4 /* AtomeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FEEF0D27EC682A00DDCBF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		F9FEEF1627EC682F00DDCBF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9FEEF1927EC682F00DDCBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9FEEF1B27EC682F00DDCBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9FEEF2127EC686F00DDCBF4 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 		F9FEEF2327EC689200DDCBF4 /* TPDirect_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TPDirect_Example-Bridging-Header.h"; path = "../../../Atome/Atome/TPDirect_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9FEEF2527EC699D00DDCBF4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -37,8 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E09124C295C510C006A0CAB /* TPDirect.xcframework in Frameworks */,
 				F9FEEF2627EC699D00DDCBF4 /* WebKit.framework in Frameworks */,
-				F9FEEF2227EC686F00DDCBF4 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,6 @@
 				F9FEEF1327EC682A00DDCBF4 /* Main.storyboard */,
 				F9FEEF1627EC682F00DDCBF4 /* Assets.xcassets */,
 				F9FEEF1827EC682F00DDCBF4 /* LaunchScreen.storyboard */,
-				F9FEEF2127EC686F00DDCBF4 /* TPDirect.framework */,
 				F9FEEF2327EC689200DDCBF4 /* TPDirect_Example-Bridging-Header.h */,
 				F9FEEF1B27EC682F00DDCBF4 /* Info.plist */,
 			);
@@ -82,6 +81,7 @@
 		F9FEEF2427EC699C00DDCBF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E09124B295C510C006A0CAB /* TPDirect.xcframework */,
 				F9FEEF2527EC699D00DDCBF4 /* WebKit.framework */,
 			);
 			name = Frameworks;

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E09123B295C4FF3006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09123A295C4FF3006A0CAB /* TPDirect.xcframework */; };
 		F9B0E71D264D03DE00C9B287 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E71C264D03DE00C9B287 /* AppDelegate.m */; };
 		F9B0E720264D03DE00C9B287 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E71F264D03DE00C9B287 /* SceneDelegate.m */; };
 		F9B0E723264D03DE00C9B287 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E722264D03DE00C9B287 /* ViewController.m */; };
@@ -14,10 +15,10 @@
 		F9B0E728264D03E000C9B287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B0E727264D03E000C9B287 /* Assets.xcassets */; };
 		F9B0E72B264D03E000C9B287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B0E729264D03E000C9B287 /* LaunchScreen.storyboard */; };
 		F9B0E72E264D03E000C9B287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B0E72D264D03E000C9B287 /* main.m */; };
-		F9B0E736264D040300C9B287 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B0E735264D040300C9B287 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E09123A295C4FF3006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = Direct_Pay_CCV_Form/TPDirect.xcframework; sourceTree = "<group>"; };
 		F9B0E718264D03DE00C9B287 /* Direct_Pay_CCV_Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Direct_Pay_CCV_Form.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B0E71B264D03DE00C9B287 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F9B0E71C264D03DE00C9B287 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		F9B0E72A264D03E000C9B287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9B0E72C264D03E000C9B287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B0E72D264D03E000C9B287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F9B0E735264D040300C9B287 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,18 +38,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9B0E736264D040300C9B287 /* TPDirect.framework in Frameworks */,
+				0E09123B295C4FF3006A0CAB /* TPDirect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E091239295C4FF3006A0CAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E09123A295C4FF3006A0CAB /* TPDirect.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9B0E70F264D03DE00C9B287 = {
 			isa = PBXGroup;
 			children = (
 				F9B0E71A264D03DE00C9B287 /* Direct_Pay_CCV_Form */,
 				F9B0E719264D03DE00C9B287 /* Products */,
+				0E091239295C4FF3006A0CAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +84,6 @@
 				F9B0E729264D03E000C9B287 /* LaunchScreen.storyboard */,
 				F9B0E72C264D03E000C9B287 /* Info.plist */,
 				F9B0E72D264D03E000C9B287 /* main.m */,
-				F9B0E735264D040300C9B287 /* TPDirect.framework */,
 			);
 			path = Direct_Pay_CCV_Form;
 			sourceTree = "<group>";

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E09123D295C5021006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09123C295C5021006A0CAB /* TPDirect.xcframework */; };
 		F938C8542563BBAF0063460C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8532563BBAF0063460C /* AppDelegate.m */; };
 		F938C8572563BBAF0063460C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8562563BBAF0063460C /* SceneDelegate.m */; };
 		F938C85A2563BBAF0063460C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8592563BBAF0063460C /* ViewController.m */; };
@@ -14,11 +15,11 @@
 		F938C85F2563BBB10063460C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F938C85E2563BBB10063460C /* Assets.xcassets */; };
 		F938C8622563BBB10063460C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F938C8602563BBB10063460C /* LaunchScreen.storyboard */; };
 		F938C8652563BBB10063460C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F938C8642563BBB10063460C /* main.m */; };
-		F938C86D2563BBED0063460C /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938C86C2563BBED0063460C /* TPDirect.framework */; };
 		F9A913DD256A9A83004154B4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A913DC256A9A83004154B4 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E09123C295C5021006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = EasyWalletExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		F938C84F2563BBAF0063460C /* EasyWalletExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWalletExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F938C8522563BBAF0063460C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F938C8532563BBAF0063460C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		F938C8612563BBB10063460C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F938C8632563BBB10063460C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F938C8642563BBB10063460C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F938C86C2563BBED0063460C /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 		F9A913DC256A9A83004154B4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -40,8 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E09123D295C5021006A0CAB /* TPDirect.xcframework in Frameworks */,
 				F9A913DD256A9A83004154B4 /* WebKit.framework in Frameworks */,
-				F938C86D2563BBED0063460C /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,6 @@
 				F938C8602563BBB10063460C /* LaunchScreen.storyboard */,
 				F938C8632563BBB10063460C /* Info.plist */,
 				F938C8642563BBB10063460C /* main.m */,
-				F938C86C2563BBED0063460C /* TPDirect.framework */,
 			);
 			path = EasyWalletExample;
 			sourceTree = "<group>";
@@ -87,6 +86,7 @@
 		F9A913DB256A9A82004154B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E09123C295C5021006A0CAB /* TPDirect.xcframework */,
 				F9A913DC256A9A83004154B4 /* WebKit.framework */,
 			);
 			name = Frameworks;
