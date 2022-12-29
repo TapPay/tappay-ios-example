@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E09125B295C5300006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09125A295C5300006A0CAB /* TPDirect.xcframework */; };
 		C5F798C5283B7019000E474A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F798C4283B7019000E474A /* AppDelegate.swift */; };
 		C5F798C7283B7019000E474A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F798C6283B7019000E474A /* SceneDelegate.swift */; };
 		C5F798C9283B7019000E474A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F798C8283B7019000E474A /* ViewController.swift */; };
 		C5F798CC283B7019000E474A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F798CA283B7019000E474A /* Main.storyboard */; };
 		C5F798CE283B701A000E474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F798CD283B701A000E474A /* Assets.xcassets */; };
 		C5F798D1283B701A000E474A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F798CF283B701A000E474A /* LaunchScreen.storyboard */; };
-		C5F798DA283B7084000E474A /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F798D9283B7084000E474A /* TPDirect.framework */; };
 		C5F798DC283B70DF000E474A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F798DB283B70DF000E474A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E09125A295C5300006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDPlusPayExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		C5F798C1283B7019000E474A /* TPDPlusPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDPlusPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F798C4283B7019000E474A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5F798C6283B7019000E474A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		C5F798CD283B701A000E474A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5F798D0283B701A000E474A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5F798D2283B701A000E474A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5F798D9283B7084000E474A /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TPDirect.framework; path = TPDPlusPayExample/TPDirect.framework; sourceTree = "<group>"; };
 		C5F798DB283B70DF000E474A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -35,8 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E09125B295C5300006A0CAB /* TPDirect.xcframework in Frameworks */,
 				C5F798DC283B70DF000E474A /* WebKit.framework in Frameworks */,
-				C5F798DA283B7084000E474A /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +77,8 @@
 		C5F798D8283B7084000E474A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E09125A295C5300006A0CAB /* TPDirect.xcframework */,
 				C5F798DB283B70DF000E474A /* WebKit.framework */,
-				C5F798D9283B7084000E474A /* TPDirect.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

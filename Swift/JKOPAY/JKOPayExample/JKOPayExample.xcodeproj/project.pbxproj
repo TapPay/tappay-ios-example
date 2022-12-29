@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E091255295C51B2006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091254295C51B2006A0CAB /* TPDirect.xcframework */; };
 		F9255B9C244462FC00030A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9255B9B244462FC00030A09 /* AppDelegate.swift */; };
 		F9255B9E244462FC00030A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9255B9D244462FC00030A09 /* SceneDelegate.swift */; };
 		F9255BA0244462FC00030A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9255B9F244462FC00030A09 /* ViewController.swift */; };
@@ -14,10 +15,10 @@
 		F9255BA5244462FD00030A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9255BA4244462FD00030A09 /* Assets.xcassets */; };
 		F9255BA8244462FD00030A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9255BA6244462FD00030A09 /* LaunchScreen.storyboard */; };
 		F9255BB82444652500030A09 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9255BB3244464ED00030A09 /* WebKit.framework */; };
-		F950D23C2474EEE800D731A3 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F950D23B2474EEE800D731A3 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E091254295C51B2006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = JKOPayExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		F9255B98244462FC00030A09 /* JKOPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9255B9B244462FC00030A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9255B9D244462FC00030A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		F9255BB1244463CC00030A09 /* JKOPayExample-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JKOPayExample-Bridging-header.h"; sourceTree = "<group>"; };
 		F9255BB3244464ED00030A09 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F9255BB92444654700030A09 /* JKOPayExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JKOPayExample.entitlements; sourceTree = "<group>"; };
-		F950D23B2474EEE800D731A3 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E091255295C51B2006A0CAB /* TPDirect.xcframework in Frameworks */,
 				F9255BB82444652500030A09 /* WebKit.framework in Frameworks */,
-				F950D23C2474EEE800D731A3 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,6 @@
 				F9255BA4244462FD00030A09 /* Assets.xcassets */,
 				F9255BA6244462FD00030A09 /* LaunchScreen.storyboard */,
 				F9255BA9244462FD00030A09 /* Info.plist */,
-				F950D23B2474EEE800D731A3 /* TPDirect.framework */,
 			);
 			path = JKOPayExample;
 			sourceTree = "<group>";
@@ -82,6 +81,7 @@
 		F9255BB2244464ED00030A09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E091254295C51B2006A0CAB /* TPDirect.xcframework */,
 				F9255BB3244464ED00030A09 /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -319,7 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Cherri.JKOPayExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cherrikevin/Cherri/JKOPayExample/JKOPayExample/JKOPayExample-Bridging-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JKOPayExample/JKOPayExample-Bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -344,7 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Cherri.JKOPayExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cherrikevin/Cherri/JKOPayExample/JKOPayExample/JKOPayExample-Bridging-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JKOPayExample/JKOPayExample-Bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

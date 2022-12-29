@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E091245295C50B7006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091244295C50B7006A0CAB /* TPDirect.xcframework */; };
 		C5DA4056281A93DA0003267C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DA4055281A93DA0003267C /* AppDelegate.m */; };
 		C5DA4059281A93DA0003267C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DA4058281A93DA0003267C /* SceneDelegate.m */; };
 		C5DA405C281A93DA0003267C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DA405B281A93DA0003267C /* ViewController.m */; };
@@ -14,11 +15,11 @@
 		C5DA4061281A93DA0003267C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DA4060281A93DA0003267C /* Assets.xcassets */; };
 		C5DA4064281A93DA0003267C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DA4062281A93DA0003267C /* LaunchScreen.storyboard */; };
 		C5DA4067281A93DA0003267C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DA4066281A93DA0003267C /* main.m */; };
-		C5DA406F281A944F0003267C /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DA406E281A944F0003267C /* TPDirect.framework */; };
 		C5DA4071281A94550003267C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DA4070281A94550003267C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E091244295C50B7006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDPlusPayExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		C5DA4051281A93DA0003267C /* TPDPlusPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDPlusPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DA4054281A93DA0003267C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5DA4055281A93DA0003267C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		C5DA4063281A93DA0003267C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5DA4065281A93DA0003267C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5DA4066281A93DA0003267C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C5DA406E281A944F0003267C /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 		C5DA4070281A94550003267C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -40,8 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E091245295C50B7006A0CAB /* TPDirect.xcframework in Frameworks */,
 				C5DA4071281A94550003267C /* WebKit.framework in Frameworks */,
-				C5DA406F281A944F0003267C /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,6 @@
 				C5DA4062281A93DA0003267C /* LaunchScreen.storyboard */,
 				C5DA4065281A93DA0003267C /* Info.plist */,
 				C5DA4066281A93DA0003267C /* main.m */,
-				C5DA406E281A944F0003267C /* TPDirect.framework */,
 			);
 			path = TPDPlusPayExample;
 			sourceTree = "<group>";
@@ -87,6 +86,7 @@
 		C5DA406D281A944F0003267C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E091244295C50B7006A0CAB /* TPDirect.xcframework */,
 				C5DA4070281A94550003267C /* WebKit.framework */,
 			);
 			name = Frameworks;

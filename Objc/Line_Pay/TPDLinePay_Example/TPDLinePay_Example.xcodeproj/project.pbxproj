@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E091241295C506E006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091240295C506E006A0CAB /* TPDirect.xcframework */; };
 		7E08A4581FFB3FBD00A12B8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E08A4571FFB3FBD00A12B8D /* AppDelegate.m */; };
 		7E08A45B1FFB3FBD00A12B8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E08A45A1FFB3FBD00A12B8D /* ViewController.m */; };
 		7E08A45E1FFB3FBD00A12B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E08A45C1FFB3FBD00A12B8D /* Main.storyboard */; };
@@ -14,10 +15,10 @@
 		7E08A4631FFB3FBD00A12B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E08A4611FFB3FBD00A12B8D /* LaunchScreen.storyboard */; };
 		7E08A4661FFB3FBD00A12B8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E08A4651FFB3FBD00A12B8D /* main.m */; };
 		7E08A4741FFB53BD00A12B8D /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E08A4731FFB53BD00A12B8D /* SafariServices.framework */; };
-		F932D64D2476A289002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D64C2476A289002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E091240295C506E006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDLinePay_Example/TPDirect.xcframework; sourceTree = "<group>"; };
 		7E08A4531FFB3FBD00A12B8D /* TPDLinePay_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDLinePay_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E08A4561FFB3FBD00A12B8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E08A4571FFB3FBD00A12B8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		7E08A4641FFB3FBD00A12B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E08A4651FFB3FBD00A12B8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E08A4731FFB53BD00A12B8D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		F932D64C2476A289002136A0 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E091241295C506E006A0CAB /* TPDirect.xcframework in Frameworks */,
 				7E08A4741FFB53BD00A12B8D /* SafariServices.framework in Frameworks */,
-				F932D64D2476A289002136A0 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,6 @@
 				7E08A4611FFB3FBD00A12B8D /* LaunchScreen.storyboard */,
 				7E08A4641FFB3FBD00A12B8D /* Info.plist */,
 				7E08A4651FFB3FBD00A12B8D /* main.m */,
-				F932D64C2476A289002136A0 /* TPDirect.framework */,
 			);
 			path = TPDLinePay_Example;
 			sourceTree = "<group>";
@@ -82,6 +81,7 @@
 		7E08A4721FFB53BD00A12B8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E091240295C506E006A0CAB /* TPDirect.xcframework */,
 				7E08A4731FFB53BD00A12B8D /* SafariServices.framework */,
 			);
 			name = Frameworks;
@@ -302,7 +302,10 @@
 				);
 				INFOPLIST_FILE = TPDLinePay_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Cherri.TPDLinePay-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +324,10 @@
 				);
 				INFOPLIST_FILE = TPDLinePay_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Cherri.TPDLinePay-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

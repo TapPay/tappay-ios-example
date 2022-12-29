@@ -3,21 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E091253295C5186006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091252295C5186006A0CAB /* TPDirect.xcframework */; };
 		F938C8232563B63B0063460C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938C8222563B63B0063460C /* AppDelegate.swift */; };
 		F938C8252563B63B0063460C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938C8242563B63B0063460C /* SceneDelegate.swift */; };
 		F938C8272563B63B0063460C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938C8262563B63B0063460C /* ViewController.swift */; };
 		F938C82A2563B63B0063460C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F938C8282563B63B0063460C /* Main.storyboard */; };
 		F938C82C2563B63C0063460C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F938C82B2563B63C0063460C /* Assets.xcassets */; };
 		F938C82F2563B63C0063460C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F938C82D2563B63C0063460C /* LaunchScreen.storyboard */; };
-		F938C83E2563BA910063460C /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938C8392563B8040063460C /* TPDirect.framework */; };
 		F938C8442563BAA40063460C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938C8432563BAA40063460C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E091252295C5186006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = EasyWalletExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		F938C81F2563B63B0063460C /* EasyWalletExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWalletExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F938C8222563B63B0063460C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F938C8242563B63B0063460C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		F938C82B2563B63C0063460C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F938C82E2563B63C0063460C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F938C8302563B63C0063460C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F938C8392563B8040063460C /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 		F938C83C2563B86F0063460C /* EasyWalletExample_Bridging_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyWalletExample_Bridging_header.h; sourceTree = "<group>"; };
 		F938C8432563BAA40063460C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F9A913C62566F265004154B4 /* EasyWalletExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyWalletExample.entitlements; sourceTree = "<group>"; };
@@ -37,8 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E091253295C5186006A0CAB /* TPDirect.xcframework in Frameworks */,
 				F938C8442563BAA40063460C /* WebKit.framework in Frameworks */,
-				F938C83E2563BA910063460C /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,6 @@
 				F938C82B2563B63C0063460C /* Assets.xcassets */,
 				F938C82D2563B63C0063460C /* LaunchScreen.storyboard */,
 				F938C8302563B63C0063460C /* Info.plist */,
-				F938C8392563B8040063460C /* TPDirect.framework */,
 				F938C83C2563B86F0063460C /* EasyWalletExample_Bridging_header.h */,
 			);
 			path = EasyWalletExample;
@@ -82,6 +81,7 @@
 		F938C8422563BAA40063460C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E091252295C5186006A0CAB /* TPDirect.xcframework */,
 				F938C8432563BAA40063460C /* WebKit.framework */,
 			);
 			name = Frameworks;

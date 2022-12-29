@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E09123F295C504A006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09123E295C504A006A0CAB /* TPDirect.xcframework */; };
 		F9255BC9244564C500030A09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9255BC8244564C500030A09 /* AppDelegate.m */; };
 		F9255BCC244564C500030A09 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9255BCB244564C500030A09 /* SceneDelegate.m */; };
 		F9255BCF244564C500030A09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9255BCE244564C500030A09 /* ViewController.m */; };
@@ -15,10 +16,10 @@
 		F9255BD7244564C700030A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9255BD5244564C700030A09 /* LaunchScreen.storyboard */; };
 		F9255BDA244564C700030A09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9255BD9244564C700030A09 /* main.m */; };
 		F9255C55244590F400030A09 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9255C53244590F200030A09 /* WebKit.framework */; };
-		F932D64F2476A2E5002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D64E2476A2E4002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E09123E295C504A006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = JKOPayObjcExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		F9255BC4244564C500030A09 /* JKOPayObjcExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOPayObjcExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9255BC7244564C500030A09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F9255BC8244564C500030A09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		F9255BD8244564C700030A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9255BD9244564C700030A09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9255C53244590F200030A09 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		F932D64E2476A2E4002136A0 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E09123F295C504A006A0CAB /* TPDirect.xcframework in Frameworks */,
 				F9255C55244590F400030A09 /* WebKit.framework in Frameworks */,
-				F932D64F2476A2E5002136A0 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,6 @@
 				F9255BD5244564C700030A09 /* LaunchScreen.storyboard */,
 				F9255BD8244564C700030A09 /* Info.plist */,
 				F9255BD9244564C700030A09 /* main.m */,
-				F932D64E2476A2E4002136A0 /* TPDirect.framework */,
 			);
 			path = JKOPayObjcExample;
 			sourceTree = "<group>";
@@ -87,6 +86,7 @@
 		F9255C52244590F200030A09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E09123E295C504A006A0CAB /* TPDirect.xcframework */,
 				F9255C53244590F200030A09 /* WebKit.framework */,
 			);
 			name = Frameworks;

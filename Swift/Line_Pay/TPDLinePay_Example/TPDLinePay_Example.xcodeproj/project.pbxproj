@@ -3,20 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E091257295C51F9006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091256295C51F9006A0CAB /* TPDirect.xcframework */; };
 		7E4633B71FF6427800B5297F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4633B61FF6427800B5297F /* SafariServices.framework */; };
 		7E8EEEB61FF60778004C0542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8EEEB51FF60778004C0542 /* AppDelegate.swift */; };
 		7E8EEEB81FF60778004C0542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8EEEB71FF60778004C0542 /* ViewController.swift */; };
 		7E8EEEBB1FF60778004C0542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8EEEB91FF60778004C0542 /* Main.storyboard */; };
 		7E8EEEBD1FF60778004C0542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8EEEBC1FF60778004C0542 /* Assets.xcassets */; };
 		7E8EEEC01FF60778004C0542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8EEEBE1FF60778004C0542 /* LaunchScreen.storyboard */; };
-		F932D6472476A1FA002136A0 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F932D6462476A1FA002136A0 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E091256295C51F9006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDLinePay_Example/TPDirect.xcframework; sourceTree = "<group>"; };
 		7E4633B61FF6427800B5297F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		7E8EEEB21FF60778004C0542 /* TPDLinePay_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDLinePay_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8EEEB51FF60778004C0542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		7E8EEEBF1FF60778004C0542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E8EEEC11FF60778004C0542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8EEEC91FF6236D004C0542 /* TPDLinePay_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPDLinePay_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		F932D6462476A1FA002136A0 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,8 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E091257295C51F9006A0CAB /* TPDirect.xcframework in Frameworks */,
 				7E4633B71FF6427800B5297F /* SafariServices.framework in Frameworks */,
-				F932D6472476A1FA002136A0 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +45,7 @@
 		7E4633B51FF6427800B5297F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E091256295C51F9006A0CAB /* TPDirect.xcframework */,
 				7E4633B61FF6427800B5297F /* SafariServices.framework */,
 			);
 			name = Frameworks;
@@ -77,7 +78,6 @@
 				7E8EEEBE1FF60778004C0542 /* LaunchScreen.storyboard */,
 				7E8EEEC11FF60778004C0542 /* Info.plist */,
 				7E8EEEC91FF6236D004C0542 /* TPDLinePay_Example-Bridging-Header.h */,
-				F932D6462476A1FA002136A0 /* TPDirect.framework */,
 			);
 			path = TPDLinePay_Example;
 			sourceTree = "<group>";
@@ -284,7 +284,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -302,7 +303,10 @@
 				);
 				INFOPLIST_FILE = TPDLinePay_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TPDLinePay_Example/TPDLinePay_Example-Bridging-Header.h";
@@ -325,7 +329,10 @@
 				);
 				INFOPLIST_FILE = TPDLinePay_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TPDLinePay_Example/TPDLinePay_Example-Bridging-Header.h";

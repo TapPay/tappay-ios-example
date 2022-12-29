@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func startAtome(_ sender: Any) {
-        let atome = TPDAtome.setup(withReturUrl: "https://google.com.tw")
+        let atome = TPDAtome.setup(withReturnUrl: "https://google.com.tw")
         
         atome.onSuccessCallback { (prime) in
             // send prime to your server and call pay by prime API

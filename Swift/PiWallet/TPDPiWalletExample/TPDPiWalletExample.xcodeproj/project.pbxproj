@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E091259295C52D9006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091258295C52D9006A0CAB /* TPDirect.xcframework */; };
 		F902AA6C2811613400ACB5F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902AA6B2811613400ACB5F3 /* AppDelegate.swift */; };
 		F902AA6E2811613400ACB5F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902AA6D2811613400ACB5F3 /* SceneDelegate.swift */; };
 		F902AA702811613400ACB5F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902AA6F2811613400ACB5F3 /* ViewController.swift */; };
 		F902AA732811613400ACB5F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F902AA712811613400ACB5F3 /* Main.storyboard */; };
 		F902AA752811613800ACB5F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F902AA742811613800ACB5F3 /* Assets.xcassets */; };
 		F902AA782811613800ACB5F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F902AA762811613800ACB5F3 /* LaunchScreen.storyboard */; };
-		F902AA802811619500ACB5F3 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F902AA7F2811619500ACB5F3 /* TPDirect.framework */; };
 		F902AA83281161A500ACB5F3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F902AA82281161A500ACB5F3 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E091258295C52D9006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDPiWalletExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		F902AA682811613400ACB5F3 /* TPDPiWalletExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDPiWalletExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F902AA6B2811613400ACB5F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F902AA6D2811613400ACB5F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		F902AA742811613800ACB5F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F902AA772811613800ACB5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F902AA792811613800ACB5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F902AA7F2811619500ACB5F3 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 		F902AA82281161A500ACB5F3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F95514AD2816904F00EE9850 /* TPDPiWalletExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TPDPiWalletExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,8 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E091259295C52D9006A0CAB /* TPDirect.xcframework in Frameworks */,
 				F902AA83281161A500ACB5F3 /* WebKit.framework in Frameworks */,
-				F902AA802811619500ACB5F3 /* TPDirect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,6 @@
 				F902AA742811613800ACB5F3 /* Assets.xcassets */,
 				F902AA762811613800ACB5F3 /* LaunchScreen.storyboard */,
 				F902AA792811613800ACB5F3 /* Info.plist */,
-				F902AA7F2811619500ACB5F3 /* TPDirect.framework */,
 			);
 			path = TPDPiWalletExample;
 			sourceTree = "<group>";
@@ -80,6 +79,7 @@
 		F902AA81281161A500ACB5F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E091258295C52D9006A0CAB /* TPDirect.xcframework */,
 				F902AA82281161A500ACB5F3 /* WebKit.framework */,
 			);
 			name = Frameworks;

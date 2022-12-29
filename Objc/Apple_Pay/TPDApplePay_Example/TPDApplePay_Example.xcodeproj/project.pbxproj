@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E091248295C50DA006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091247295C50DA006A0CAB /* TPDirect.xcframework */; };
 		7E4E85921FAC4B3D00BD1288 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E85911FAC4B3D00BD1288 /* AppDelegate.m */; };
 		7E4E85951FAC4B3D00BD1288 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E85941FAC4B3D00BD1288 /* ViewController.m */; };
 		7E4E85981FAC4B3D00BD1288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85961FAC4B3D00BD1288 /* Main.storyboard */; };
@@ -28,10 +29,10 @@
 		7E4E85C51FAC4B7C00BD1288 /* card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B51FAC4B7B00BD1288 /* card_visa.png */; };
 		7E4E85C61FAC4B7C00BD1288 /* card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B61FAC4B7B00BD1288 /* card_visa@2x.png */; };
 		7E4E85C71FAC4B7C00BD1288 /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85B71FAC4B7B00BD1288 /* card_visa@3x.png */; };
-		F9A913D5256A8B4C004154B4 /* TPDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A913D4256A8B4C004154B4 /* TPDirect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E091247295C50DA006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDApplePay_Example/TPDirect.xcframework; sourceTree = "<group>"; };
 		7E4E858D1FAC4B3D00BD1288 /* TPDApplePay_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDApplePay_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4E85901FAC4B3D00BD1288 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E4E85911FAC4B3D00BD1288 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		7E4E85B61FAC4B7B00BD1288 /* card_visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@2x.png"; sourceTree = "<group>"; };
 		7E4E85B71FAC4B7B00BD1288 /* card_visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card_visa@3x.png"; sourceTree = "<group>"; };
 		7EC7D6061FB9AD04002A651B /* TPDApplePay_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TPDApplePay_Example.entitlements; sourceTree = "<group>"; };
-		F9A913D4256A8B4C004154B4 /* TPDirect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPDirect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,18 +66,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A913D5256A8B4C004154B4 /* TPDirect.framework in Frameworks */,
+				0E091248295C50DA006A0CAB /* TPDirect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E091246295C50D9006A0CAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E091247295C50DA006A0CAB /* TPDirect.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7E4E85841FAC4B3D00BD1288 = {
 			isa = PBXGroup;
 			children = (
 				7E4E858F1FAC4B3D00BD1288 /* TPDApplePay_Example */,
 				7E4E858E1FAC4B3D00BD1288 /* Products */,
+				0E091246295C50D9006A0CAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +111,6 @@
 				7E4E859B1FAC4B3D00BD1288 /* LaunchScreen.storyboard */,
 				7E4E859E1FAC4B3D00BD1288 /* Info.plist */,
 				7E4E859F1FAC4B3D00BD1288 /* main.m */,
-				F9A913D4256A8B4C004154B4 /* TPDirect.framework */,
 				7E4E85A71FAC4B7B00BD1288 /* TPDirectResource */,
 			);
 			path = TPDApplePay_Example;
@@ -374,7 +382,10 @@
 				);
 				INFOPLIST_FILE = TPDApplePay_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,7 +405,10 @@
 				);
 				INFOPLIST_FILE = TPDApplePay_Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.cherri.TPDirect-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
