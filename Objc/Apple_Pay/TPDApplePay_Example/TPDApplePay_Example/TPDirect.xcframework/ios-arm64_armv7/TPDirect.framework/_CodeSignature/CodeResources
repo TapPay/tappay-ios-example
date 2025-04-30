@@ -100,6 +100,14 @@
 		<data>
 		96mHZ3G27ZOCchEO3l58C5bXBP8=
 		</data>
+		<key>Headers/TPDPxPayPlus.h</key>
+		<data>
+		Y8x5k0LQC4MNGOEVXMoPy/X5PbI=
+		</data>
+		<key>Headers/TPDPxPayPlusResult.h</key>
+		<data>
+		BpBVn35QqbOwv6/Lh+M8VEvl7T4=
+		</data>
 		<key>Headers/TPDSetup.h</key>
 		<data>
 		+ZFhVN9LPC/HbPN3vR8CgatfzTs=
@@ -114,7 +122,7 @@
 		</data>
 		<key>Headers/TPDirect.h</key>
 		<data>
-		TE50QmBhRT7T9sBqpaH481zFFos=
+		G3vUnj9IPsINuDBuVqrB1r+R9L0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -391,6 +399,28 @@
 			0EtXK176LXAXDFLz8LWeU5bQ5/0QrwM5oR60hIBfCA0=
 			</data>
 		</dict>
+		<key>Headers/TPDPxPayPlus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y8x5k0LQC4MNGOEVXMoPy/X5PbI=
+			</data>
+			<key>hash2</key>
+			<data>
+			5pw6do9oDFXqRPQkJNLyW6ETTmPEkO0o1JDn8Saohvk=
+			</data>
+		</dict>
+		<key>Headers/TPDPxPayPlusResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BpBVn35QqbOwv6/Lh+M8VEvl7T4=
+			</data>
+			<key>hash2</key>
+			<data>
+			nOplaJIz3tFtyojtpgjljniKpv46Jo4Irv3vPMHgOd8=
+			</data>
+		</dict>
 		<key>Headers/TPDSetup.h</key>
 		<dict>
 			<key>hash</key>
@@ -428,11 +458,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TE50QmBhRT7T9sBqpaH481zFFos=
+			G3vUnj9IPsINuDBuVqrB1r+R9L0=
 			</data>
 			<key>hash2</key>
 			<data>
-			DYvVRzoHZCGvkzBjZfMXDLZu0OgnZbl8OSXNBU9sU2w=
+			rwHhzTqLxfvEVJw6oPcC/6S/Hf84IQ+u9jUpdhyYhWc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
