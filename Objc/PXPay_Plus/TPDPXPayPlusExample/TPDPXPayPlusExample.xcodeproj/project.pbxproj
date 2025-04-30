@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E5FB55F2DB6196900F97B64 /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5FB55E2DB6196900F97B64 /* TPDirect.xcframework */; };
+		6E44186E2DC20CC3009F6AC2 /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E44186D2DC20CC3009F6AC2 /* TPDirect.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E44186D2DC20CC3009F6AC2 /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = ../../../Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/TPDirect.xcframework; sourceTree = "<group>"; };
 		6E5FB5402DB6193E00F97B64 /* TPDPXPayPlusExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDPXPayPlusExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E5FB55E2DB6196900F97B64 /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = ../../../../../Downloads/TPDirect.xcframework_2.20.0/TPDirect.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -20,6 +20,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				TPDirect.xcframework,
 			);
 			target = 6E5FB53F2DB6193E00F97B64 /* TPDPXPayPlusExample */;
 		};
@@ -41,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E5FB55F2DB6196900F97B64 /* TPDirect.xcframework in Frameworks */,
+				6E44186E2DC20CC3009F6AC2 /* TPDirect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +69,7 @@
 		6E5FB55D2DB6196900F97B64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E5FB55E2DB6196900F97B64 /* TPDirect.xcframework */,
+				6E44186D2DC20CC3009F6AC2 /* TPDirect.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
