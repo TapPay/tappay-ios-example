@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05d54254-7eef-49b3-a2d8-91605a03875e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome.xcodeproj/project.xcworkspace/xcuserdata/cherrikevin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome.xcodeproj/project.xcworkspace/xcuserdata/lukecho.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome.xcodeproj/xcuserdata/cherrikevin.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome.xcodeproj/xcuserdata/lukecho.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Assets.xcassets/AccentColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Assets.xcassets/atome.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Assets.xcassets/atome.imageset/atome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/SceneDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/SceneDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDApplePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDAtome.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDAtomeResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCard.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCardInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCardValidationResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCcv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCcvForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDConsumer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDEasyWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDEasyWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDJKOPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDJKOPayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDLinePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDLinePayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDMerchant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPaymentBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPaymentItem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPaymentResultBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPiWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPiWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPlusPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPxPayPlus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPxPayPlusResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDSetup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDStatus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDTransactionResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDirect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/TPDirect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeDirectory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeRequirements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeSignature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDApplePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDAtome.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDAtomeResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCard.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCardInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCardValidationResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCcv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCcvForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDConsumer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDEasyWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDEasyWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDJKOPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDJKOPayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDLinePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDLinePayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDMerchant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPaymentBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPaymentItem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPaymentResultBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPiWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPiWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPlusPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPxPayPlus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPxPayPlusResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDSetup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDStatus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDTransactionResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDirect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/TPDirect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeDirectory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeRequirements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeSignature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/ViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/ViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/Atome/Atome/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/AppDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/Objc/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/ViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/project.xcworkspace/xcuserdata/cherri_tappay_lukecho.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/project.xcworkspace/xcuserdata/cherrikevin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/project.xcworkspace/xcuserdata/lukecho.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/xcuserdata/cherri_tappay_lukecho.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/xcuserdata/cherrikevin.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample.xcodeproj/xcuserdata/lukecho.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Assets.xcassets/AccentColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Assets.xcassets/atome.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Assets.xcassets/atome.imageset/atome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/AtomeExample.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/SceneDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDApplePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDAtome.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDAtomeResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCard.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCardInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCardValidationResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCcv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDCcvForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDConsumer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDEasyWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDEasyWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDJKOPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDJKOPayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDLinePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDLinePayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDMerchant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPaymentBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPaymentItem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPaymentResultBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPiWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPiWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPlusPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPxPayPlus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDPxPayPlusResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDSetup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDStatus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDTransactionResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Headers/TPDirect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/TPDirect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeDirectory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeRequirements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_armv7/TPDirect.framework/_CodeSignature/CodeSignature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDApplePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDAtome.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDAtomeResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCard.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCardInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCardValidationResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCcv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDCcvForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDConsumer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDEasyWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDEasyWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDForm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDJKOPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDJKOPayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDLinePay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDLinePayResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDMerchant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPaymentBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPaymentItem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPaymentResultBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPiWallet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPiWalletResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPlusPay.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPxPayPlus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDPxPayPlusResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDSetup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDStatus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDTransactionResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Headers/TPDirect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/TPDirect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeDirectory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeRequirements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/TPDirect.xcframework/ios-arm64_i386_x86_64-simulator/TPDirect.framework/_CodeSignature/CodeSignature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/Atome/AtomeExample/AtomeExample/ViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Swift/PXPay_Plus/TPDPXPayPlusExample/TPDPXPayPlusExample/ViewController.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2yObtIEQklifwOSub83Qo3IkcxR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05d54254-7eef-49b3-a2d8-91605a03875e" name="Changes" comment="" />
+      <created>1749708781112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749708781112</updated>
+      <workItem from="1749708786728" duration="402000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
