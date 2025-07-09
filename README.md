@@ -1146,3 +1146,101 @@ print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTrad
 }
 
 ```
+
+## Aftee
+### 1. Download and import TPDirect.xcframework into your project.
+
+### 2. Use TPDSetup to set up your environment.
+```swift
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+    TPDSetup.setWithAppId(APP_ID, withAppKey: "APP_KEY", with: TPDServerType.ServerType)
+
+}
+```
+### 3. Setup Custom URL Scheme
+#### Step 1
+Go into your app's info.plist file.
+#### Step 2
+Add a Row to this and call it "URL types"
+#### Step 3
+Expand the first item in "URL types" and add a row called "URL identifier", the value of this string should be the reverse domain for your app e.g. "com.yourcompany.myapp".
+#### Step 4
+Again, add a row into the first item in "URL types" and call it "URL Schemes"
+#### Step 5
+Inside "URL Schemes" you can use each item as a different url you wish to use, so if you wanted to use "myapp://" you would create an item called "myapp".
+
+![](./line_pay_custom_url.png)
+
+### Setup TPDAftee
+Use your custom URL Scheme to initialize TPDAftee object.
+```swift
+TPDAftee.setup(withReturnUrl: "You Custom URL SCheme")
+```
+
+### Get Prime
+Call getPrime function, via onSuccessCallback or onFailureCallback to get prime or error message.
+
+```Swift
+aftee.onSuccessCallback { (prime) in
+    print(prime : \(prime!))
+}.onFailureCallback { (status, msg) in
+    print("status : \(status), msg : \(msg)")
+}.getPrime()
+```
+### Redirect to Aftee Payment Page
+
+Obtain payment_url from TapPay, call redirect url function to Aftee Payment Page, get Aftee result via callback.
+```Swift
+aftee.redirect("paymentUrl") { (result) in
+
+    print("stauts : \(result.status) , recTradeId : \(result.recTradeId) , bankTransactionId : \(result.bankTransactionId) , order_number : \(result.orderNumber)")
+
+})
+```
+
+### Handle URL
+Use this method handle URL come from TapPay and parse URL data.
+( For version higher than iOS 9.0 )
+```Swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    let afteeHandled = TPDAftee.handle(url)
+    if (afteeHandled) {
+        return true
+        }
+    return false
+}
+```
+( For version lower than iOS 9.0 )
+```
+func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+    let afteeHandled = TPDAftee.handle(url)
+    if (afteeHandled) {
+        return true
+    }
+
+    return false
+}
+```
+### Exception Handle
+#### Step1
+Implement addExceptionOberver function in AppDelegate didFinishLaunchingWithOptions to handle exception, .
+
+```Swift
+TPDAftee.addExceptionObserver(#selector(tappayAfteeExceptionHandler(notofication:)))
+```
+
+#### Step2
+In AppDelegate add tappayLinePayExceptionHandler function, when exception happened receive notification.
+
+```Swift
+@objc func tappayAfteeExceptionHandler(notofication: Notification) {
+
+let result : TPDAfteeResult = TPDAftee.parseURL(notofication)
+
+    print("status : \(result.status) , orderNumber : \(result.orderNumber) , recTradeid : \(result.recTradeId) , bankTransactionId : \(result.bankTransactionId) ")
+
+}
+
+```
