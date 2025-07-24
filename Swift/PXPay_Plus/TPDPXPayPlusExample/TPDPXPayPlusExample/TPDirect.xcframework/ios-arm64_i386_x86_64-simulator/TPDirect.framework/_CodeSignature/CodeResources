@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/TPDAftee.h</key>
+		<data>
+		PZ7tlIaW/yIfBtVRKmKnhiEEwkI=
+		</data>
 		<key>Headers/TPDApplePay.h</key>
 		<data>
 		bCQ9XOV2seGEhh5bjKFLCtdEpso=
@@ -86,7 +90,7 @@
 		</data>
 		<key>Headers/TPDPaymentResultBase.h</key>
 		<data>
-		om5DBtHVXjxuAoTmK/6oauZLc5s=
+		CO4VHPf7K1qiuoEKvfZF6SpIa9A=
 		</data>
 		<key>Headers/TPDPiWallet.h</key>
 		<data>
@@ -122,7 +126,7 @@
 		</data>
 		<key>Headers/TPDirect.h</key>
 		<data>
-		Twjt+6VHDRxyPDPz/5Relmhd82c=
+		/6gteZcFnHiAWhOeEZ5/eUoiPtY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -135,6 +139,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/TPDAftee.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PZ7tlIaW/yIfBtVRKmKnhiEEwkI=
+			</data>
+			<key>hash2</key>
+			<data>
+			2oUZ63VoZkiRZw2yPIxC4Q8qWkxvWjuoH38/ZfgTxh8=
+			</data>
+		</dict>
 		<key>Headers/TPDApplePay.h</key>
 		<dict>
 			<key>hash</key>
@@ -359,11 +374,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			om5DBtHVXjxuAoTmK/6oauZLc5s=
+			CO4VHPf7K1qiuoEKvfZF6SpIa9A=
 			</data>
 			<key>hash2</key>
 			<data>
-			PukAVRe1KhZl1zmEwu+0JaL+Gb5F01OrDIC+30aNedE=
+			ycMTwgBnYAEP7Xrc1Kw4DqaJgc4lQAdauRdlY9A6TTI=
 			</data>
 		</dict>
 		<key>Headers/TPDPiWallet.h</key>
@@ -458,11 +473,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Twjt+6VHDRxyPDPz/5Relmhd82c=
+			/6gteZcFnHiAWhOeEZ5/eUoiPtY=
 			</data>
 			<key>hash2</key>
 			<data>
-			PKKUvQPKworK61E3VCrABegJrx8lJFUIqAoLNgDVJfQ=
+			Wv0vl+nRNt+3A2hs7FPBRaKacGk8y6AoJmFlvwaBFJA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
