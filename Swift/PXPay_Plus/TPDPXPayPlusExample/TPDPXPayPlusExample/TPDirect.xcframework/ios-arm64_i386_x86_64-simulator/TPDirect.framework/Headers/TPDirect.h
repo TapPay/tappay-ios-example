@@ -45,3 +45,5 @@ FOUNDATION_EXPORT const unsigned char TPDirectVersionString[];
 #import <TPDirect/TPDIPassMoney.h>
 #import <TPDirect/TPDIPassMoneyResult.h>
 #import <TPDirect/TPDAftee.h>
+#import <TPDirect/TPDOpPay.h>
+#import <TPDirect/TPDCardholderForm.h>

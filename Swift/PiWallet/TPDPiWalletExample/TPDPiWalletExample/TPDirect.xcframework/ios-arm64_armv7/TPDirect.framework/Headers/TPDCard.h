@@ -9,7 +9,6 @@
 @class TPDCardValidationResult;
 @class TPDForm;
 
-
 typedef NS_ENUM(NSInteger, CardType) {
     CardType_Visa,
     CardType_JCB,
@@ -46,6 +45,7 @@ typedef NS_ENUM(NSInteger, CardType) {
  @return TPDCard Instance
  */
 + (instancetype _Nonnull)setup:(TPDForm * _Nonnull)tpdForm;
+
 
 #pragma mark - Function
 /**
