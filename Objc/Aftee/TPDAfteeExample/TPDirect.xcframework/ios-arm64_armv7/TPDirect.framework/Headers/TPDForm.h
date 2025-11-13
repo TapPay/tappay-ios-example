@@ -79,6 +79,30 @@
  */
 - (NSString *)getCCV;
 
+/**
+ 
+ @return NSString, Name EN.
+ */
+- (NSString *)getNameEn;
+
+/**
+ 
+ @return NSString, Email.
+ */
+- (NSString *)getEmail;
+
+/**
+ 
+ @return NSString, Phone Number Country Code.
+ */
+- (NSString *)getPhoneNumberCountryCode;
+
+/**
+ 
+ @return NSString, Phone Number.
+ */
+- (NSString *)getPhoneNumber;
+
 
 /**
  Show Off Keyboard
@@ -99,5 +123,27 @@
  @return isUsedCcv BOOL
  */
 - (BOOL)getIsUsedCcv;
+
+ /**
+ Set TPDForm display nameEn field.
+
+ @param showNameEnField BOOL
+ */
+- (void)setShowNameEnField:(BOOL)showNameEnField;
+
+ /**
+ Set TPDForm display Email field.
+
+ @param showEmailField BOOL
+ */
+- (void)setShowEmailField:(BOOL)showEmailField;
+
+ /**
+ Set TPDForm display PhoneNumber field.
+
+ @param showPhoneNumberField BOOL
+ */
+- (void)setShowPhoneNumberField:(BOOL)showPhoneNumberField;
+
 
 @end

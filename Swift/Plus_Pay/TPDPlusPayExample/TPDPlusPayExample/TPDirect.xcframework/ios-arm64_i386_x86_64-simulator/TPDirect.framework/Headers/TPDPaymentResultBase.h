@@ -27,4 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TPDOpPayResult : TPDPaymentResultBase
+
+@end
+
 NS_ASSUME_NONNULL_END

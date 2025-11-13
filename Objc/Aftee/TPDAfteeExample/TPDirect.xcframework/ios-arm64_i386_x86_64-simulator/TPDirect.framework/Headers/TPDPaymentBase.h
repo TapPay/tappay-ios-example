@@ -11,7 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, TPDPaymentType) {
-    TPDPaymentTypePlusPay
+    TPDPaymentTypePlusPay,
+    TPDPaymentTypeApplePay,
+    TPDPaymentTypePxPayPlusEC,
+    TPDPaymentTypePxPayPlusBind,
+    TPDPaymentTypeIPassMoneyEC,
+    TPDPaymentTypeIPassMoneyBind,
+    TPDPaymentTypeAftee,
+    TPDPaymentTypeOpPay
 };
 
 @interface TPDPaymentBase : NSObject

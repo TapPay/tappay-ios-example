@@ -16,11 +16,23 @@ typedef NS_ENUM(NSInteger, FormStatus) {
     
 };
 
+typedef NS_ENUM(NSInteger, TextFieldStatus) {
+    TextFieldStatus_Exists    ,
+    TextFieldStatus_Not_Exists,
+};
+
 @interface TPDStatus : NSObject
 
-@property FormStatus cardNumberStatus;
-@property FormStatus expirationDateStatus;
-@property FormStatus ccvStatus;
+@property FormStatus        cardNumberStatus;
+@property FormStatus        expirationDateStatus;
+@property FormStatus        ccvStatus;
+@property FormStatus        nameEnStatus;
+@property FormStatus        emailStatus;
+@property FormStatus        phoneNumberCountryCodeStatus;
+@property FormStatus        phoneNumberStatus;
+@property TextFieldStatus   nameEnTextFieldStatus;
+@property TextFieldStatus   emailTextFieldStatus;
+@property TextFieldStatus   phoneNumberTextFieldStatus;
 
 #pragma mark - Function
 /**
@@ -37,6 +49,13 @@ typedef NS_ENUM(NSInteger, FormStatus) {
 - (BOOL)isCanGetPrime;
 
 /**
+ This method will return boolean value for checking getCardholderPrime status.
+
+ @return Bool, getPrime status.
+ */
+- (BOOL)isCanGetCardholderPrime;
+
+/**
  This method will return boolean value for checking error status.
 
  @return Bool, error status.
@@ -46,4 +65,6 @@ typedef NS_ENUM(NSInteger, FormStatus) {
 
 - (BOOL)isCanGetCCVPrime;
 
+
 @end
+
