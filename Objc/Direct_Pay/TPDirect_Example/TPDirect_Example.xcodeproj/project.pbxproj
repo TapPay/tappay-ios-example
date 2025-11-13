@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E091238295C4FC4006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E091237295C4FC4006A0CAB /* TPDirect.xcframework */; };
+		6EEC2AA62EBB4D820027DF58 /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEC2AA52EBB4D820027DF58 /* TPDirect.xcframework */; };
+		6EEC2AA72EBB4D820027DF58 /* TPDirect.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEC2AA52EBB4D820027DF58 /* TPDirect.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E4E854D1FAC44D900BD1288 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E854C1FAC44D900BD1288 /* AppDelegate.m */; };
 		7E4E85501FAC44D900BD1288 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E854F1FAC44D900BD1288 /* ViewController.m */; };
 		7E4E85531FAC44D900BD1288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85511FAC44D900BD1288 /* Main.storyboard */; };
@@ -31,8 +32,23 @@
 		7E4E85821FAC451C00BD1288 /* card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4E85721FAC451C00BD1288 /* card_visa@3x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6EEC2AA82EBB4D820027DF58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6EEC2AA72EBB4D820027DF58 /* TPDirect.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E091237295C4FC4006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDirect_Example/TPDirect.xcframework; sourceTree = "<group>"; };
+		6EEC2AA52EBB4D820027DF58 /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = ../../../Swift/Direct_Pay/TPDirect_Example/TPDirect.xcframework; sourceTree = "<group>"; };
 		7E4E85481FAC44D900BD1288 /* TPDirect_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDirect_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4E854B1FAC44D900BD1288 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E4E854C1FAC44D900BD1288 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E091238295C4FC4006A0CAB /* TPDirect.xcframework in Frameworks */,
+				6EEC2AA62EBB4D820027DF58 /* TPDirect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +91,7 @@
 		0E091236295C4FC4006A0CAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EEC2AA52EBB4D820027DF58 /* TPDirect.xcframework */,
 				0E091237295C4FC4006A0CAB /* TPDirect.xcframework */,
 			);
 			name = Frameworks;
@@ -154,6 +171,7 @@
 				7E4E85441FAC44D900BD1288 /* Sources */,
 				7E4E85451FAC44D900BD1288 /* Frameworks */,
 				7E4E85461FAC44D900BD1288 /* Resources */,
+				6EEC2AA82EBB4D820027DF58 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E09124E295C513C006A0CAB /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E09124D295C513C006A0CAB /* TPDirect.xcframework */; };
+		6EEC2AA22EBB4B260027DF58 /* TPDirect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEC2AA12EBB4B260027DF58 /* TPDirect.xcframework */; };
 		7E5BF81B1FAB1E39005E47BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5BF81A1FAB1E39005E47BD /* AppDelegate.swift */; };
 		7E5BF81D1FAB1E39005E47BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5BF81C1FAB1E39005E47BD /* ViewController.swift */; };
 		7E5BF8201FAB1E39005E47BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5BF81E1FAB1E39005E47BD /* Main.storyboard */; };
@@ -32,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0E09124D295C513C006A0CAB /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TPDirect.xcframework; path = TPDirect_Example/TPDirect.xcframework; sourceTree = "<group>"; };
+		6EEC2AA12EBB4B260027DF58 /* TPDirect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TPDirect.xcframework; sourceTree = "<group>"; };
 		7E5BF8171FAB1E39005E47BD /* TPDirect_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDirect_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5BF81A1FAB1E39005E47BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E5BF81C1FAB1E39005E47BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E09124E295C513C006A0CAB /* TPDirect.xcframework in Frameworks */,
+				6EEC2AA22EBB4B260027DF58 /* TPDirect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +135,7 @@
 		F97740AC2774805600DEA12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EEC2AA12EBB4B260027DF58 /* TPDirect.xcframework */,
 				0E09124D295C513C006A0CAB /* TPDirect.xcframework */,
 			);
 			name = Frameworks;

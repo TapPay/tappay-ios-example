@@ -41,6 +41,12 @@ class ViewController: UIViewController {
             
         }
         
+        // 4. Enable Cardholder field
+        tpdForm.setShowNameEnField(true)
+        tpdForm.setShowEmailField(true)
+        tpdForm.setShowPhoneNumberField(true)
+        
+        
         // Button Disable (Default)
         payButton.isEnabled = false
         payButton.alpha     = 0.25

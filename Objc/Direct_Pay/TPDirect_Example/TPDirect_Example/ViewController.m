@@ -44,6 +44,11 @@
         [weakSelf.payButton setEnabled:[status isCanGetPrime]];
         weakSelf.payButton.alpha = [status isCanGetPrime] ? 1.0 : 0.25;
     }];
+    // 4. Enable Cardholder field
+    [self.tpdForm setShowNameEnField:true];
+    [self.tpdForm setShowEmailField:true];
+    [self.tpdForm setShowPhoneNumberField:true];
+    
     
     // Button Disable (Default)
     [self.payButton setEnabled:false];

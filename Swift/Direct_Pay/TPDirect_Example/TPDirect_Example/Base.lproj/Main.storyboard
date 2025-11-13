@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ih6-FG-Oev">
-                                <rect key="frame" x="57.5" y="50" width="260" height="80"/>
+                                <rect key="frame" x="57.5" y="70" width="260" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Bmb-hf-3BJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="Bmb-hf-3BJ"/>
                                     <constraint firstAttribute="width" constant="260" id="iK0-70-8lj"/>
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="您可以設定中華郵政VISA金融卡及各家銀行信用卡（美國運通、大來卡、銀聯卡除外）費用將併入所設定信用卡帳單。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-B6-ucw">
-                                <rect key="frame" x="37.5" y="145" width="300" height="70"/>
+                                <rect key="frame" x="37.5" y="285" width="300" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="NNa-z2-1j3"/>
@@ -35,7 +35,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-aG-1Bf">
-                                <rect key="frame" x="150" y="231" width="75" height="30"/>
+                                <rect key="frame" x="150" y="371" width="75" height="30"/>
                                 <color key="backgroundColor" red="0.88909536600000005" green="0.56646364930000004" blue="0.27671140430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ber-WQ-99K"/>
@@ -65,7 +65,7 @@
                             <constraint firstItem="gKW-B6-ucw" firstAttribute="top" secondItem="ih6-FG-Oev" secondAttribute="bottom" constant="15" id="XJX-bd-TtF"/>
                             <constraint firstItem="gKW-B6-ucw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFr-zH-yAw"/>
                             <constraint firstItem="s8I-X0-R8j" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="ZPh-mg-9F3"/>
-                            <constraint firstItem="ih6-FG-Oev" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="ZX0-Gl-lqH"/>
+                            <constraint firstItem="ih6-FG-Oev" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="ZX0-Gl-lqH"/>
                             <constraint firstItem="s8I-X0-R8j" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="tbm-Kc-z0q"/>
                             <constraint firstItem="ih6-FG-Oev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCc-YC-Q3q"/>
                         </constraints>
