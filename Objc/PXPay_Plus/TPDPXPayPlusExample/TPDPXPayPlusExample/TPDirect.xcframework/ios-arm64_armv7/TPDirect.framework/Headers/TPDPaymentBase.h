@@ -18,7 +18,8 @@ typedef NS_ENUM(NSInteger, TPDPaymentType) {
     TPDPaymentTypeIPassMoneyEC,
     TPDPaymentTypeIPassMoneyBind,
     TPDPaymentTypeAftee,
-    TPDPaymentTypeOpPay
+    TPDPaymentTypeOpPay,
+    TPDPaymentTypeGogoPay
 };
 
 @interface TPDPaymentBase : NSObject

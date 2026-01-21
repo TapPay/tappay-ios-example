@@ -56,6 +56,10 @@
 		<data>
 		urc1P2ebhXv5ry9pxcgCkIng71k=
 		</data>
+		<key>Headers/TPDGogoPay.h</key>
+		<data>
+		PICeizso0ARybMD2xMbA/CMAmD8=
+		</data>
 		<key>Headers/TPDIPassMoney.h</key>
 		<data>
 		x6S3iLDO40kQAzsTe15wnkVMaP8=
@@ -90,7 +94,7 @@
 		</data>
 		<key>Headers/TPDPaymentBase.h</key>
 		<data>
-		TEUyjGaj7cOauN0wH/qLX5/z37E=
+		EsOPcL4fwvnxPUuhmVO5o/Cjeko=
 		</data>
 		<key>Headers/TPDPaymentItem.h</key>
 		<data>
@@ -98,7 +102,7 @@
 		</data>
 		<key>Headers/TPDPaymentResultBase.h</key>
 		<data>
-		9W0WkIKTUKWJvOhhas1wQqupsBg=
+		m6MvL5A0486ERRWjw1/BPNHnUoc=
 		</data>
 		<key>Headers/TPDPiWallet.h</key>
 		<data>
@@ -134,7 +138,7 @@
 		</data>
 		<key>Headers/TPDirect.h</key>
 		<data>
-		uA3JAzgMp9L1wijv2ArWil8IUdM=
+		9W7i3tp+1dXzxZGzsZwjRpLZ5mA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -290,6 +294,17 @@
 			T/4Ls/lDYYtHb/jDQP+Jw8x7pS0tsVuyUaGAPOpC4hc=
 			</data>
 		</dict>
+		<key>Headers/TPDGogoPay.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PICeizso0ARybMD2xMbA/CMAmD8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ji09pJZPQKFhxmayRS9s3QvB+TeHbZthWyWea2cg1cs=
+			</data>
+		</dict>
 		<key>Headers/TPDIPassMoney.h</key>
 		<dict>
 			<key>hash</key>
@@ -382,11 +397,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TEUyjGaj7cOauN0wH/qLX5/z37E=
+			EsOPcL4fwvnxPUuhmVO5o/Cjeko=
 			</data>
 			<key>hash2</key>
 			<data>
-			SND51HzwiT/oYa4YB/lv2eaJwqQXC/c9nz3I/ce//OA=
+			X6fK1fmCrqUgSUQptbVz6IeW4mSN1s/EQlI61FSacPs=
 			</data>
 		</dict>
 		<key>Headers/TPDPaymentItem.h</key>
@@ -404,11 +419,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9W0WkIKTUKWJvOhhas1wQqupsBg=
+			m6MvL5A0486ERRWjw1/BPNHnUoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			6Mm7eVqzdD/BSyqCTPGKFTS/D+8DCV8tT6To3z8xi6E=
+			pu2UiQZE2DgZxasxbmIWdvtHhO66wiicUdp/3FPivZk=
 			</data>
 		</dict>
 		<key>Headers/TPDPiWallet.h</key>
@@ -503,11 +518,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uA3JAzgMp9L1wijv2ArWil8IUdM=
+			9W7i3tp+1dXzxZGzsZwjRpLZ5mA=
 			</data>
 			<key>hash2</key>
 			<data>
-			2CMr9wOf/4Hz3Fz+FBRyanvoSp0OdKS2IZl7hJOuz/c=
+			whCBbd9/0oz/MhtbSmBpPh0kh+gDh+RpnHBsukUfefw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
