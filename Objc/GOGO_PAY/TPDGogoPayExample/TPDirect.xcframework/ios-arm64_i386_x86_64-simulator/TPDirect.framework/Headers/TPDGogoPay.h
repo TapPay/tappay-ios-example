@@ -30,10 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getPrime;
 
 
-/// Pass Payment Url to redirect to GoGoPay Web, complete GoGoPay Transaction Get Result via Callback
+/// Pass Payment Url to redirect to GogoPay Web, complete GogoPay Transaction Get Result via Callback
 /// - Parameters:
 ///   - url: Payment Url Get From Pay By Prime Success.
-///   - callback: Get GoGoPay Result, You Need to implement handleGoGoPayUrl in AppDelegate
+///   - callback: Get GogoPay Result, You Need to implement handleGogoPayUrl in AppDelegate
 - (void)redirect:(NSString * _Nonnull)url completion:(void (^_Nonnull)(TPDGogoPayResult * _Nonnull result))callback;
 
 
